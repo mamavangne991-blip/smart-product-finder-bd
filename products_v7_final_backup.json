@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Earbuds",
+    "price": "850",
+    "category": "Electronics",
+    "source": "Demo"
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "price": "1200",
+    "category": "Electronics",
+    "source": "Demo"
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth Speaker",
+    "price": "1500",
+    "category": "Electronics",
+    "source": "Demo"
+  },
+  {
+    "id": 4,
+    "name": "USB Fast Charger",
+    "price": "650",
+    "category": "Accessories",
+    "source": "Demo"
+  },
+  {
+    "id": 5,
+    "name": "Mini Power Bank",
+    "price": "1100",
+    "category": "Electronics",
+    "source": "Demo"
+  },
+  {
+    "id": 6,
+    "name": "Wireless Earbuds Pro",
+    "price": "1490",
+    "category": "Electronics",
+    "source": "Demo Store",
+    "url": "https://example.com/product1",
+    "commission": "5"
+  },
+  {
+    "id": 7,
+    "name": "Smart Watch X2",
+    "price": "2490",
+    "category": "Electronics",
+    "source": "Demo Store",
+    "url": "https://example.com/product2",
+    "commission": "5"
+  },
+  {
+    "id": 8,
+    "name": "Fast Charger 25W",
+    "price": "790",
+    "category": "Accessories",
+    "source": "Demo Store",
+    "url": "https://example.com/product3",
+    "commission": "4"
+  },
+  {
+    "id": 9,
+    "name": "Power Bank 10000mAh",
+    "price": "1790",
+    "category": "Electronics",
+    "source": "Demo Store",
+    "url": "https://example.com/product4",
+    "commission": "6"
+  },
+  {
+    "id": 10,
+    "name": "Bluetooth Speaker Mini",
+    "price": "1290",
+    "category": "Electronics",
+    "source": "Demo Store",
+    "url": "https://example.com/product5",
+    "commission": "5"
+  }
+]

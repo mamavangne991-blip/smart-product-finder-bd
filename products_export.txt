@@ -1,0 +1,14 @@
+ID: 1
+Name: Wireless Earbuds
+Category: Electronics
+Price: 1500
+Score: 97
+Link: https://example.com/product
+------------------------------
+ID: 2
+Name: Wireless Earbuds
+Category: Electronics
+Price: 1500
+Score: 97
+Link: https://example.com/product
+------------------------------

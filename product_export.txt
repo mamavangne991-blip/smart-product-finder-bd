@@ -1,0 +1,17 @@
+SMART PRODUCT FINDER BD
+===================================
+
+ID: 1
+Name: Wireless Earbuds
+Category: Electronics
+Price: 1500
+Affiliate Link: https://example.com/product
+Score: 97/100
+-----------------------------------
+ID: 2
+Name: Wireless Earbuds
+Category: Electronics
+Price: 1500
+Affiliate Link: https://example.com/product
+Score: 97/100
+-----------------------------------
