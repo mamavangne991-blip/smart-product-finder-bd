@@ -1,0 +1,192 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Earbuds",
+    "price": "850",
+    "category": "Electronics",
+    "source": "Demo",
+    "research_status": "NO CONFIDENT MATCH",
+    "research_title": "",
+    "research_url": "",
+    "market_price": "",
+    "match_score": 0,
+    "link_status": "LINK NEEDED",
+    "research_score": 30,
+    "missing_data": [
+      "Daraz Product Match"
+    ],
+    "daraz_results": []
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "price": "1200",
+    "category": "Electronics",
+    "source": "Demo",
+    "research_status": "NO CONFIDENT MATCH",
+    "research_title": "",
+    "research_url": "",
+    "market_price": "",
+    "match_score": 0,
+    "link_status": "LINK NEEDED",
+    "research_score": 30,
+    "missing_data": [
+      "Daraz Product Match"
+    ],
+    "daraz_results": []
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth Speaker",
+    "price": "1500",
+    "category": "Electronics",
+    "source": "Demo",
+    "research_status": "NO CONFIDENT MATCH",
+    "research_title": "",
+    "research_url": "",
+    "market_price": "",
+    "match_score": 0,
+    "link_status": "LINK NEEDED",
+    "research_score": 30,
+    "missing_data": [
+      "Daraz Product Match"
+    ],
+    "daraz_results": []
+  },
+  {
+    "id": 4,
+    "name": "USB Fast Charger",
+    "price": "650",
+    "category": "Accessories",
+    "source": "Demo",
+    "research_status": "NO CONFIDENT MATCH",
+    "research_title": "",
+    "research_url": "",
+    "market_price": "",
+    "match_score": 0,
+    "link_status": "LINK NEEDED",
+    "research_score": 30,
+    "missing_data": [
+      "Daraz Product Match"
+    ],
+    "daraz_results": []
+  },
+  {
+    "id": 5,
+    "name": "Mini Power Bank",
+    "price": "1100",
+    "category": "Electronics",
+    "source": "Demo",
+    "research_status": "NO CONFIDENT MATCH",
+    "research_title": "",
+    "research_url": "",
+    "market_price": "",
+    "match_score": 0,
+    "link_status": "LINK NEEDED",
+    "research_score": 30,
+    "missing_data": [
+      "Daraz Product Match"
+    ],
+    "daraz_results": []
+  },
+  {
+    "id": 6,
+    "name": "Wireless Earbuds Pro",
+    "price": "1490",
+    "category": "Electronics",
+    "source": "Demo Store",
+    "url": "",
+    "commission": "5",
+    "research_status": "NO CONFIDENT MATCH",
+    "research_title": "",
+    "research_url": "",
+    "market_price": "",
+    "match_score": 0,
+    "link_status": "LINK NEEDED",
+    "research_score": 30,
+    "missing_data": [
+      "Daraz Product Match"
+    ],
+    "daraz_results": []
+  },
+  {
+    "id": 7,
+    "name": "Smart Watch X2",
+    "price": "2490",
+    "category": "Electronics",
+    "source": "Demo Store",
+    "url": "",
+    "commission": "5",
+    "research_status": "NO CONFIDENT MATCH",
+    "research_title": "",
+    "research_url": "",
+    "market_price": "",
+    "match_score": 0,
+    "link_status": "LINK NEEDED",
+    "research_score": 30,
+    "missing_data": [
+      "Daraz Product Match"
+    ],
+    "daraz_results": []
+  },
+  {
+    "id": 8,
+    "name": "Fast Charger 25W",
+    "price": "790",
+    "category": "Accessories",
+    "source": "Demo Store",
+    "url": "",
+    "commission": "4",
+    "research_status": "NO CONFIDENT MATCH",
+    "research_title": "",
+    "research_url": "",
+    "market_price": "",
+    "match_score": 0,
+    "link_status": "LINK NEEDED",
+    "research_score": 30,
+    "missing_data": [
+      "Daraz Product Match"
+    ],
+    "daraz_results": []
+  },
+  {
+    "id": 9,
+    "name": "Power Bank 10000mAh",
+    "price": "1790",
+    "category": "Electronics",
+    "source": "Demo Store",
+    "url": "",
+    "commission": "6",
+    "research_status": "NO CONFIDENT MATCH",
+    "research_title": "",
+    "research_url": "",
+    "market_price": "",
+    "match_score": 0,
+    "link_status": "LINK NEEDED",
+    "research_score": 30,
+    "missing_data": [
+      "Daraz Product Match"
+    ],
+    "daraz_results": []
+  },
+  {
+    "id": 10,
+    "name": "Bluetooth Speaker Mini",
+    "price": "1290",
+    "category": "Electronics",
+    "source": "Demo Store",
+    "url": "",
+    "commission": "5",
+    "research_status": "NO CONFIDENT MATCH",
+    "research_title": "",
+    "research_url": "",
+    "market_price": "",
+    "match_score": 0,
+    "link_status": "LINK NEEDED",
+    "research_score": 30,
+    "missing_data": [
+      "Daraz Product Match"
+    ],
+    "daraz_results": []
+  }
+]

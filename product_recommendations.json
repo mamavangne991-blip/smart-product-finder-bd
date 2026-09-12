@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Earbuds",
+    "price": "850",
+    "category": "Electronics",
+    "source": "Demo",
+    "draft_description": "Wireless Earbuds একটি Electronics ক্যাটাগরির প্রোডাক্ট। বর্তমান মূল্য: 850 BDT। কেনার আগে বিস্তারিত তথ্য ও আসল সোর্স যাচাই করুন।",
+    "research_score": 70,
+    "link_status": "LINK NEEDED",
+    "missing_data": [
+      "Description",
+      "Link"
+    ],
+    "recommendation_score": 90,
+    "recommendation_rank": 1
+  },
+  {
+    "id": 4,
+    "name": "USB Fast Charger",
+    "price": "650",
+    "category": "Accessories",
+    "source": "Demo",
+    "draft_description": "USB Fast Charger একটি Accessories ক্যাটাগরির প্রোডাক্ট। বর্তমান মূল্য: 650 BDT। কেনার আগে বিস্তারিত তথ্য ও আসল সোর্স যাচাই করুন।",
+    "research_score": 70,
+    "link_status": "LINK NEEDED",
+    "missing_data": [
+      "Description",
+      "Link"
+    ],
+    "recommendation_score": 90,
+    "recommendation_rank": 2
+  },
+  {
+    "id": 8,
+    "name": "Fast Charger 25W",
+    "price": "790",
+    "category": "Accessories",
+    "source": "Demo Store",
+    "url": "",
+    "commission": "4",
+    "draft_description": "Fast Charger 25W একটি Accessories ক্যাটাগরির প্রোডাক্ট। বর্তমান মূল্য: 790 BDT। কেনার আগে বিস্তারিত তথ্য ও আসল সোর্স যাচাই করুন।",
+    "research_score": 70,
+    "link_status": "LINK NEEDED",
+    "missing_data": [
+      "Description",
+      "Link"
+    ],
+    "recommendation_score": 90,
+    "recommendation_rank": 3
+  },
+  {
+    "id": 5,
+    "name": "Mini Power Bank",
+    "price": "1100",
+    "category": "Electronics",
+    "source": "Demo",
+    "draft_description": "Mini Power Bank একটি Electronics ক্যাটাগরির প্রোডাক্ট। বর্তমান মূল্য: 1100 BDT। কেনার আগে বিস্তারিত তথ্য ও আসল সোর্স যাচাই করুন।",
+    "research_score": 70,
+    "link_status": "LINK NEEDED",
+    "missing_data": [
+      "Description",
+      "Link"
+    ],
+    "recommendation_score": 88.18,
+    "recommendation_rank": 4
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "price": "1200",
+    "category": "Electronics",
+    "source": "Demo",
+    "draft_description": "Smart Watch একটি Electronics ক্যাটাগরির প্রোডাক্ট। বর্তমান মূল্য: 1200 BDT। কেনার আগে বিস্তারিত তথ্য ও আসল সোর্স যাচাই করুন।",
+    "research_score": 70,
+    "link_status": "LINK NEEDED",
+    "missing_data": [
+      "Description",
+      "Link"
+    ],
+    "recommendation_score": 86.67,
+    "recommendation_rank": 5
+  },
+  {
+    "id": 10,
+    "name": "Bluetooth Speaker Mini",
+    "price": "1290",
+    "category": "Electronics",
+    "source": "Demo Store",
+    "url": "",
+    "commission": "5",
+    "draft_description": "Bluetooth Speaker Mini একটি Electronics ক্যাটাগরির প্রোডাক্ট। বর্তমান মূল্য: 1290 BDT। কেনার আগে বিস্তারিত তথ্য ও আসল সোর্স যাচাই করুন।",
+    "research_score": 70,
+    "link_status": "LINK NEEDED",
+    "missing_data": [
+      "Description",
+      "Link"
+    ],
+    "recommendation_score": 85.5,
+    "recommendation_rank": 6
+  },
+  {
+    "id": 6,
+    "name": "Wireless Earbuds Pro",
+    "price": "1490",
+    "category": "Electronics",
+    "source": "Demo Store",
+    "url": "",
+    "commission": "5",
+    "draft_description": "Wireless Earbuds Pro একটি Electronics ক্যাটাগরির প্রোডাক্ট। বর্তমান মূল্য: 1490 BDT। কেনার আগে বিস্তারিত তথ্য ও আসল সোর্স যাচাই করুন।",
+    "research_score": 70,
+    "link_status": "LINK NEEDED",
+    "missing_data": [
+      "Description",
+      "Link"
+    ],
+    "recommendation_score": 83.42,
+    "recommendation_rank": 7
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth Speaker",
+    "price": "1500",
+    "category": "Electronics",
+    "source": "Demo",
+    "draft_description": "Bluetooth Speaker একটি Electronics ক্যাটাগরির প্রোডাক্ট। বর্তমান মূল্য: 1500 BDT। কেনার আগে বিস্তারিত তথ্য ও আসল সোর্স যাচাই করুন।",
+    "research_score": 70,
+    "link_status": "LINK NEEDED",
+    "missing_data": [
+      "Description",
+      "Link"
+    ],
+    "recommendation_score": 83.33,
+    "recommendation_rank": 8
+  },
+  {
+    "id": 9,
+    "name": "Power Bank 10000mAh",
+    "price": "1790",
+    "category": "Electronics",
+    "source": "Demo Store",
+    "url": "",
+    "commission": "6",
+    "draft_description": "Power Bank 10000mAh একটি Electronics ক্যাটাগরির প্রোডাক্ট। বর্তমান মূল্য: 1790 BDT। কেনার আগে বিস্তারিত তথ্য ও আসল সোর্স যাচাই করুন।",
+    "research_score": 70,
+    "link_status": "LINK NEEDED",
+    "missing_data": [
+      "Description",
+      "Link"
+    ],
+    "recommendation_score": 81.17,
+    "recommendation_rank": 9
+  },
+  {
+    "id": 7,
+    "name": "Smart Watch X2",
+    "price": "2490",
+    "category": "Electronics",
+    "source": "Demo Store",
+    "url": "",
+    "commission": "5",
+    "draft_description": "Smart Watch X2 একটি Electronics ক্যাটাগরির প্রোডাক্ট। বর্তমান মূল্য: 2490 BDT। কেনার আগে বিস্তারিত তথ্য ও আসল সোর্স যাচাই করুন।",
+    "research_score": 70,
+    "link_status": "LINK NEEDED",
+    "missing_data": [
+      "Description",
+      "Link"
+    ],
+    "recommendation_score": 78.03,
+    "recommendation_rank": 10
+  }
+]
