@@ -1395,15 +1395,39 @@ def smart_recommendation_engine(products):
         ).lower()
 
         if keyword:
-            if (
-                keyword not in name
-                and keyword not in product_category
-            ):
+            keywords = [
+                word for word in keyword.split()
+                if len(word) > 1
+            ]
+
+            searchable_text = (
+                name + " " + product_category
+            )
+
+            matched_words = sum(
+                1
+                for word in keywords
+                if word in searchable_text
+            )
+
+            if keywords and matched_words == 0:
                 continue
 
         if category:
-            if category not in product_category:
-                continue
+            category_words = [
+                word for word in category.split()
+                if len(word) > 1
+            ]
+
+            if category_words:
+                category_matches = sum(
+                    1
+                    for word in category_words
+                    if word in product_category
+                )
+
+                if category_matches == 0:
+                    continue
 
         try:
             price = float(
