@@ -5,14 +5,17 @@ import hashlib
 import urllib.parse
 import requests
 from pathlib import Path
+from dotenv import load_dotenv
+import os
 
-APP_KEY = "505970"
-APP_SECRET = ""  # এখানে এখন App Secret লিখবেন না
+load_dotenv()
 
-CALLBACK_URL = "https://8d5bd1502eb565.lhr.life/callback"
+APP_KEY = os.getenv("DARAZ_APP_KEY")
+APP_SECRET = os.getenv("DARAZ_APP_SECRET")
 
+CALLBACK_URL = os.getenv("DARAZ_CALLBACK_URL")
 AUTH_URL = "https://api.daraz.com.bd/oauth/authorize"
-API_BASE_URL = "https://api.daraz.com.bd/rest"
+API_BASE_URL = os.getenv("DARAZ_API_BASE", "https://api.daraz.com.bd/rest")
 
 TOKEN_FILE = Path("daraz_token.json")
 
