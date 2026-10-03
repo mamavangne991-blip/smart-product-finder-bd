@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 daraz_config.py
 .env
+
+daraz_token.json
