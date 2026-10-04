@@ -2,6 +2,7 @@ import json
 import os
 import csv
 from datetime import datetime
+from collections import defaultdict
 
 PRODUCT_FILE = "products.json"
 SOURCE_FILE = "sources.json"
@@ -209,45 +210,93 @@ def search_products(products):
         print("Recommendation: Needs more evaluation.")
 
 
-def calculate_score(product):
-    score = 0
+def num_price(p):
+    try:
+        return float(
+            str(p.get("price", ""))
+            .replace("৳", "")
+            .replace(",", "")
+            .replace("BDT", "")
+            .strip()
+        )
+    except:
+        return 0
 
+def build_score_groups(products):
+    groups = defaultdict(list)
+    for item in products:
+        category = str(item.get("category", "")).strip()
+        groups[category].append(item)
+    return groups
+
+
+score_groups = {}
+
+def calculate_score(product):
+    s = 0
     name = str(product.get("name", "")).strip()
     category = str(product.get("category", "")).strip()
-    source = str(product.get("source", "")).strip()
+    desc = str(product.get("description", "")).strip()
+    price = num_price(product)
 
-    try:
-        price = float(str(product.get("price", "")).replace("BDT", "").strip())
-    except:
-        price = 0
-
-    # Product information
+    # Product information — 25
     if name:
-        score += 25
+        s += 10
+    if len(name) >= 20:
+        s += 3
     if category:
-        score += 15
-    if source:
-        score += 15
+        s += 5
+    if desc:
+        s += 7
 
-    # Price attractiveness
-    if 300 <= price <= 800:
-        score += 30
-    elif 801 <= price <= 1500:
-        score += 20
+    # Data quality — 15
+    if product.get("image"):
+        s += 5
+    if price > 0:
+        s += 5
+    if product.get("item_id"):
+        s += 5
+
+    # Price compared with products in same category — 30
+    same = [
+        num_price(x)
+        for x in score_groups[category]
+        if num_price(x) > 0
+    ]
+
+    if price > 0 and len(same) > 1:
+        avg = sum(same) / len(same)
+        if price <= avg * 0.75:
+            s += 30
+        elif price <= avg * 0.90:
+            s += 25
+        elif price <= avg * 1.10:
+            s += 20
+        elif price <= avg * 1.25:
+            s += 15
+        else:
+            s += 10
     elif price > 0:
-        score += 10
+        s += 20
 
-    # Popular product keywords
+    # Description quality — 10
+    if len(desc) >= 100:
+        s += 3
+    if len(desc) >= 300:
+        s += 7
+
+    # Product-name relevance — 10
     keywords = [
-        "earbuds", "smart watch", "speaker",
-        "power bank", "charger", "headphone",
-        "phone", "mobile", "camera"
+        "earbuds", "watch", "speaker", "power bank", "charger",
+        "headphone", "phone", "camera", "airpods", "toy",
+        "oats", "nuts", "spice", "air freshener"
     ]
 
     if any(k in name.lower() for k in keywords):
-        score += 15
+        s += 10
 
-    return min(score, 100)
+    # No source/Daraz bonus
+    return min(s, 100)
 
 
 def remove_duplicates(products):
@@ -1453,7 +1502,7 @@ def smart_recommendation_engine(products):
         return
 
     matches.sort(
-        key=smart_score_v2,
+        key=calculate_score,
         reverse=True
     )
 
@@ -1478,8 +1527,8 @@ def smart_recommendation_engine(products):
         )
 
         print(
-            f"   Smart Score V2: "
-            f"{smart_score_v2(product)}/100"
+            f"   Smart Score: "
+            f"{calculate_score(product)}/100"
         )
 
     best = matches[0]
@@ -1567,7 +1616,9 @@ def show_menu():
 
 
 def main():
+    global score_groups
     products = get_products()
+    score_groups = build_score_groups(products)
     sources = get_sources()
 
     while True:

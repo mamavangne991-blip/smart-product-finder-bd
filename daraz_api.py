@@ -1,6 +1,7 @@
 import json
 import time
 import hashlib
+import hmac
 import urllib.parse
 import requests
 from pathlib import Path
@@ -48,10 +49,6 @@ def load_token():
 
 
 def _sign_api_request(api_path, params):
-    """
-    Daraz/LazOP style request signing.
-    The signature is generated locally and the App Secret is never printed.
-    """
     if not APP_KEY or not APP_SECRET:
         raise RuntimeError("DARAZ_APP_KEY or DARAZ_APP_SECRET is missing")
 
@@ -60,15 +57,14 @@ def _sign_api_request(api_path, params):
     params["sign_method"] = "sha256"
 
     sorted_items = sorted(params.items())
-    query_string = "".join(
-        urllib.parse.quote(str(k), safe="-_.~")
-        + urllib.parse.quote(str(v), safe="-_.~")
-        for k, v in sorted_items
+    sign_string = api_path + "".join(
+        str(k) + str(v) for k, v in sorted_items
     )
 
-    sign_string = api_path + query_string
-    signature = hashlib.sha256(
-        (APP_SECRET + sign_string + APP_SECRET).encode("utf-8")
+    signature = hmac.new(
+        APP_SECRET.encode("utf-8"),
+        sign_string.encode("utf-8"),
+        hashlib.sha256
     ).hexdigest().upper()
 
     params["sign"] = signature
@@ -84,6 +80,7 @@ def create_access_token(code):
         api_path,
         {
             "code": code,
+            "timestamp": str(int(time.time() * 1000)),
         },
     )
 
