@@ -1546,7 +1546,7 @@ def smart_recommendation_engine(products):
     )
 
     print(
-        f"Score: {smart_score_v2(best)}/100"
+        f"Score: {calculate_score(best)}/100"
     )
 
     rating = best.get("rating", "")
