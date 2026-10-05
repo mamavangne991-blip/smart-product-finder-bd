@@ -142,6 +142,9 @@ def main():
         reverse=True,
     )
 
+    for i, item in enumerate(ranked, 1):
+        item["recommendation_rank"] = i
+
     OUTPUT.write_text(
         json.dumps(ranked, ensure_ascii=False, indent=2),
         encoding="utf-8",
@@ -155,13 +158,11 @@ def main():
 
     for i, p in enumerate(ranked[:15], 1):
         b = p["score_breakdown"]
-
         print(
             f"#{i:02} | SCORE {p['recommendation_score']} | "
             f"৳{p.get('price')} | "
             f"{str(p.get('name') or '')[:75]}"
         )
-
         print(
             f"     research={b['research']} "
             f"info={b['data_completeness']} "
@@ -170,8 +171,8 @@ def main():
             f"title={b['title']} "
             f"evidence={b['evidence_fields']}/9"
         )
+        print()
 
-    print()
     print("Saved:", OUTPUT)
     print("V4 ENGINE: PASS")
 
