@@ -1,0 +1,403 @@
+{
+  "worker": "V5 Real Evidence Score Worker",
+  "timestamp": "2026-10-05T19:26:47.151247",
+  "total_products": 19,
+  "results": [
+    {
+      "name": "Nuts Combo Pack of 4 – Thai China Badam 100g, Thai China Badam (Roasted) 100g, China Badam 100g, China Badam (Roasted) 100g | Daraz.com.bd",
+      "item_id": "530238363",
+      "source": "Daraz Public",
+      "recommendation_score_v5": 100,
+      "score_breakdown": {
+        "evidence": 36,
+        "source": 20,
+        "research": 25,
+        "price": 15,
+        "title": 5
+      },
+      "evidence_count": 8,
+      "evidence_total": 9,
+      "missing_fields": [
+        "seller_id"
+      ],
+      "status": "INCOMPLETE"
+    },
+    {
+      "name": "Go Fresh Rajnigandha Air Freshener 300 ml | Daraz.com.bd",
+      "item_id": "560796759",
+      "source": "Daraz Public",
+      "recommendation_score_v5": 100,
+      "score_breakdown": {
+        "evidence": 40,
+        "source": 20,
+        "research": 25,
+        "price": 12,
+        "title": 5
+      },
+      "evidence_count": 9,
+      "evidence_total": 9,
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "name": "Savory Spice Combo (Meat Masala+Chicken Masala+Biriyani Masala) | Daraz.com.bd",
+      "item_id": "368361896",
+      "source": "Daraz Public",
+      "recommendation_score_v5": 100,
+      "score_breakdown": {
+        "evidence": 40,
+        "source": 20,
+        "research": 25,
+        "price": 15,
+        "title": 5
+      },
+      "evidence_count": 9,
+      "evidence_total": 9,
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "name": "Foodcare Oats-500g | Daraz.com.bd",
+      "item_id": "567759025",
+      "source": "Daraz Public",
+      "recommendation_score_v5": 100,
+      "score_breakdown": {
+        "evidence": 40,
+        "source": 20,
+        "research": 25,
+        "price": 12,
+        "title": 5
+      },
+      "evidence_count": 9,
+      "evidence_total": 9,
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "name": "Musical Telephone Toy Mobile Toy for Kids | Daraz.com.bd",
+      "item_id": "337346588",
+      "source": "Daraz Public",
+      "recommendation_score_v5": 100,
+      "score_breakdown": {
+        "evidence": 40,
+        "source": 20,
+        "research": 25,
+        "price": 15,
+        "title": 5
+      },
+      "evidence_count": 9,
+      "evidence_total": 9,
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "name": "(শুধুমাত্র কভার) Airpods Pro / pro 2 silicone Case with for apple logo | Daraz.com.bd",
+      "item_id": "327951057",
+      "source": "Daraz Public",
+      "recommendation_score_v5": 100,
+      "score_breakdown": {
+        "evidence": 40,
+        "source": 20,
+        "research": 25,
+        "price": 12,
+        "title": 5
+      },
+      "evidence_count": 9,
+      "evidence_total": 9,
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "name": "Godrej Aer Matic Cool Surf Blue Automatic Spray Refill 2200 Sprays | Daraz.com.bd",
+      "item_id": "434316725",
+      "source": "Daraz Public",
+      "recommendation_score_v5": 100,
+      "score_breakdown": {
+        "evidence": 40,
+        "source": 20,
+        "research": 25,
+        "price": 12,
+        "title": 5
+      },
+      "evidence_count": 9,
+      "evidence_total": 9,
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "name": "Artificial Hanging Vines Plant - 7 feet - artificial flower leaf | Daraz.com.bd",
+      "item_id": "438545820",
+      "source": "Daraz Public",
+      "recommendation_score_v5": 100,
+      "score_breakdown": {
+        "evidence": 40,
+        "source": 20,
+        "research": 25,
+        "price": 15,
+        "title": 5
+      },
+      "evidence_count": 9,
+      "evidence_total": 9,
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "name": "Adjustable Back Correction Strap Shoulder Brace Belt Straighten | Daraz.com.bd",
+      "item_id": "296702548",
+      "source": "Daraz Public",
+      "recommendation_score_v5": 99,
+      "score_breakdown": {
+        "evidence": 40,
+        "source": 20,
+        "research": 25,
+        "price": 9,
+        "title": 5
+      },
+      "evidence_count": 9,
+      "evidence_total": 9,
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "name": "Wireless Earbuds",
+      "item_id": null,
+      "source": "Demo",
+      "recommendation_score_v5": 45,
+      "score_breakdown": {
+        "evidence": 13,
+        "source": 10,
+        "research": 10,
+        "price": 9,
+        "title": 3
+      },
+      "evidence_count": 3,
+      "evidence_total": 9,
+      "missing_fields": [
+        "description",
+        "image",
+        "url",
+        "item_id",
+        "seller_sku",
+        "seller_id"
+      ],
+      "status": "INCOMPLETE"
+    },
+    {
+      "name": "USB Fast Charger",
+      "item_id": null,
+      "source": "Demo",
+      "recommendation_score_v5": 45,
+      "score_breakdown": {
+        "evidence": 13,
+        "source": 10,
+        "research": 10,
+        "price": 9,
+        "title": 3
+      },
+      "evidence_count": 3,
+      "evidence_total": 9,
+      "missing_fields": [
+        "description",
+        "image",
+        "url",
+        "item_id",
+        "seller_sku",
+        "seller_id"
+      ],
+      "status": "INCOMPLETE"
+    },
+    {
+      "name": "Fast Charger 25W",
+      "item_id": null,
+      "source": "Demo Store",
+      "recommendation_score_v5": 45,
+      "score_breakdown": {
+        "evidence": 13,
+        "source": 10,
+        "research": 10,
+        "price": 9,
+        "title": 3
+      },
+      "evidence_count": 3,
+      "evidence_total": 9,
+      "missing_fields": [
+        "description",
+        "image",
+        "url",
+        "item_id",
+        "seller_sku",
+        "seller_id"
+      ],
+      "status": "INCOMPLETE"
+    },
+    {
+      "name": "Wireless Earbuds Pro",
+      "item_id": null,
+      "source": "Demo Store",
+      "recommendation_score_v5": 44,
+      "score_breakdown": {
+        "evidence": 13,
+        "source": 10,
+        "research": 10,
+        "price": 6,
+        "title": 5
+      },
+      "evidence_count": 3,
+      "evidence_total": 9,
+      "missing_fields": [
+        "description",
+        "image",
+        "url",
+        "item_id",
+        "seller_sku",
+        "seller_id"
+      ],
+      "status": "INCOMPLETE"
+    },
+    {
+      "name": "Bluetooth Speaker Mini",
+      "item_id": null,
+      "source": "Demo Store",
+      "recommendation_score_v5": 44,
+      "score_breakdown": {
+        "evidence": 13,
+        "source": 10,
+        "research": 10,
+        "price": 6,
+        "title": 5
+      },
+      "evidence_count": 3,
+      "evidence_total": 9,
+      "missing_fields": [
+        "description",
+        "image",
+        "url",
+        "item_id",
+        "seller_sku",
+        "seller_id"
+      ],
+      "status": "INCOMPLETE"
+    },
+    {
+      "name": "Smart Watch",
+      "item_id": null,
+      "source": "Demo",
+      "recommendation_score_v5": 42,
+      "score_breakdown": {
+        "evidence": 13,
+        "source": 10,
+        "research": 10,
+        "price": 6,
+        "title": 3
+      },
+      "evidence_count": 3,
+      "evidence_total": 9,
+      "missing_fields": [
+        "description",
+        "image",
+        "url",
+        "item_id",
+        "seller_sku",
+        "seller_id"
+      ],
+      "status": "INCOMPLETE"
+    },
+    {
+      "name": "Bluetooth Speaker",
+      "item_id": null,
+      "source": "Demo",
+      "recommendation_score_v5": 42,
+      "score_breakdown": {
+        "evidence": 13,
+        "source": 10,
+        "research": 10,
+        "price": 6,
+        "title": 3
+      },
+      "evidence_count": 3,
+      "evidence_total": 9,
+      "missing_fields": [
+        "description",
+        "image",
+        "url",
+        "item_id",
+        "seller_sku",
+        "seller_id"
+      ],
+      "status": "INCOMPLETE"
+    },
+    {
+      "name": "Mini Power Bank",
+      "item_id": null,
+      "source": "Demo",
+      "recommendation_score_v5": 42,
+      "score_breakdown": {
+        "evidence": 13,
+        "source": 10,
+        "research": 10,
+        "price": 6,
+        "title": 3
+      },
+      "evidence_count": 3,
+      "evidence_total": 9,
+      "missing_fields": [
+        "description",
+        "image",
+        "url",
+        "item_id",
+        "seller_sku",
+        "seller_id"
+      ],
+      "status": "INCOMPLETE"
+    },
+    {
+      "name": "Smart Watch X2",
+      "item_id": null,
+      "source": "Demo Store",
+      "recommendation_score_v5": 42,
+      "score_breakdown": {
+        "evidence": 13,
+        "source": 10,
+        "research": 10,
+        "price": 6,
+        "title": 3
+      },
+      "evidence_count": 3,
+      "evidence_total": 9,
+      "missing_fields": [
+        "description",
+        "image",
+        "url",
+        "item_id",
+        "seller_sku",
+        "seller_id"
+      ],
+      "status": "INCOMPLETE"
+    },
+    {
+      "name": "Power Bank 10000mAh",
+      "item_id": null,
+      "source": "Demo Store",
+      "recommendation_score_v5": 42,
+      "score_breakdown": {
+        "evidence": 13,
+        "source": 10,
+        "research": 10,
+        "price": 6,
+        "title": 3
+      },
+      "evidence_count": 3,
+      "evidence_total": 9,
+      "missing_fields": [
+        "description",
+        "image",
+        "url",
+        "item_id",
+        "seller_sku",
+        "seller_id"
+      ],
+      "status": "INCOMPLETE"
+    }
+  ],
+  "status": "PASS"
+}

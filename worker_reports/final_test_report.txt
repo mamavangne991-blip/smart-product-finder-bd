@@ -1,0 +1,9 @@
+PASS | worker_agents/evidence_worker.py
+PASS | worker_agents/duplicate_worker.py
+PASS | worker_agents/search_filter_worker.py
+PASS | worker_agents/evidence_score_worker.py
+PASS | worker_agents/test_recommendation_ui_worker.py
+PASS | worker_agents/recommendation_ui_worker.py
+PASS | worker_agents/test_app_v10_ui_integration.py
+
+TESTS=7 PASS=7 FAIL=0

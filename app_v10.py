@@ -1615,6 +1615,72 @@ def show_menu():
 """)
 
 
+
+# === RECOMMENDATION UI V1 ===
+def load_recommendation_ui():
+    """Load worker-generated recommendation results safely."""
+    import json
+    from pathlib import Path
+
+    candidates = [
+        Path("product_recommendations.json"),
+        Path("worker_reports/recommendation_ui_report.json"),
+    ]
+
+    for path in candidates:
+        if not path.exists():
+            continue
+
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+
+            if isinstance(data, dict) and "results" in data:
+                return data["results"]
+
+            if isinstance(data, list):
+                return data
+
+        except Exception:
+            continue
+
+    return []
+
+
+def recommendation_ui_summary(limit=10):
+    """Return clean recommendation records for the app UI."""
+    results = load_recommendation_ui()
+
+    output = []
+
+    for item in results[:limit]:
+        try:
+            score = float(
+                item.get(
+                    "recommendation_score",
+                    item.get("score", 0)
+                )
+            )
+        except (TypeError, ValueError):
+            score = 0.0
+
+        output.append({
+            "rank": item.get("rank"),
+            "name": item.get("name", "Unknown Product"),
+            "score": score,
+            "price": item.get("price"),
+            "currency": item.get("currency", "BDT"),
+            "source": item.get("source", "Unknown"),
+            "category": item.get("category"),
+            "url": item.get("url"),
+            "evidence": item.get(
+                "evidence_score",
+                item.get("evidence", 0)
+            ),
+        })
+
+    return output
+
+
 def main():
     global score_groups
     products = get_products()

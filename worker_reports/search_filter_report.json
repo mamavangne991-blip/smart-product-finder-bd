@@ -1,0 +1,376 @@
+{
+  "worker": "Search + Filter Worker V1",
+  "timestamp": "2026-10-05T19:26:46.853896",
+  "total_products": 19,
+  "tests": {
+    "all": {
+      "query": "",
+      "category": "",
+      "source": "",
+      "count": 19,
+      "products": [
+        {
+          "name": "Wireless Earbuds",
+          "price": "850",
+          "source": "Demo",
+          "category": "Electronics",
+          "item_id": null,
+          "url": null
+        },
+        {
+          "name": "Smart Watch",
+          "price": "1200",
+          "source": "Demo",
+          "category": "Electronics",
+          "item_id": null,
+          "url": null
+        },
+        {
+          "name": "Bluetooth Speaker",
+          "price": "1500",
+          "source": "Demo",
+          "category": "Electronics",
+          "item_id": null,
+          "url": null
+        },
+        {
+          "name": "USB Fast Charger",
+          "price": "650",
+          "source": "Demo",
+          "category": "Accessories",
+          "item_id": null,
+          "url": null
+        },
+        {
+          "name": "Mini Power Bank",
+          "price": "1100",
+          "source": "Demo",
+          "category": "Electronics",
+          "item_id": null,
+          "url": null
+        },
+        {
+          "name": "Wireless Earbuds Pro",
+          "price": "1490",
+          "source": "Demo Store",
+          "category": "Electronics",
+          "item_id": null,
+          "url": ""
+        },
+        {
+          "name": "Smart Watch X2",
+          "price": "2490",
+          "source": "Demo Store",
+          "category": "Electronics",
+          "item_id": null,
+          "url": ""
+        },
+        {
+          "name": "Fast Charger 25W",
+          "price": "790",
+          "source": "Demo Store",
+          "category": "Accessories",
+          "item_id": null,
+          "url": ""
+        },
+        {
+          "name": "Power Bank 10000mAh",
+          "price": "1790",
+          "source": "Demo Store",
+          "category": "Electronics",
+          "item_id": null,
+          "url": ""
+        },
+        {
+          "name": "Bluetooth Speaker Mini",
+          "price": "1290",
+          "source": "Demo Store",
+          "category": "Electronics",
+          "item_id": null,
+          "url": ""
+        },
+        {
+          "name": "Nuts Combo Pack of 4 – Thai China Badam 100g, Thai China Badam (Roasted) 100g, China Badam 100g, China Badam (Roasted) 100g | Daraz.com.bd",
+          "price": 280.0,
+          "source": "Daraz Public",
+          "category": "Groceries > Snacks",
+          "item_id": "530238363",
+          "url": "https://www.daraz.com.bd/products/nuts-combo-pack-of-4-thai-china-badam-100g-thai-china-badam-roasted-100g-china-badam-100g-china-badam-roasted-100g-i530238363-s2546976029.html"
+        },
+        {
+          "name": "Go Fresh Rajnigandha Air Freshener 300 ml | Daraz.com.bd",
+          "price": 305.0,
+          "source": "Daraz Public",
+          "category": "Groceries > Laundry & Household > AirCare",
+          "item_id": "560796759",
+          "url": "https://www.daraz.com.bd/products/go-fresh-rajnigandha-air-freshener-300-ml-i560796759-s2593878572.html"
+        },
+        {
+          "name": "Savory Spice Combo (Meat Masala+Chicken Masala+Biriyani Masala) | Daraz.com.bd",
+          "price": 220.0,
+          "source": "Daraz Public",
+          "category": "Groceries > Fresh Produce",
+          "item_id": "368361896",
+          "url": "https://www.daraz.com.bd/products/savory-spice-combo-meat-masalachicken-masalabiriyani-masala-i368361896-s1839279259.html"
+        },
+        {
+          "name": "Foodcare Oats-500g | Daraz.com.bd",
+          "price": 461.0,
+          "source": "Daraz Public",
+          "category": "Groceries > Breakfast",
+          "item_id": "567759025",
+          "url": "https://www.daraz.com.bd/products/foodcare-oats-500g-i567759025-s2608872588.html"
+        },
+        {
+          "name": "Musical Telephone Toy Mobile Toy for Kids | Daraz.com.bd",
+          "price": "250",
+          "source": "Daraz Public",
+          "category": "Mother & Baby > Baby & Toddler Toys  > Baby & Toddler Toys",
+          "item_id": "337346588",
+          "url": "https://www.daraz.com.bd/products/musical-telephone-toy-mobile-toy-for-kids-i337346588-s1645094976.html"
+        },
+        {
+          "name": "(শুধুমাত্র কভার) Airpods Pro / pro 2 silicone Case with for apple logo | Daraz.com.bd",
+          "price": "399",
+          "source": "Daraz Public",
+          "category": "TV, Audio / Video, Gaming & Wearables > Audio > Audio Accessories",
+          "item_id": "327951057",
+          "url": "https://www.daraz.com.bd/products/airpods-pro-pro-2-silicone-case-with-for-apple-logo-i327951057-s1600169556.html"
+        },
+        {
+          "name": "Adjustable Back Correction Strap Shoulder Brace Belt Straighten | Daraz.com.bd",
+          "price": "550",
+          "source": "Daraz Public",
+          "category": "Health & Beauty > Medical Supplies",
+          "item_id": "296702548",
+          "url": "https://www.daraz.com.bd/products/adjustable-back-correction-strap-shoulder-brace-belt-straighten-i296702548-s1552468918.html"
+        },
+        {
+          "name": "Godrej Aer Matic Cool Surf Blue Automatic Spray Refill 2200 Sprays | Daraz.com.bd",
+          "price": "500",
+          "source": "Daraz Public",
+          "category": "Groceries > Laundry & Household > AirCare",
+          "item_id": "434316725",
+          "url": "https://www.daraz.com.bd/products/godrej-aer-matic-cool-surf-blue-automatic-spray-refill-2200-sprays-i434316725-s2107144794.html"
+        },
+        {
+          "name": "Artificial Hanging Vines Plant - 7 feet - artificial flower leaf | Daraz.com.bd",
+          "price": "200",
+          "source": "Daraz Public",
+          "category": "Furniture & Decor > Home Decor",
+          "item_id": "438545820",
+          "url": "https://www.daraz.com.bd/products/artificial-hanging-vines-plant-7-feet-artificial-flower-leaf-i438545820-s2115995705.html"
+        }
+      ]
+    },
+    "daraz_public": {
+      "query": "",
+      "category": "",
+      "source": "Daraz Public",
+      "count": 9,
+      "products": [
+        {
+          "name": "Nuts Combo Pack of 4 – Thai China Badam 100g, Thai China Badam (Roasted) 100g, China Badam 100g, China Badam (Roasted) 100g | Daraz.com.bd",
+          "price": 280.0,
+          "source": "Daraz Public",
+          "category": "Groceries > Snacks",
+          "item_id": "530238363",
+          "url": "https://www.daraz.com.bd/products/nuts-combo-pack-of-4-thai-china-badam-100g-thai-china-badam-roasted-100g-china-badam-100g-china-badam-roasted-100g-i530238363-s2546976029.html"
+        },
+        {
+          "name": "Go Fresh Rajnigandha Air Freshener 300 ml | Daraz.com.bd",
+          "price": 305.0,
+          "source": "Daraz Public",
+          "category": "Groceries > Laundry & Household > AirCare",
+          "item_id": "560796759",
+          "url": "https://www.daraz.com.bd/products/go-fresh-rajnigandha-air-freshener-300-ml-i560796759-s2593878572.html"
+        },
+        {
+          "name": "Savory Spice Combo (Meat Masala+Chicken Masala+Biriyani Masala) | Daraz.com.bd",
+          "price": 220.0,
+          "source": "Daraz Public",
+          "category": "Groceries > Fresh Produce",
+          "item_id": "368361896",
+          "url": "https://www.daraz.com.bd/products/savory-spice-combo-meat-masalachicken-masalabiriyani-masala-i368361896-s1839279259.html"
+        },
+        {
+          "name": "Foodcare Oats-500g | Daraz.com.bd",
+          "price": 461.0,
+          "source": "Daraz Public",
+          "category": "Groceries > Breakfast",
+          "item_id": "567759025",
+          "url": "https://www.daraz.com.bd/products/foodcare-oats-500g-i567759025-s2608872588.html"
+        },
+        {
+          "name": "Musical Telephone Toy Mobile Toy for Kids | Daraz.com.bd",
+          "price": "250",
+          "source": "Daraz Public",
+          "category": "Mother & Baby > Baby & Toddler Toys  > Baby & Toddler Toys",
+          "item_id": "337346588",
+          "url": "https://www.daraz.com.bd/products/musical-telephone-toy-mobile-toy-for-kids-i337346588-s1645094976.html"
+        },
+        {
+          "name": "(শুধুমাত্র কভার) Airpods Pro / pro 2 silicone Case with for apple logo | Daraz.com.bd",
+          "price": "399",
+          "source": "Daraz Public",
+          "category": "TV, Audio / Video, Gaming & Wearables > Audio > Audio Accessories",
+          "item_id": "327951057",
+          "url": "https://www.daraz.com.bd/products/airpods-pro-pro-2-silicone-case-with-for-apple-logo-i327951057-s1600169556.html"
+        },
+        {
+          "name": "Adjustable Back Correction Strap Shoulder Brace Belt Straighten | Daraz.com.bd",
+          "price": "550",
+          "source": "Daraz Public",
+          "category": "Health & Beauty > Medical Supplies",
+          "item_id": "296702548",
+          "url": "https://www.daraz.com.bd/products/adjustable-back-correction-strap-shoulder-brace-belt-straighten-i296702548-s1552468918.html"
+        },
+        {
+          "name": "Godrej Aer Matic Cool Surf Blue Automatic Spray Refill 2200 Sprays | Daraz.com.bd",
+          "price": "500",
+          "source": "Daraz Public",
+          "category": "Groceries > Laundry & Household > AirCare",
+          "item_id": "434316725",
+          "url": "https://www.daraz.com.bd/products/godrej-aer-matic-cool-surf-blue-automatic-spray-refill-2200-sprays-i434316725-s2107144794.html"
+        },
+        {
+          "name": "Artificial Hanging Vines Plant - 7 feet - artificial flower leaf | Daraz.com.bd",
+          "price": "200",
+          "source": "Daraz Public",
+          "category": "Furniture & Decor > Home Decor",
+          "item_id": "438545820",
+          "url": "https://www.daraz.com.bd/products/artificial-hanging-vines-plant-7-feet-artificial-flower-leaf-i438545820-s2115995705.html"
+        }
+      ]
+    },
+    "electronics": {
+      "query": "",
+      "category": "Electronics",
+      "source": "",
+      "count": 8,
+      "products": [
+        {
+          "name": "Wireless Earbuds",
+          "price": "850",
+          "source": "Demo",
+          "category": "Electronics",
+          "item_id": null,
+          "url": null
+        },
+        {
+          "name": "Smart Watch",
+          "price": "1200",
+          "source": "Demo",
+          "category": "Electronics",
+          "item_id": null,
+          "url": null
+        },
+        {
+          "name": "Bluetooth Speaker",
+          "price": "1500",
+          "source": "Demo",
+          "category": "Electronics",
+          "item_id": null,
+          "url": null
+        },
+        {
+          "name": "Mini Power Bank",
+          "price": "1100",
+          "source": "Demo",
+          "category": "Electronics",
+          "item_id": null,
+          "url": null
+        },
+        {
+          "name": "Wireless Earbuds Pro",
+          "price": "1490",
+          "source": "Demo Store",
+          "category": "Electronics",
+          "item_id": null,
+          "url": ""
+        },
+        {
+          "name": "Smart Watch X2",
+          "price": "2490",
+          "source": "Demo Store",
+          "category": "Electronics",
+          "item_id": null,
+          "url": ""
+        },
+        {
+          "name": "Power Bank 10000mAh",
+          "price": "1790",
+          "source": "Demo Store",
+          "category": "Electronics",
+          "item_id": null,
+          "url": ""
+        },
+        {
+          "name": "Bluetooth Speaker Mini",
+          "price": "1290",
+          "source": "Demo Store",
+          "category": "Electronics",
+          "item_id": null,
+          "url": ""
+        }
+      ]
+    },
+    "charger": {
+      "query": "charger",
+      "category": "",
+      "source": "",
+      "count": 2,
+      "products": [
+        {
+          "name": "USB Fast Charger",
+          "price": "650",
+          "source": "Demo",
+          "category": "Accessories",
+          "item_id": null,
+          "url": null
+        },
+        {
+          "name": "Fast Charger 25W",
+          "price": "790",
+          "source": "Demo Store",
+          "category": "Accessories",
+          "item_id": null,
+          "url": ""
+        }
+      ]
+    },
+    "air": {
+      "query": "air",
+      "category": "",
+      "source": "",
+      "count": 3,
+      "products": [
+        {
+          "name": "Go Fresh Rajnigandha Air Freshener 300 ml | Daraz.com.bd",
+          "price": 305.0,
+          "source": "Daraz Public",
+          "category": "Groceries > Laundry & Household > AirCare",
+          "item_id": "560796759",
+          "url": "https://www.daraz.com.bd/products/go-fresh-rajnigandha-air-freshener-300-ml-i560796759-s2593878572.html"
+        },
+        {
+          "name": "(শুধুমাত্র কভার) Airpods Pro / pro 2 silicone Case with for apple logo | Daraz.com.bd",
+          "price": "399",
+          "source": "Daraz Public",
+          "category": "TV, Audio / Video, Gaming & Wearables > Audio > Audio Accessories",
+          "item_id": "327951057",
+          "url": "https://www.daraz.com.bd/products/airpods-pro-pro-2-silicone-case-with-for-apple-logo-i327951057-s1600169556.html"
+        },
+        {
+          "name": "Godrej Aer Matic Cool Surf Blue Automatic Spray Refill 2200 Sprays | Daraz.com.bd",
+          "price": "500",
+          "source": "Daraz Public",
+          "category": "Groceries > Laundry & Household > AirCare",
+          "item_id": "434316725",
+          "url": "https://www.daraz.com.bd/products/godrej-aer-matic-cool-surf-blue-automatic-spray-refill-2200-sprays-i434316725-s2107144794.html"
+        }
+      ]
+    }
+  },
+  "status": "PASS"
+}
