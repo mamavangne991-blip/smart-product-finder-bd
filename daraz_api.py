@@ -127,6 +127,27 @@ def refresh_access_token():
     return data
 
 
+def daraz_get(api_path, params=None):
+    """Perform a signed, read-only Daraz API GET request."""
+    token = load_token()
+    if not token or not token.get("access_token"):
+        raise RuntimeError("No saved Daraz access token found")
+
+    request_params = dict(params or {})
+    request_params["access_token"] = token["access_token"]
+    request_params["timestamp"] = str(int(time.time() * 1000))
+
+    signed_params = _sign_api_request(api_path, request_params)
+
+    response = requests.get(
+        API_BASE_URL + api_path,
+        params=signed_params,
+        timeout=30,
+    )
+    response.raise_for_status()
+    return response.json()
+
+
 def get_access_token():
     token_data = load_token()
 
