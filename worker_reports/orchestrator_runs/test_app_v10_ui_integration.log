@@ -1,0 +1,9 @@
+=== STDOUT ===
+PASS: test_app_exists
+PASS: test_recommendation_data_connected
+PASS: test_recommendation_ui_present
+
+TESTS: 3 | FAILED: 0
+INTEGRATION TEST: PASS
+
+=== STDERR ===

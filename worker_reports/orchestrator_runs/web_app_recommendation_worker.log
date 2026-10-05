@@ -1,0 +1,24 @@
+=== STDOUT ===
+========================================
+ WEB APP RECOMMENDATION WORKER
+========================================
+PASS: Recommendation file configured
+PASS: Recommendation scores loaded
+PASS: Product lookup supports item_id
+PASS: Product card score uses recommendation score
+PASS: Old homepage smart_score sorting detected
+PASS: Old homepage item score detected
+PASS: Old best-value score detected
+PASS: Product card URL supports item_id fallback
+       Product card still uses id only
+PASS: Recommendation coverage
+       21/21 products matched
+PASS: Recommendation ranks sequential
+       Ranks found: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+PASS: web_app_v6.py compiles
+
+STATUS: PASS
+REPORT: worker_reports/web_app_recommendation_report.json
+MODE: AUDIT ONLY / NO FILE MODIFICATION
+
+=== STDERR ===

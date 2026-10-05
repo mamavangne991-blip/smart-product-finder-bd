@@ -1,0 +1,111 @@
+{
+  "project": "Smart Product Finder BD",
+  "mode": "safe_sequential",
+  "git_push": false,
+  "workers": [
+    {
+      "worker": "evidence_worker",
+      "script": "worker_agents/evidence_worker.py",
+      "status": "PASS",
+      "returncode": 0,
+      "seconds": 0.29,
+      "log": "worker_reports/orchestrator_runs/evidence_worker.log"
+    },
+    {
+      "worker": "duplicate_worker",
+      "script": "worker_agents/duplicate_worker.py",
+      "status": "PASS",
+      "returncode": 0,
+      "seconds": 0.29,
+      "log": "worker_reports/orchestrator_runs/duplicate_worker.log"
+    },
+    {
+      "worker": "search_filter_worker",
+      "script": "worker_agents/search_filter_worker.py",
+      "status": "PASS",
+      "returncode": 0,
+      "seconds": 0.28,
+      "log": "worker_reports/orchestrator_runs/search_filter_worker.log"
+    },
+    {
+      "worker": "evidence_score_worker",
+      "script": "worker_agents/evidence_score_worker.py",
+      "status": "PASS",
+      "returncode": 0,
+      "seconds": 0.26,
+      "log": "worker_reports/orchestrator_runs/evidence_score_worker.log"
+    },
+    {
+      "worker": "recommendation_ui_worker",
+      "script": "worker_agents/recommendation_ui_worker.py",
+      "status": "PASS",
+      "returncode": 0,
+      "seconds": 0.27,
+      "log": "worker_reports/orchestrator_runs/recommendation_ui_worker.log"
+    },
+    {
+      "worker": "test_recommendation_ui_worker",
+      "script": "worker_agents/test_recommendation_ui_worker.py",
+      "status": "PASS",
+      "returncode": 0,
+      "seconds": 0.28,
+      "log": "worker_reports/orchestrator_runs/test_recommendation_ui_worker.log"
+    },
+    {
+      "worker": "test_app_v10_ui_integration",
+      "script": "worker_agents/test_app_v10_ui_integration.py",
+      "status": "PASS",
+      "returncode": 0,
+      "seconds": 0.25,
+      "log": "worker_reports/orchestrator_runs/test_app_v10_ui_integration.log"
+    },
+    {
+      "worker": "web_app_recommendation_worker",
+      "script": "worker_agents/web_app_recommendation_worker.py",
+      "status": "PASS",
+      "returncode": 0,
+      "seconds": 0.85,
+      "log": "worker_reports/orchestrator_runs/web_app_recommendation_worker.log"
+    },
+    {
+      "worker": "web_app_recommendation_fix_worker",
+      "script": "worker_agents/web_app_recommendation_fix_worker.py",
+      "status": "PASS",
+      "returncode": 0,
+      "seconds": 0.34,
+      "log": "worker_reports/orchestrator_runs/web_app_recommendation_fix_worker.log"
+    },
+    {
+      "worker": "product_discovery_worker",
+      "script": "worker_agents/product_discovery_worker.py",
+      "status": "PASS",
+      "returncode": 0,
+      "seconds": 0.85,
+      "log": "worker_reports/orchestrator_runs/product_discovery_worker.log"
+    },
+    {
+      "worker": "affiliate_safety_worker",
+      "script": "worker_agents/affiliate_safety_worker.py",
+      "status": "PASS",
+      "returncode": 0,
+      "seconds": 0.86,
+      "log": "worker_reports/orchestrator_runs/affiliate_safety_worker.log"
+    },
+    {
+      "worker": "quality_security_worker",
+      "script": "worker_agents/quality_security_worker.py",
+      "status": "PASS",
+      "returncode": 0,
+      "seconds": 2.35,
+      "log": "worker_reports/orchestrator_runs/quality_security_worker.log"
+    },
+    {
+      "worker": "final_production_audit_worker",
+      "script": "worker_agents/final_production_audit_worker.py",
+      "status": "PASS",
+      "returncode": 0,
+      "seconds": 0.58,
+      "log": "worker_reports/orchestrator_runs/final_production_audit_worker.log"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "worker": "V5 Real Evidence Score Worker",
-  "timestamp": "2026-10-05T19:26:47.151247",
-  "total_products": 19,
+  "timestamp": "2026-10-05T23:50:37.708029",
+  "total_products": 21,
   "results": [
     {
       "name": "Nuts Combo Pack of 4 – Thai China Badam 100g, Thai China Badam (Roasted) 100g, China Badam 100g, China Badam (Roasted) 100g | Daraz.com.bd",
@@ -150,6 +150,40 @@
         "evidence": 40,
         "source": 20,
         "research": 25,
+        "price": 9,
+        "title": 5
+      },
+      "evidence_count": 9,
+      "evidence_total": 9,
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "name": "Bird Swing Toy for Budgies, Cockatiels, Parrots & Finches – Fun Bird Cage Accessory | Bangladesh | Daraz.com.bd",
+      "item_id": "540705606",
+      "source": null,
+      "recommendation_score_v5": 70,
+      "score_breakdown": {
+        "evidence": 40,
+        "source": 0,
+        "research": 10,
+        "price": 15,
+        "title": 5
+      },
+      "evidence_count": 9,
+      "evidence_total": 9,
+      "missing_fields": [],
+      "status": "PASS"
+    },
+    {
+      "name": "Tresemme Shampoo Keratin Smooth 580ml | Daraz.com.bd",
+      "item_id": "101528357",
+      "source": null,
+      "recommendation_score_v5": 64,
+      "score_breakdown": {
+        "evidence": 40,
+        "source": 0,
+        "research": 10,
         "price": 9,
         "title": 5
       },

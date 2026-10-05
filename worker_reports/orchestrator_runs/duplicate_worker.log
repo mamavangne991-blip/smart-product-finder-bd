@@ -1,0 +1,11 @@
+=== STDOUT ===
+============================================================
+DUPLICATE WORKER V1
+============================================================
+TOTAL PRODUCTS: 21
+DUPLICATE GROUPS: 0
+DUPLICATES: NONE
+REPORT: /data/data/com.termux/files/home/smart-product-finder/worker_reports/duplicate_report.json
+WORKER STATUS: PASS
+
+=== STDERR ===

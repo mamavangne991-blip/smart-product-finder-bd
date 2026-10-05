@@ -1,0 +1,142 @@
+{
+  "worker": "final_production_audit_worker",
+  "timestamp": "2026-10-05T23:58:03.687103",
+  "mode": "READ_ONLY / NO FILE MODIFICATION / NO GIT PUSH / NO FILE DELETION",
+  "checks": [
+    {
+      "name": "File exists: products.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "File exists: product_recommendations.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "File exists: daraz_public_products.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "File exists: web_app_v6.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "File exists: daraz_public_import.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "products.json valid",
+      "status": "PASS",
+      "detail": "type=list"
+    },
+    {
+      "name": "product_recommendations.json valid",
+      "status": "PASS",
+      "detail": "type=list"
+    },
+    {
+      "name": "daraz_public_products.json valid",
+      "status": "PASS",
+      "detail": "type=list"
+    },
+    {
+      "name": "Recommendation coverage complete",
+      "status": "PASS",
+      "detail": "products=21, recommendations=21, missing=[], extra=[]"
+    },
+    {
+      "name": "Recommendation ranks sequential",
+      "status": "PASS",
+      "detail": "expected=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21], actual=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]"
+    },
+    {
+      "name": "Recommendation scores present",
+      "status": "PASS",
+      "detail": "scores=21/21"
+    },
+    {
+      "name": "Web app recommendation file connected",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Web app recommendation score connected",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Web app recommendation rank connected",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Product lookup supports item_id fallback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Product card supports item_id fallback",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "No old TOP 3 smart_score selection",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "No old Best Value smart_score selection",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Public Daraz products required fields",
+      "status": "PASS",
+      "detail": "products=3"
+    },
+    {
+      "name": "No duplicate public Daraz item IDs",
+      "status": "PASS",
+      "detail": "duplicates=[]"
+    },
+    {
+      "name": "Compile: web_app_v6.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Compile: daraz_public_import.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Compile: daraz_api.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Compile: worker_orchestrator.py",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "backup_test_inventory": [
+    "app_v10_MASTER_TEST_PASS_BACKUP.py",
+    "daraz_api_MASTER_TEST_PASS_BACKUP.py",
+    "production_git_status_before_cleanup.txt",
+    "products_MASTER_TEST_PASS_BACKUP.json",
+    "products_WORKING_BACKUP.json",
+    "smart-product-finder_WORKING_BACKUP.tar.gz",
+    "web_app_v6_WORKING_BACKUP.py"
+  ],
+  "summary": {
+    "checks": 24,
+    "passed": 24,
+    "failed": 0,
+    "status": "PASS"
+  }
+}

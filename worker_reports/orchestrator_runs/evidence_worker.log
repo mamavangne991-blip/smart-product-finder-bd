@@ -1,0 +1,11 @@
+=== STDOUT ===
+============================================================
+EVIDENCE WORKER V1
+============================================================
+TOTAL: 21
+PASS: 10
+INCOMPLETE: 11
+REPORT: /data/data/com.termux/files/home/smart-product-finder/worker_reports/evidence_report.json
+WORKER STATUS: PASS
+
+=== STDERR ===

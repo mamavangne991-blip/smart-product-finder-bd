@@ -1,0 +1,32 @@
+=== STDOUT ===
+========================================
+ PRODUCT DISCOVERY WORKER
+========================================
+PASS: products.json exists
+PASS: daraz_public_products.json exists
+PASS: daraz_public_import.py exists
+PASS: products.json valid JSON
+PASS: public Daraz data valid JSON
+PASS: Daraz products contain item_id
+       11/11
+PASS: Daraz products contain product name
+       11/11
+PASS: Daraz products contain price
+       11/11
+PASS: Daraz products contain URL
+       11/11
+PASS: No duplicate Daraz item IDs
+       Duplicates: []
+PASS: Public importer has main guard
+PASS: Public importer does not expose Daraz secret
+PASS: Public importer writes public data file
+PASS: daraz_public_import.py compiles
+
+PRODUCTS: 21
+DARAZ PRODUCTS: 11
+PUBLIC IMPORT DATA: 3
+STATUS: PASS
+REPORT: worker_reports/product_discovery_report.json
+MODE: AUDIT ONLY / NO FILE MODIFICATION
+
+=== STDERR ===

@@ -1,0 +1,9 @@
+=== STDOUT ===
+PASS: test_input_exists
+PASS: test_recommendation_records_have_ui_fields
+PASS: test_report_path_ready
+
+TESTS: 3 | FAILED: 0
+RED TEST: NOT RED — implementation may already satisfy current contract
+
+=== STDERR ===

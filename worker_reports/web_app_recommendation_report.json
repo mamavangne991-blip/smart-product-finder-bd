@@ -1,0 +1,63 @@
+{
+  "worker": "web_app_recommendation_worker",
+  "mode": "audit_only",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "Recommendation file configured",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Recommendation scores loaded",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Product lookup supports item_id",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Product card score uses recommendation score",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Old homepage smart_score sorting detected",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Old homepage item score detected",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Old best-value score detected",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Product card URL supports item_id fallback",
+      "status": "PASS",
+      "detail": "Product card still uses id only"
+    },
+    {
+      "check": "Recommendation coverage",
+      "status": "PASS",
+      "detail": "21/21 products matched"
+    },
+    {
+      "check": "Recommendation ranks sequential",
+      "status": "PASS",
+      "detail": "Ranks found: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]"
+    },
+    {
+      "check": "web_app_v6.py compiles",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "issues": []
+}

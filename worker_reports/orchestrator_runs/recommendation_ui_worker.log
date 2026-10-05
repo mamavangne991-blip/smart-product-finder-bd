@@ -1,0 +1,34 @@
+=== STDOUT ===
+============================================================
+RECOMMENDATION UI WORKER V1
+============================================================
+TOTAL: 21
+READY: 11
+MISSING URL: 10
+
+===== TOP RESULTS =====
+#1 | SCORE 95 | ৳200 | Artificial Hanging Vines Plant - 7 feet - artificial flower leaf | Dar
+    source=Daraz Public evidence=0 url=YES
+#2 | SCORE 95 | ৳220.0 | Savory Spice Combo (Meat Masala+Chicken Masala+Biriyani Masala) | Dara
+    source=Daraz Public evidence=0 url=YES
+#3 | SCORE 95 | ৳250 | Musical Telephone Toy Mobile Toy for Kids | Daraz.com.bd
+    source=Daraz Public evidence=0 url=YES
+#4 | SCORE 93 | ৳305.0 | Go Fresh Rajnigandha Air Freshener 300 ml | Daraz.com.bd
+    source=Daraz Public evidence=0 url=YES
+#5 | SCORE 93 | ৳399 | (শুধুমাত্র কভার) Airpods Pro / pro 2 silicone Case with for apple logo
+    source=Daraz Public evidence=0 url=YES
+#6 | SCORE 93 | ৳500 | Godrej Aer Matic Cool Surf Blue Automatic Spray Refill 2200 Sprays | D
+    source=Daraz Public evidence=0 url=YES
+#7 | SCORE 93 | ৳280.0 | Nuts Combo Pack of 4 – Thai China Badam 100g, Thai China Badam (Roaste
+    source=Daraz Public evidence=0 url=YES
+#8 | SCORE 91 | ৳461.0 | Foodcare Oats-500g | Daraz.com.bd
+    source=Daraz Public evidence=0 url=YES
+#9 | SCORE 90 | ৳550 | Adjustable Back Correction Strap Shoulder Brace Belt Straighten | Dara
+    source=Daraz Public evidence=0 url=YES
+#10 | SCORE 65 | ৳200 | Bird Swing Toy for Budgies, Cockatiels, Parrots & Finches – Fun Bird C
+    source=Unknown evidence=0 url=YES
+
+REPORT: worker_reports/recommendation_ui_report.json
+WORKER STATUS: PASS
+
+=== STDERR ===

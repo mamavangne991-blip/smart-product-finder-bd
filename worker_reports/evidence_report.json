@@ -1,8 +1,8 @@
 {
   "worker": "Evidence Worker V1",
-  "timestamp": "2026-10-05T19:26:46.321237",
-  "total_products": 19,
-  "pass": 8,
+  "timestamp": "2026-10-05T23:50:36.858717",
+  "total_products": 21,
+  "pass": 10,
   "incomplete": 11,
   "results": [
     {
@@ -459,6 +459,48 @@
       "name": "Artificial Hanging Vines Plant - 7 feet - artificial flower leaf | Daraz.com.bd",
       "source": "Daraz Public",
       "item_id": "438545820",
+      "evidence_fields": 9,
+      "evidence_total": 9,
+      "evidence_score": 100.0,
+      "missing_fields": [],
+      "status": "PASS",
+      "evidence": {
+        "name": true,
+        "description": true,
+        "image": true,
+        "url": true,
+        "category": true,
+        "price": true,
+        "item_id": true,
+        "seller_sku": true,
+        "seller_id": true
+      }
+    },
+    {
+      "name": "Tresemme Shampoo Keratin Smooth 580ml | Daraz.com.bd",
+      "source": null,
+      "item_id": "101528357",
+      "evidence_fields": 9,
+      "evidence_total": 9,
+      "evidence_score": 100.0,
+      "missing_fields": [],
+      "status": "PASS",
+      "evidence": {
+        "name": true,
+        "description": true,
+        "image": true,
+        "url": true,
+        "category": true,
+        "price": true,
+        "item_id": true,
+        "seller_sku": true,
+        "seller_id": true
+      }
+    },
+    {
+      "name": "Bird Swing Toy for Budgies, Cockatiels, Parrots & Finches – Fun Bird Cage Accessory | Bangladesh | Daraz.com.bd",
+      "source": null,
+      "item_id": "540705606",
       "evidence_fields": 9,
       "evidence_total": 9,
       "evidence_score": 100.0,

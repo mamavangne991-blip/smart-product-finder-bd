@@ -1,0 +1,29 @@
+=== STDOUT ===
+========================================
+ AFFILIATE SAFETY WORKER
+========================================
+PASS: products.json exists
+PASS: web_app_v6.py exists
+PASS: products.json valid JSON
+PASS: Daraz products have usable URLs
+       Missing: []
+PASS: Daraz URLs are HTTPS
+       Invalid URLs: []
+PASS: App contains product URL handling
+PASS: App uses HTTPS product links
+PASS: No obvious credentials embedded in web app
+       Patterns found: []
+PASS: Affiliate tracking is not required for normal product links
+       No tracking parameter will be invented automatically
+PASS: No obvious unsafe link/redirect patterns
+       Found: []
+PASS: web_app_v6.py compiles
+
+PRODUCTS: 21
+DARAZ PRODUCTS: 11
+TRACKING TERMS FOUND: ['affiliate']
+STATUS: PASS
+REPORT: worker_reports/affiliate_safety_report.json
+MODE: AUDIT ONLY / NO FILE MODIFICATION
+
+=== STDERR ===

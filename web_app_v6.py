@@ -6,19 +6,34 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.parse import urlparse, parse_qs
 
 PRODUCT_FILE = Path("products.json")
+RECOMMENDATION_FILE = Path("product_recommendations.json")
 
 
 def load_products():
     if not PRODUCT_FILE.exists():
         return []
-
     try:
-        return json.loads(
-            PRODUCT_FILE.read_text(encoding="utf-8")
-        )
+        products = json.loads(PRODUCT_FILE.read_text(encoding="utf-8"))
     except Exception:
         return []
-
+    if RECOMMENDATION_FILE.exists():
+        try:
+            recommendations = json.loads(RECOMMENDATION_FILE.read_text(encoding="utf-8"))
+            rec_map = {}
+            for rec in recommendations:
+                key = str(rec.get("id") or rec.get("item_id") or "")
+                if key:
+                    rec_map[key] = rec
+            for product in products:
+                key = str(product.get("id") or product.get("item_id") or "")
+                rec = rec_map.get(key)
+                if rec:
+                    product["recommendation_rank"] = rec.get("recommendation_rank")
+                    product["recommendation_score"] = rec.get("recommendation_score")
+                    product["score_breakdown"] = rec.get("score_breakdown")
+        except Exception:
+            pass
+    return products
 
 def get_price(product):
     try:
@@ -163,7 +178,13 @@ def product_card(product, rank=None, best=False):
         str(product.get("price", "N/A"))
     )
 
-    score = smart_score(product)
+    score = product.get("recommendation_score")
+    if score is None:
+        score = smart_score(product)
+    try:
+        score = int(float(score))
+    except Exception:
+        score = int(smart_score(product))
 
     badge = ""
 
@@ -236,36 +257,76 @@ def get_best_value_product(products):
     if not valid_products:
         return None
 
-    return max(
+    return min(
         valid_products,
-        key=best_value_score
+        key=lambda item: (
+            item.get("recommendation_rank")
+            if item.get("recommendation_rank") is not None
+            else 999999
+        )
     )
 
 
 
 def get_top_three_products(products):
-
     return sorted(
         products,
-        key=smart_score,
-        reverse=True
+        key=lambda item: (
+            item.get("recommendation_rank")
+            if item.get("recommendation_rank") is not None
+            else 999999
+        )
     )[:3]
 
 
 def home_page(products, keyword="", budget="", category_filter="", sort_by="score"):
+    def recommendation_score(item):
+        value = item.get("recommendation_score")
+        if value is None:
+            return smart_score(item)
+        try:
+            return int(float(value))
+        except Exception:
+            return smart_score(item)
+
     ranked = sorted(
         products,
-        key=smart_score,
-        reverse=True
+        key=lambda item: (
+            item.get("recommendation_rank")
+            if item.get("recommendation_rank") is not None
+            else 999999
+        )
     )
 
     cards = ""
 
-    best_value = get_best_value_product(products)
+    valid_best_values = [
+        product
+        for product in products
+        if get_price(product) > 0
+    ]
+
+    best_value = None
+    if valid_best_values:
+        best_value = min(
+            valid_best_values,
+            key=lambda item: (
+                item.get("recommendation_rank")
+                if item.get("recommendation_rank") is not None
+                else 999999
+            )
+        )
 
     best_value_card = ""
 
-    top_three = get_top_three_products(products)
+    top_three = sorted(
+        products,
+        key=lambda item: (
+            item.get("recommendation_rank")
+            if item.get("recommendation_rank") is not None
+            else 999999
+        )
+    )[:3]
 
     top_three_card = """
     <div class="top-three-title">
@@ -283,7 +344,7 @@ def home_page(products, keyword="", budget="", category_filter="", sort_by="scor
             str(item.get("price", "N/A"))
         )
 
-        item_score = smart_score(item)
+        item_score = recommendation_score(item)
 
         top_three_card += f"""
         <div class="card">
@@ -321,7 +382,7 @@ def home_page(products, keyword="", budget="", category_filter="", sort_by="scor
             str(best_value.get("price", "N/A"))
         )
 
-        best_value_score = smart_score(
+        best_value_score = recommendation_score(
             best_value
         )
 
@@ -923,7 +984,7 @@ class Handler(BaseHTTPRequestHandler):
             for product in products:
 
                 if str(
-                    product.get("id", "")
+                    product.get("id") or product.get("item_id") or ""
                 ) == product_id:
 
                     selected = product

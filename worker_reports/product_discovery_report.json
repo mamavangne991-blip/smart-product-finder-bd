@@ -1,0 +1,81 @@
+{
+  "worker": "product_discovery_worker",
+  "mode": "audit_only",
+  "status": "PASS",
+  "products_total": 21,
+  "daraz_products": 11,
+  "public_products": 3,
+  "checks": [
+    {
+      "check": "products.json exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "daraz_public_products.json exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "daraz_public_import.py exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "products.json valid JSON",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "public Daraz data valid JSON",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Daraz products contain item_id",
+      "status": "PASS",
+      "detail": "11/11"
+    },
+    {
+      "check": "Daraz products contain product name",
+      "status": "PASS",
+      "detail": "11/11"
+    },
+    {
+      "check": "Daraz products contain price",
+      "status": "PASS",
+      "detail": "11/11"
+    },
+    {
+      "check": "Daraz products contain URL",
+      "status": "PASS",
+      "detail": "11/11"
+    },
+    {
+      "check": "No duplicate Daraz item IDs",
+      "status": "PASS",
+      "detail": "Duplicates: []"
+    },
+    {
+      "check": "Public importer has main guard",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Public importer does not expose Daraz secret",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Public importer writes public data file",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "daraz_public_import.py compiles",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "issues": []
+}

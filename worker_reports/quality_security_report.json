@@ -1,0 +1,105 @@
+{
+  "worker": "quality_security_worker",
+  "mode": "audit_only",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "products.json exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "product_recommendations.json exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "web_app_v6.py exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "daraz_api.py exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "daraz_public_import.py exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "worker_orchestrator.py exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "products.json valid JSON",
+      "status": "PASS",
+      "detail": "type=list"
+    },
+    {
+      "check": "product_recommendations.json valid JSON",
+      "status": "PASS",
+      "detail": "type=list"
+    },
+    {
+      "check": "daraz_public_products.json valid JSON",
+      "status": "PASS",
+      "detail": "type=list"
+    },
+    {
+      "check": "Recommendation coverage is complete",
+      "status": "PASS",
+      "detail": "products=21, recommendations=21"
+    },
+    {
+      "check": "Recommendation ranks are sequential",
+      "status": "PASS",
+      "detail": "count=21"
+    },
+    {
+      "check": "No obvious hard-coded credentials",
+      "status": "PASS",
+      "detail": "Files: []"
+    },
+    {
+      "check": ".env is not committed by Git",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": ".env permissions are restrictive",
+      "status": "PASS",
+      "detail": "0o600"
+    },
+    {
+      "check": "web_app_v6.py compiles",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "daraz_api.py compiles",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "daraz_public_import.py compiles",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "worker_orchestrator.py compiles",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Git status readable",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "issues": [],
+  "git_push": false,
+  "files_deleted": false
+}

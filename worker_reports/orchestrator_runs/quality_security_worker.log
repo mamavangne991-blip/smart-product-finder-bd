@@ -1,0 +1,122 @@
+=== STDOUT ===
+========================================
+ QUALITY & SECURITY WORKER
+========================================
+PASS: products.json exists
+PASS: product_recommendations.json exists
+PASS: web_app_v6.py exists
+PASS: daraz_api.py exists
+PASS: daraz_public_import.py exists
+PASS: worker_orchestrator.py exists
+PASS: products.json valid JSON
+       type=list
+PASS: product_recommendations.json valid JSON
+       type=list
+PASS: daraz_public_products.json valid JSON
+       type=list
+PASS: Recommendation coverage is complete
+       products=21, recommendations=21
+PASS: Recommendation ranks are sequential
+       count=21
+PASS: No obvious hard-coded credentials
+       Files: []
+PASS: .env is not committed by Git
+PASS: .env permissions are restrictive
+       0o600
+PASS: web_app_v6.py compiles
+PASS: daraz_api.py compiles
+PASS: daraz_public_import.py compiles
+PASS: worker_orchestrator.py compiles
+PASS: Git status readable
+
+GIT STATUS:
+D app_v10_before_agent.py
+ D app_v1_backup.py
+ D app_v2_backup.py
+ D app_v3_backup.py
+ D app_v4_before_source.py
+ D app_v4_final_backup.py
+ D app_v5_backup.py
+ D app_v5_before_final.py
+ D app_v5_block1_backup.py
+ D app_v6_backup.py
+ D app_v7_before_cleanup.py
+ D app_v8_before_score_v2.py
+ D app_v9_before_advanced_data.py
+ D app_v9_before_recommendation_engine.py
+ D app_v9_final_backup.py
+ M daraz_public_products.json
+ M product_recommendations.json
+ D product_research_agent_v1_backup.py
+ D product_research_agent_v2_backup.py
+ D product_research_agent_v4_backup.py
+ M products.json
+ D products_before_agent.json
+ D products_before_cleanup.json
+ D products_before_daraz_integration.json
+ D products_before_score_v2.json
+ D products_final_backup.json
+ D products_source_backup.csv
+ D products_v7_final_backup.json
+ D sources_before_cleanup.json
+ D sources_old_backup.json
+ D sources_v7_final_backup.json
+ D web_app_v1_backup.py
+ D web_app_v2_backup.py
+ D web_app_v3_final_backup.py
+ D web_app_v3_local_backup.py
+ D web_app_v5_backup_before_favorite.py
+ M web_app_v6.py
+ D web_app_v6_backup_before_best_value.py
+ D web_app_v6_before_buy_button_upgrade.py
+ D web_app_v6_before_online.py
+ D web_app_v6_before_server_fix.py
+ D web_app_v6_before_share_upgrade.py
+ D web_app_v6_share_error_backup.py
+ M worker_reports/duplicate_report.json
+ M worker_reports/evidence_report.json
+ M worker_reports/recommendation_ui_report.json
+ M worker_reports/search_filter_report.json
+ M worker_reports/v5_evidence_score_report.json
+?? MASTER_AUDIT_20261005_015530.txt
+?? agent/
+?? app_v10_MASTER_TEST_PASS_BACKUP.py
+?? app_v10_PRODUCTION_SAFE.py
+?? daraz_api_MASTER_TEST_PASS_BACKUP.py
+?? daraz_api_PRODUCTION_SAFE.py
+?? daraz_debug.html
+?? daraz_public_import_PRODUCTION_SAFE.py
+?? daraz_public_products_PRODUCTION_SNAPSHOT_20261005.json
+?? main
+?? master_audit.sh
+?? product_recommendations_PRODUCTION_SNAPSHOT_20261005.json
+?? production_git_status_before_cleanup.txt
+?? products_MASTER_TEST_PASS_BACKUP.json
+?? products_PRODUCTION_SAFE.json
+?? products_PRODUCTION_SNAPSHOT_20261005.json
+?? project_archive/
+?? project_archive_20261005_024138/
+?? web_app_v6_PRODUCTION_SNAPSHOT_20261005.py
+?? worker_agents/affiliate_safety_worker.py
+?? worker_agents/final_production_audit_worker.py
+?? worker_agents/final_recommendation_selection_fix_worker.py
+?? worker_agents/product_discovery_worker.py
+?? worker_agents/quality_security_worker.py
+?? worker_agents/web_app_recommendation_fix_worker.py
+?? worker_agents/web_app_recommendation_worker.py
+?? worker_orchestrator.py
+?? worker_reports/affiliate_safety_report.json
+?? worker_reports/final_production_audit_report.json
+?? worker_reports/orchestrator_runs/
+?? worker_reports/product_discovery_report.json
+?? worker_reports/quality_security_report.json
+?? worker_reports/web_app_recommendation_fix_report.json
+?? worker_reports/web_app_recommendation_report.json
+
+STATUS: PASS
+REPORT: worker_reports/quality_security_report.json
+MODE: AUDIT ONLY / NO FILE MODIFICATION
+NO GIT PUSH
+NO FILE DELETION
+
+=== STDERR ===

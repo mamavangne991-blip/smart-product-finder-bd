@@ -216,6 +216,29 @@
     "recommendation_rank": 9
   },
   {
+    "url": "https://www.daraz.com.bd/products/bird-swing-toy-for-budgies-cockatiels-parrots-finches-fun-bird-cage-accessory-bangladesh-i540705606-s2558640839.html",
+    "name": "Bird Swing Toy for Budgies, Cockatiels, Parrots & Finches – Fun Bird Cage Accessory | Bangladesh | Daraz.com.bd",
+    "price": "200",
+    "currency": "BDT",
+    "item_id": "540705606",
+    "seller_sku": "2558640839",
+    "brand": "No Brand",
+    "category": "Pet Supplies > Bird",
+    "description": "Product details of Birds Swing toy for Cage Accessory Perch Bird Toy for Budgies, Cockatiel, Parrot, Conure, Java, Finch, Canary and Other Small Birds bird ladder swing and cradle birds will play with joy Add fun and exercise to your bird’s life with this Bird Swing Toy, specially designed for small pet birds like budgies, cockatiels, parrots, conures, finches, canaries, and Java sparrows. Now available in Bangladesh, this swing keeps your bird active, happy, and mentally stimulated inside the cage. Key Features:Perfect for Small Birds – Suitable for budgies, cockatiels, parrots, finches & more Encourages Play & Movement – Supports physical activity and stress relief Easy to Install – Hangs securely in most standard cages Durable & Safe Materials – Made for long-lasting fun and safety Add fun and exercise to your bird’s life with this Bird Swing Toy, specially designed for small pet birds like budgies, cockatiels, parrots, conures, finches, canaries, and Java sparrows. Now available in Bangladesh, this swing keeps your bird active, happy, and mentally stimulated inside the cage.Key Features:Perfect for Small Birds – Suitable for budgies, cockatiels, parrots, finches & moreEncourages Play & Movement – Supports physical activity and stress reliefEasy to Install – Hangs securely in most standard cagesDurable & Safe Materials – Made for long-lasting fun and safety",
+    "image": "https://img.drz.lazcdn.com/static/bd/p/d52e6538d473fdcba287dd083e585e92.jpg_720x720q80.jpg",
+    "seller_id": "700906016804",
+    "recommendation_score": 65,
+    "score_breakdown": {
+      "research": 10,
+      "data_completeness": 20,
+      "source": 5,
+      "price": 20,
+      "title": 10,
+      "evidence_fields": 9
+    },
+    "recommendation_rank": 10
+  },
+  {
     "url": "https://www.daraz.com.bd/products/tresemme-shampoo-keratin-smooth-580ml-i101528357-s1015534346.html",
     "name": "Tresemme Shampoo Keratin Smooth 580ml | Daraz.com.bd",
     "price": "850",
@@ -236,7 +259,7 @@
       "title": 10,
       "evidence_fields": 9
     },
-    "recommendation_rank": 10
+    "recommendation_rank": 11
   },
   {
     "id": 4,
@@ -253,7 +276,7 @@
       "title": 6,
       "evidence_fields": 3
     },
-    "recommendation_rank": 11
+    "recommendation_rank": 12
   },
   {
     "id": 8,
@@ -272,7 +295,7 @@
       "title": 6,
       "evidence_fields": 3
     },
-    "recommendation_rank": 12
+    "recommendation_rank": 13
   },
   {
     "id": 1,
@@ -289,7 +312,7 @@
       "title": 6,
       "evidence_fields": 3
     },
-    "recommendation_rank": 13
+    "recommendation_rank": 14
   },
   {
     "id": 5,
@@ -306,7 +329,7 @@
       "title": 6,
       "evidence_fields": 3
     },
-    "recommendation_rank": 14
+    "recommendation_rank": 15
   },
   {
     "id": 2,
@@ -323,7 +346,7 @@
       "title": 6,
       "evidence_fields": 3
     },
-    "recommendation_rank": 15
+    "recommendation_rank": 16
   },
   {
     "id": 10,
@@ -342,7 +365,7 @@
       "title": 8,
       "evidence_fields": 3
     },
-    "recommendation_rank": 16
+    "recommendation_rank": 17
   },
   {
     "id": 6,
@@ -361,7 +384,7 @@
       "title": 8,
       "evidence_fields": 3
     },
-    "recommendation_rank": 17
+    "recommendation_rank": 18
   },
   {
     "id": 3,
@@ -378,7 +401,7 @@
       "title": 6,
       "evidence_fields": 3
     },
-    "recommendation_rank": 18
+    "recommendation_rank": 19
   },
   {
     "id": 9,
@@ -397,7 +420,7 @@
       "title": 6,
       "evidence_fields": 3
     },
-    "recommendation_rank": 19
+    "recommendation_rank": 20
   },
   {
     "id": 7,
@@ -416,6 +439,6 @@
       "title": 6,
       "evidence_fields": 3
     },
-    "recommendation_rank": 20
+    "recommendation_rank": 21
   }
 ]

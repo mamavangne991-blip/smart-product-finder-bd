@@ -1,7 +1,7 @@
 {
   "worker": "Recommendation UI Worker V1",
-  "total": 19,
-  "ready": 9,
+  "total": 21,
+  "ready": 11,
   "missing_url": 10,
   "status": "PASS",
   "results": [
@@ -124,6 +124,32 @@
     },
     {
       "rank": 10,
+      "name": "Bird Swing Toy for Budgies, Cockatiels, Parrots & Finches – Fun Bird Cage Accessory | Bangladesh | Daraz.com.bd",
+      "score": 65.0,
+      "price": "200",
+      "currency": "BDT",
+      "source": "Unknown",
+      "evidence": 0,
+      "category": "Pet Supplies > Bird",
+      "url": "https://www.daraz.com.bd/products/bird-swing-toy-for-budgies-cockatiels-parrots-finches-fun-bird-cage-accessory-bangladesh-i540705606-s2558640839.html",
+      "has_url": true,
+      "item_id": "540705606"
+    },
+    {
+      "rank": 11,
+      "name": "Tresemme Shampoo Keratin Smooth 580ml | Daraz.com.bd",
+      "score": 57.0,
+      "price": "850",
+      "currency": "BDT",
+      "source": "Unknown",
+      "evidence": 0,
+      "category": "Health & Beauty > Hair Care",
+      "url": "https://www.daraz.com.bd/products/tresemme-shampoo-keratin-smooth-580ml-i101528357-s1015534346.html",
+      "has_url": true,
+      "item_id": "101528357"
+    },
+    {
+      "rank": 12,
       "name": "USB Fast Charger",
       "score": 43.0,
       "price": "650",
@@ -136,7 +162,7 @@
       "item_id": null
     },
     {
-      "rank": 11,
+      "rank": 13,
       "name": "Fast Charger 25W",
       "score": 43.0,
       "price": "790",
@@ -149,7 +175,7 @@
       "item_id": null
     },
     {
-      "rank": 12,
+      "rank": 14,
       "name": "Wireless Earbuds",
       "score": 40.0,
       "price": "850",
@@ -162,7 +188,7 @@
       "item_id": null
     },
     {
-      "rank": 13,
+      "rank": 15,
       "name": "Mini Power Bank",
       "score": 40.0,
       "price": "1100",
@@ -175,7 +201,7 @@
       "item_id": null
     },
     {
-      "rank": 14,
+      "rank": 16,
       "name": "Smart Watch",
       "score": 40.0,
       "price": "1200",
@@ -188,7 +214,7 @@
       "item_id": null
     },
     {
-      "rank": 15,
+      "rank": 17,
       "name": "Bluetooth Speaker Mini",
       "score": 39.0,
       "price": "1290",
@@ -201,7 +227,7 @@
       "item_id": null
     },
     {
-      "rank": 16,
+      "rank": 18,
       "name": "Wireless Earbuds Pro",
       "score": 39.0,
       "price": "1490",
@@ -214,7 +240,7 @@
       "item_id": null
     },
     {
-      "rank": 17,
+      "rank": 19,
       "name": "Bluetooth Speaker",
       "score": 37.0,
       "price": "1500",
@@ -227,7 +253,7 @@
       "item_id": null
     },
     {
-      "rank": 18,
+      "rank": 20,
       "name": "Power Bank 10000mAh",
       "score": 37.0,
       "price": "1790",
@@ -240,7 +266,7 @@
       "item_id": null
     },
     {
-      "rank": 19,
+      "rank": 21,
       "name": "Smart Watch X2",
       "score": 34.0,
       "price": "2490",

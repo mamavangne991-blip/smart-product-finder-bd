@@ -1,0 +1,14 @@
+=== STDOUT ===
+============================================================
+SEARCH + FILTER WORKER V1
+============================================================
+TOTAL PRODUCTS: 21
+all             -> 21 products
+daraz_public    -> 9 products
+electronics     -> 8 products
+charger         -> 2 products
+air             -> 4 products
+REPORT: /data/data/com.termux/files/home/smart-product-finder/worker_reports/search_filter_report.json
+WORKER STATUS: PASS
+
+=== STDERR ===

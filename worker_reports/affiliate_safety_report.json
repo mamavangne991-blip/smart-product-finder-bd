@@ -1,0 +1,68 @@
+{
+  "worker": "affiliate_safety_worker",
+  "mode": "audit_only",
+  "status": "PASS",
+  "products_total": 21,
+  "daraz_products": 11,
+  "tracking_terms_present": [
+    "affiliate"
+  ],
+  "checks": [
+    {
+      "check": "products.json exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "web_app_v6.py exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "products.json valid JSON",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Daraz products have usable URLs",
+      "status": "PASS",
+      "detail": "Missing: []"
+    },
+    {
+      "check": "Daraz URLs are HTTPS",
+      "status": "PASS",
+      "detail": "Invalid URLs: []"
+    },
+    {
+      "check": "App contains product URL handling",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "App uses HTTPS product links",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No obvious credentials embedded in web app",
+      "status": "PASS",
+      "detail": "Patterns found: []"
+    },
+    {
+      "check": "Affiliate tracking is not required for normal product links",
+      "status": "PASS",
+      "detail": "No tracking parameter will be invented automatically"
+    },
+    {
+      "check": "No obvious unsafe link/redirect patterns",
+      "status": "PASS",
+      "detail": "Found: []"
+    },
+    {
+      "check": "web_app_v6.py compiles",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "issues": []
+}
