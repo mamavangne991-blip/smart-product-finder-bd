@@ -1,0 +1,16 @@
+{
+  "worker": "daraz_recommendation_safety_worker",
+  "version": "1.0",
+  "mode": "read_only_validation",
+  "production_modified": false,
+  "git_modified": false,
+  "input_recommendations": 10,
+  "input_review": 1,
+  "checked": 10,
+  "passed": 10,
+  "failed": 0,
+  "review_leak_count": 0,
+  "failures": [],
+  "review_leaks": [],
+  "status": "PASS"
+}

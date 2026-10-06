@@ -12,27 +12,81 @@ RECOMMENDATION_FILE = Path("product_recommendations.json")
 def load_products():
     if not PRODUCT_FILE.exists():
         return []
+
     try:
         products = json.loads(PRODUCT_FILE.read_text(encoding="utf-8"))
     except Exception:
         return []
-    if RECOMMENDATION_FILE.exists():
+
+    # Production final recommendation pipeline is the authoritative
+    # recommendation source for the web UI.
+    final_file = Path(
+        "worker_reports/daraz_final_recommendation_pipeline_report.json"
+    )
+
+    if final_file.exists():
         try:
-            recommendations = json.loads(RECOMMENDATION_FILE.read_text(encoding="utf-8"))
-            rec_map = {}
+            final_report = json.loads(
+                final_file.read_text(encoding="utf-8")
+            )
+
+            recommendations = final_report.get("recommendations", [])
+            product_map = {
+                str(product.get("id") or product.get("item_id") or ""): product
+                for product in products
+            }
+
+            # Fill missing production Daraz products from the validated
+            # discovery report without modifying products.json.
+            discovery_file = Path(
+                "worker_reports/daraz_public_discovery_report.json"
+            )
+            if discovery_file.exists():
+                try:
+                    discovery = json.loads(
+                        discovery_file.read_text(encoding="utf-8")
+                    )
+
+                    def collect_products(value):
+                        found = []
+                        if isinstance(value, dict):
+                            if value.get("item_id") is not None:
+                                found.append(value)
+                            for child in value.values():
+                                found.extend(collect_products(child))
+                        elif isinstance(value, list):
+                            for child in value:
+                                found.extend(collect_products(child))
+                        return found
+
+                    for item in collect_products(discovery):
+                        iid = str(item.get("item_id") or "")
+                        if iid and iid not in product_map:
+                            product_map[iid] = dict(item)
+                except Exception:
+                    pass
+
+            final_products = []
+
             for rec in recommendations:
-                key = str(rec.get("id") or rec.get("item_id") or "")
-                if key:
-                    rec_map[key] = rec
-            for product in products:
-                key = str(product.get("id") or product.get("item_id") or "")
-                rec = rec_map.get(key)
-                if rec:
-                    product["recommendation_rank"] = rec.get("recommendation_rank")
-                    product["recommendation_score"] = rec.get("recommendation_score")
-                    product["score_breakdown"] = rec.get("score_breakdown")
+                item_id = str(rec.get("item_id") or "")
+                product = product_map.get(item_id)
+
+                if not product:
+                    continue
+
+                product["recommendation_rank"] = rec.get("position")
+                product["recommendation_score"] = rec.get("score")
+                product["recommendation_status"] = rec.get("status")
+
+                final_products.append(product)
+
+            if final_products:
+                return final_products
+
         except Exception:
             pass
+
     return products
 
 def get_price(product):

@@ -1,0 +1,127 @@
+{
+  "worker": "daraz_final_recommendation_pipeline_worker",
+  "version": "1.0",
+  "mode": "read_only_finalization",
+  "status": "PASS",
+  "input_count": 11,
+  "final_recommendation_count": 10,
+  "review_count": 1,
+  "safety_status": "PASS",
+  "production_modified": false,
+  "git_modified": false,
+  "recommendations": [
+    {
+      "position": 1,
+      "item_id": "530238363",
+      "name": "Nuts Combo Pack of 4 – Thai China Badam 100g, Thai China Badam (Roasted) 100g, China Badam 100g, China Badam (Roasted) 100g | Daraz.com.bd",
+      "price": 280.0,
+      "url": "https://www.daraz.com.bd/products/nuts-combo-pack-of-4-thai-china-badam-100g-thai-china-badam-roasted-100g-china-badam-100g-china-badam-roasted-100g-i530238363-s2546976029.html",
+      "search_keyword": "nuts",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 2,
+      "item_id": "560796759",
+      "name": "Go Fresh Rajnigandha Air Freshener 300 ml | Daraz.com.bd",
+      "price": 305.0,
+      "url": "https://www.daraz.com.bd/products/go-fresh-rajnigandha-air-freshener-300-ml-i560796759-s2593878572.html",
+      "search_keyword": "air freshener",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 3,
+      "item_id": "368361896",
+      "name": "Savory Spice Combo (Meat Masala+Chicken Masala+Biriyani Masala) | Daraz.com.bd",
+      "price": 220.0,
+      "url": "https://www.daraz.com.bd/products/savory-spice-combo-meat-masalachicken-masalabiriyani-masala-i368361896-s1839279259.html",
+      "search_keyword": "masala",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 4,
+      "item_id": "567759025",
+      "name": "Foodcare Oats-500g | Daraz.com.bd",
+      "price": 461.0,
+      "url": "https://www.daraz.com.bd/products/foodcare-oats-500g-i567759025-s2608872588.html",
+      "search_keyword": "oats",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 5,
+      "item_id": "337346588",
+      "name": "Musical Telephone Toy Mobile Toy for Kids | Daraz.com.bd",
+      "price": "250",
+      "url": "https://www.daraz.com.bd/products/musical-telephone-toy-mobile-toy-for-kids-i337346588-s1645094976.html",
+      "search_keyword": "toy",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 6,
+      "item_id": "296702548",
+      "name": "Adjustable Back Correction Strap Shoulder Brace Belt Straighten | Daraz.com.bd",
+      "price": "550",
+      "url": "https://www.daraz.com.bd/products/adjustable-back-correction-strap-shoulder-brace-belt-straighten-i296702548-s1552468918.html",
+      "search_keyword": "brace",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 7,
+      "item_id": "434316725",
+      "name": "Godrej Aer Matic Cool Surf Blue Automatic Spray Refill 2200 Sprays | Daraz.com.bd",
+      "price": "500",
+      "url": "https://www.daraz.com.bd/products/godrej-aer-matic-cool-surf-blue-automatic-spray-refill-2200-sprays-i434316725-s2107144794.html",
+      "search_keyword": "spray",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 8,
+      "item_id": "438545820",
+      "name": "Artificial Hanging Vines Plant - 7 feet - artificial flower leaf | Daraz.com.bd",
+      "price": "200",
+      "url": "https://www.daraz.com.bd/products/artificial-hanging-vines-plant-7-feet-artificial-flower-leaf-i438545820-s2115995705.html",
+      "search_keyword": "plant",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 9,
+      "item_id": "101528357",
+      "name": "Tresemme Shampoo Keratin Smooth 580ml | Daraz.com.bd",
+      "price": "850",
+      "url": "https://www.daraz.com.bd/products/tresemme-shampoo-keratin-smooth-580ml-i101528357-s1015534346.html",
+      "search_keyword": "shampoo",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 10,
+      "item_id": "540705606",
+      "name": "Bird Swing Toy for Budgies, Cockatiels, Parrots & Finches – Fun Bird Cage Accessory | Bangladesh | Daraz.com.bd",
+      "price": "200",
+      "url": "https://www.daraz.com.bd/products/bird-swing-toy-for-budgies-cockatiels-parrots-finches-fun-bird-cage-accessory-bangladesh-i540705606-s2558640839.html",
+      "search_keyword": "bird",
+      "score": 90,
+      "status": "RECOMMEND"
+    }
+  ],
+  "review_items": [
+    {
+      "item_id": "327951057",
+      "name": "(শুধুমাত্র কভার) Airpods Pro / pro 2 silicone Case with for apple logo | Daraz.com.bd",
+      "price": "399",
+      "url": "https://www.daraz.com.bd/products/airpods-pro-pro-2-silicone-case-with-for-apple-logo-i327951057-s1600169556.html",
+      "search_keyword": "airpods",
+      "ranking_score": 90,
+      "ranking_tier": "REVIEW",
+      "ranking_flags": [],
+      "recommendation_status": "REVIEW"
+    }
+  ]
+}
