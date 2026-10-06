@@ -1,0 +1,39 @@
+{
+  "worker": "search_filter_production_audit_worker",
+  "mode": "READ_ONLY",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "runtime_v2_report_exists",
+      "pass": true
+    },
+    {
+      "check": "count_audit_report_exists",
+      "pass": true
+    },
+    {
+      "check": "shampoo_500_http_200",
+      "pass": true
+    },
+    {
+      "check": "shampoo_1000_http_200",
+      "pass": true
+    },
+    {
+      "check": "charger_1000_http_200",
+      "pass": true
+    },
+    {
+      "check": "shampoo_500_returns_zero",
+      "pass": true
+    },
+    {
+      "check": "shampoo_1000_returns_one",
+      "pass": true
+    },
+    {
+      "check": "charger_1000_returns_two",
+      "pass": true
+    }
+  ]
+}

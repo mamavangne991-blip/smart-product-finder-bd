@@ -13,6 +13,7 @@ WORKERS = [
     ("evidence_worker", "worker_agents/evidence_worker.py"),
     ("duplicate_worker", "worker_agents/duplicate_worker.py"),
     ("search_filter_worker", "worker_agents/search_filter_worker.py"),
+    ("search_filter_production_audit_worker", "worker_agents/search_filter_production_audit_worker.py"),
     ("evidence_score_worker", "worker_agents/evidence_score_worker.py"),
     ("recommendation_ui_worker", "worker_agents/recommendation_ui_worker.py"),
     ("test_recommendation_ui_worker", "worker_agents/test_recommendation_ui_worker.py"),
