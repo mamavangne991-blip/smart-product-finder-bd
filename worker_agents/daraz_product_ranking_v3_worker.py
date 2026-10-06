@@ -73,8 +73,29 @@ def main():
         if price and price > 0:
             score += 5
 
-        # Relevance: 25
+        # Relevance: 25 — semantic category mapping
+        relevance_map = {
+            "home decor": ["decor", "plant", "flower", "vines", "leaf", "home"],
+            "hair care": ["shampoo", "conditioner", "hair", "scalp", "oil"],
+            "bird": ["bird", "budgie", "cockatiel", "parrot", "finch"],
+        }
+
+        relevance_hit = False
+
         if keyword and keyword in name_lower:
+            relevance_hit = True
+        else:
+            keyword_parts = [x.strip() for x in keyword.split(">")]
+            keyword_text = " ".join(keyword_parts)
+
+            for mapped_keyword, terms in relevance_map.items():
+                if mapped_keyword in keyword_text and any(
+                    term in name_lower for term in terms
+                ):
+                    relevance_hit = True
+                    break
+
+        if relevance_hit:
             score += 25
             reasons.append("keyword_relevant")
         else:
