@@ -217,7 +217,7 @@ def recommendation_reasons(product):
 
 def product_card(product, rank=None, best=False):
     product_id = html.escape(
-        str(product.get("id", ""))
+        str(product.get("id") or product.get("item_id") or "")
     )
 
     name = html.escape(
@@ -419,7 +419,7 @@ def home_page(products, keyword="", budget="", category_filter="", sort_by="scor
             </div>
 
             <a class="details-btn"
-               href="/product?id={html.escape(str(item.get("id", "")))}">
+               href="/product?id={html.escape(str(item.get("id") or item.get("item_id") or ""))}">
                 View Details →
             </a>
 
