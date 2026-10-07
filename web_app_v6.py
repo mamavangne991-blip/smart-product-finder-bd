@@ -346,6 +346,7 @@ def home_page(products, keyword="", budget="", category_filter="", sort_by="scor
     ranked = sorted(
         products,
         key=lambda item: (
+            0 if str(item.get("affiliate_url", "")).strip() else 1,
             item.get("recommendation_rank")
             if item.get("recommendation_rank") is not None
             else 999999
