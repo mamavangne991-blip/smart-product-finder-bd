@@ -991,7 +991,7 @@ Why recommended?
 
 <a
 class="back-btn"
-href="https://www.facebook.com/sharer/sharer.php?u={html.escape((os.environ.get('PUBLIC_BASE_URL', '').rstrip('/') or f'http://{self.headers.get('Host', '127.0.0.1:8080')}') + self.path, quote=True)}"
+href="https://www.facebook.com/sharer/sharer.php?u={html.escape((os.environ.get('PUBLIC_BASE_URL', '').rstrip('/') or 'http://127.0.0.1:8080') + '/product?id=' + str(product.get('id') or product.get('item_id') or ''), quote=True)}"
 target="_blank"
 rel="noopener noreferrer"
 >
@@ -1051,6 +1051,46 @@ class Handler(BaseHTTPRequestHandler):
 
                     selected = product
                     break
+
+            if not selected:
+
+                # Fallback: product-detail pages may reference products
+                # that are not in the final recommendation subset.
+                raw_products = []
+
+                try:
+                    raw_data = json.loads(
+                        PRODUCT_FILE.read_text(encoding="utf-8")
+                    )
+                    raw_products = (
+                        raw_data
+                        if isinstance(raw_data, list)
+                        else raw_data.get("products", [])
+                    )
+                except Exception:
+                    raw_products = []
+
+                for product in raw_products:
+
+                    candidates = {
+                        str(product.get("id") or ""),
+                        str(product.get("item_id") or ""),
+                    }
+
+                    # Support Daraz IDs in both forms:
+                    # daraz-530238363 and 530238363
+                    if product_id.startswith("daraz-"):
+                        candidates.add(
+                            product_id.replace("daraz-", "", 1)
+                        )
+                    else:
+                        candidates.add(
+                            "daraz-" + product_id
+                        )
+
+                    if product_id in candidates:
+                        selected = product
+                        break
 
             if not selected:
 
