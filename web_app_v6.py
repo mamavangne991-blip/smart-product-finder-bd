@@ -31,10 +31,17 @@ def load_products():
             )
 
             recommendations = final_report.get("recommendations", [])
-            product_map = {
-                str(product.get("id") or product.get("item_id") or ""): product
-                for product in products
-            }
+            product_map = {}
+            for product in products:
+                for key in ("id", "item_id"):
+                    value = str(product.get(key) or "").strip()
+                    if not value:
+                        continue
+                    product_map[value] = product
+                    if value.startswith("daraz-"):
+                        product_map[value[len("daraz-"):]] = product
+                    else:
+                        product_map["daraz-" + value] = product
 
             # Fill missing production Daraz products from the validated
             # discovery report without modifying products.json.
