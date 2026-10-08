@@ -825,7 +825,9 @@ def product_page(product):
     )
 
     url = str(
-        product.get("url", "")
+        product.get("affiliate_url")
+        or product.get("product_url")
+        or product.get("url", "")
     ).strip()
 
     buy_button = ""

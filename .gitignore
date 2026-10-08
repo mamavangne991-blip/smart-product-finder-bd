@@ -4,3 +4,23 @@ daraz_config.py
 .env
 
 daraz_token.json
+
+# Local backup/archive and temporary audit artifacts
+agent/
+project_archive/
+project_archive_20261005_024138/
+*_BACKUP.*
+*_SNAPSHOT_*
+MASTER_AUDIT_*.txt
+master_audit.sh
+production_git_status_before_cleanup.txt
+daraz_debug.html
+main
+worker_agents/*_audit_worker.py
+worker_agents/*_runtime_worker.py
+worker_agents/port_owner_worker.py
+worker_agents/search_result_content_worker.py
+worker_reports/*_audit_report.json
+worker_reports/*_runtime_report.json
+worker_reports/port_owner_report.json
+worker_reports/search_result_content_report.json
