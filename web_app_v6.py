@@ -991,7 +991,7 @@ Why recommended?
 
 <a
 class="back-btn"
-href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:8080{html.escape(self.path if False else '', quote=True)}"
+href="https://www.facebook.com/sharer/sharer.php?u={html.escape((os.environ.get('PUBLIC_BASE_URL', '').rstrip('/') or f'http://{self.headers.get('Host', '127.0.0.1:8080')}') + self.path, quote=True)}"
 target="_blank"
 rel="noopener noreferrer"
 >
