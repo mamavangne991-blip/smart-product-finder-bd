@@ -1,0 +1,95 @@
+{
+  "audit": "Smart Product Finder BD Master Read-Only Audit",
+  "time": "2026-10-12T14:48:14.459753+06:00",
+  "passed": 16,
+  "failed": 1,
+  "overall_status": "NEEDS_REVIEW",
+  "checks": [
+    {
+      "status": "PASS",
+      "name": "Web app Python syntax",
+      "detail": ""
+    },
+    {
+      "status": "PASS",
+      "name": "products.json valid JSON",
+      "detail": "records=17"
+    },
+    {
+      "status": "PASS",
+      "name": "products.json duplicate IDs",
+      "detail": "records with IDs=17"
+    },
+    {
+      "status": "PASS",
+      "name": "products.json product names",
+      "detail": "missing=0"
+    },
+    {
+      "status": "PASS",
+      "name": "product_recommendations.json valid JSON",
+      "detail": "records=21"
+    },
+    {
+      "status": "PASS",
+      "name": "product_recommendations.json duplicate IDs",
+      "detail": "records with IDs=21"
+    },
+    {
+      "status": "PASS",
+      "name": "product_recommendations.json product names",
+      "detail": "missing=0"
+    },
+    {
+      "status": "PASS",
+      "name": "daraz_public_products.json valid JSON",
+      "detail": "records=1"
+    },
+    {
+      "status": "PASS",
+      "name": "daraz_public_products.json duplicate IDs",
+      "detail": "records with IDs=1"
+    },
+    {
+      "status": "PASS",
+      "name": "daraz_public_products.json product names",
+      "detail": "missing=0"
+    },
+    {
+      "status": "PASS",
+      "name": "Affiliate URL coverage",
+      "detail": "12/17 products have affiliate_url"
+    },
+    {
+      "status": "PASS",
+      "name": "RFL bike affiliate URL saved",
+      "detail": "https://s.daraz.com.bd/s.YXfL9?cc"
+    },
+    {
+      "status": "PASS",
+      "name": "Local homepage HTTP",
+      "detail": "HTTP 200; bytes=17141"
+    },
+    {
+      "status": "PASS",
+      "name": "Git branch",
+      "detail": "main"
+    },
+    {
+      "status": "PASS",
+      "name": "Latest Git commit readable",
+      "detail": "6c103d6 Update verified Daraz affiliate product link"
+    },
+    {
+      "status": "FAIL",
+      "name": "Git working tree clean",
+      "detail": "Review changes before commit/push"
+    },
+    {
+      "status": "PASS",
+      "name": "Git diff whitespace check",
+      "detail": "No whitespace errors reported"
+    }
+  ],
+  "note": "Read-only audit; no fixes, commits, pushes, or deployments performed."
+}

@@ -1,0 +1,38 @@
+{
+  "created": "2026-10-12T09:17:49",
+  "safe_mode": true,
+  "production_modified": false,
+  "source": "daraz_public_products.json",
+  "output": "worker_reports/daraz_data_bridge_candidate.json",
+  "source_records": 1,
+  "valid_records": 1,
+  "rejected_records": 0,
+  "required_fields": [
+    "name",
+    "price",
+    "url",
+    "category",
+    "item_id",
+    "seller_sku",
+    "seller_id",
+    "description",
+    "image"
+  ],
+  "valid_products": [
+    {
+      "name": "RFL Playtime Royal Bike Free Delivery All Over Bangladesh | Daraz.com.bd",
+      "price": "1500",
+      "currency": "BDT",
+      "url": "https://www.daraz.com.bd/products/rfl-playtime-royal-bike-free-delivery-all-over-bangladesh-i1581469214-s12673030540.html",
+      "category": "Toys & Games > Sports & Outdoor Play > Outdoor Toys",
+      "item_id": "1581469214",
+      "seller_sku": "12673030540",
+      "seller_id": "1029613",
+      "brand": "PLAYTIME",
+      "description": "Royal Bike Item code: 947409 Brand: Playtime Material: Food Grade Plastic  Dimension (LxWxH): 62x39x47cm Age Limit: 1.5-4 Years weight capacity-upto 30 kg Music & Lighting system Color: Mixed (As given picture)N.B: Product delivery duration may vary due to product availability in stock. Disclaimer: The actual color of the physical product may slightly vary due to the deviation of lighting sources, photography or your device display settings.Royal BikeItem code: 947409Brand: PlaytimeMaterial: Food Grade Plastic Dimension (LxWxH): 62x39x47cmAge Limit: 1.5-4 Yearsweight capacity-upto 30 kgMusic & Lighting systemColor: Mixed (As given picture)N.B: Product delivery duration may vary due to product availability in stock.Disclaimer: The actual color of the physical product may slightly vary due to the deviation of lighting sources, photography or your device display settings.",
+      "image": "https://img.drz.lazcdn.com/static/bd/p/f43be21d488aabb475e4c9e8be6afe68.png_720x720q80.png_.webp"
+    }
+  ],
+  "rejected": [],
+  "decision": "READY_FOR_BRIDGE_TEST"
+}

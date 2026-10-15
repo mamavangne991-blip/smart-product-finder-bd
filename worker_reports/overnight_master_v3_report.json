@@ -1,0 +1,59 @@
+{
+  "worker": "overnight_master_worker_v3",
+  "timestamp": "2026-10-08T13:33:32.315362",
+  "mode": "safe_read_only",
+  "overall_status": "PASS",
+  "production_hash_before": "a79b0034ba35214d6679f619622cdbea55dec91ef605d4223b6406edd8d0db8e",
+  "production_hash_after": "a79b0034ba35214d6679f619622cdbea55dec91ef605d4223b6406edd8d0db8e",
+  "production_unchanged": true,
+  "production_write": false,
+  "affiliate_generation": false,
+  "git_commit": false,
+  "git_push": false,
+  "results": [
+    {
+      "task": "active_python_compile",
+      "status": "PASS",
+      "failed": []
+    },
+    {
+      "task": "credential_scan",
+      "status": "PASS",
+      "unsafe_matches": [],
+      "safe_environment_references": [
+        "daraz_api.py:13",
+        "daraz_api.py:14"
+      ]
+    },
+    {
+      "worker": "worker_agents/product_discovery_worker.py",
+      "status": "PASS",
+      "output": "========================================\n PRODUCT DISCOVERY WORKER\n========================================\nPASS: products.json exists\nPASS: daraz_public_products.json exists\nPASS: daraz_public_import.py exists\nPASS: products.json valid JSON\nPASS: public Daraz data valid JSON\nPASS: Daraz products contain item_id\n       11/11\nPASS: Daraz products contain product name\n       11/11\nPASS: Daraz products contain price\n       11/11\nPASS: Daraz products contain URL\n       11/11\nPASS: No duplicate Daraz item IDs\n       Duplicates: []\nPASS: Public importer has main guard\nPASS: Public importer does not expose Daraz secret\nPASS: Public importer writes public data file\nPASS: daraz_public_import.py compiles\n\nPRODUCTS: 21\nDARAZ PRODUCTS: 11\nPUBLIC IMPORT DATA: 3\nSTATUS: PASS\nREPORT: worker_reports/product_discovery_report.json\nMODE: AUDIT ONLY / NO FILE MODIFICATION\n",
+      "error": ""
+    },
+    {
+      "worker": "worker_agents/affiliate_safety_worker.py",
+      "status": "PASS",
+      "output": "========================================\n AFFILIATE SAFETY WORKER\n========================================\nPASS: products.json exists\nPASS: web_app_v6.py exists\nPASS: products.json valid JSON\nPASS: Daraz products have usable URLs\n       Missing: []\nPASS: Daraz URLs are HTTPS\n       Invalid URLs: []\nPASS: App contains product URL handling\nPASS: App uses HTTPS product links\nPASS: No obvious credentials embedded in web app\n       Patterns found: []\nPASS: Affiliate tracking is not required for normal product links\n       No tracking parameter will be invented automatically\nPASS: No obvious unsafe link/redirect patterns\n       Found: []\nPASS: web_app_v6.py compiles\n\nPRODUCTS: 21\nDARAZ PRODUCTS: 11\nTRACKING TERMS FOUND: ['affiliate']\nSTATUS: PASS\nREPORT: worker_reports/affiliate_safety_report.json\nMODE: AUDIT ONLY / NO FILE MODIFICATION\n",
+      "error": ""
+    },
+    {
+      "worker": "worker_agents/daraz_affiliate_intake_validator.py",
+      "status": "PASS",
+      "output": "INPUT RECORDS: 30\nVALID OFFICIAL LINKS: 0\nPENDING OFFICIAL LINKS: 30\nINVALID LINKS: 0\nAFFILIATE LINKS GENERATED: 0\nSTATUS: PASS\nPRODUCTION MODIFIED: False\nGIT MODIFIED: False\nREPORT: worker_reports/daraz_affiliate_intake_validation_report.json\n",
+      "error": ""
+    },
+    {
+      "worker": "worker_agents/daraz_affiliate_approval_gate.py",
+      "status": "PASS",
+      "output": "INPUT RECORDS: 30\nAPPROVED: 0\nPENDING: 30\nREJECTED: 0\nPRODUCTION WRITE ALLOWED: False\nPRODUCTION MODIFIED: False\nGIT MODIFIED: False\nSTATUS: PASS\nREPORT: worker_reports/daraz_affiliate_approval_gate_report.json\n",
+      "error": ""
+    },
+    {
+      "worker": "worker_agents/daraz_discovery_quality_worker.py",
+      "status": "PASS",
+      "output": "================================\nInput products : 30\nUnique         : 30\nDuplicates     : 0\nPASS           : 30\nREVIEW         : 0\nREJECT         : 0\n\nReport: worker_reports/daraz_discovery_quality_report.json\nProduction data modified: NO\nGit modified: NO\n\nTOP QUALITY PRODUCTS:\n- Natura Grow Shampoo + Conditioner 200ml (Buy 1 Get 1) | ৳249 | score=100 | id=1585981435\n- Parachute Naturale Nourishing Care Shampoo with Aloe Vera & Coconut Milk For Strong & Silky Hair Smoothens Hair Paraben Free, 100% Vegan All Hair Types 160 ml | ৳126 | score=100 | id=131530544\n- Ujjwala Care Anti Hair Fall Herbal Shampoo  200 ML | ৳198 | score=100 | id=530364850\n- Himalaya Gentle Daily Care Natural Protein Shampoo 170ml (Buy 1 Get 1 FREE) | ৳270 | score=100 | id=1585855395\n- Aarong Earth Shampoo With Amla, Ritha & Shikakai Extract  200 ml | ৳249 | score=100 | id=411800933\n- Parachute Naturale Shampoo Egg Shine 320ml | ৳239 | score=100 | id=339305549\n- Ujjwala Care Anti Hair Fall Shampoo+Conditioner Men  200 ML | ৳187 | score=100 | id=530368705\n- Parachute Naturale Shampoo Nourishing Care 320ml | ৳239 | score=100 | id=131530545\n- Parachute Naturale Advanced Hair Fall Control Shampoo with Onion & Coconut Milk For Strong & Thick Hair Reduces Hair Fall Paraben Free, 100% Vegan All Hair Types 320 ml | ৳239 | score=100 | id=287020419\n- HAIR CARE BUNDLE - Parachute Naturale Shampoo Anti Hair Fall 320ml & Parachute Advansed Onion Enriched Coconut Hair Growth Oil 200ml | ৳261 | score=100 | id=307729936\n",
+      "error": ""
+    }
+  ]
+}

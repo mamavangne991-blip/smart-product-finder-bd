@@ -1,0 +1,434 @@
+{
+  "worker": "daraz_claim_safety_candidate_v1",
+  "version": "1.0",
+  "mode": "read_only_candidate_test",
+  "input_count": 25,
+  "claim_detected": 7,
+  "verification_needed": 7,
+  "high_risk": 6,
+  "medium_risk": 1,
+  "low_risk": 0,
+  "status_mismatches": 7,
+  "production_modified": false,
+  "git_modified": false,
+  "products": [
+    {
+      "position": 1,
+      "name": "Natura Grow Shampoo + Conditioner 200ml (Buy 1 Get 1)",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [],
+      "claim_status": "NO_STRONG_CLAIM_DETECTED",
+      "verification_needed": false,
+      "claim_risk": "NONE",
+      "expected_safety_tier": "NO_CHANGE",
+      "status_mismatch": false
+    },
+    {
+      "position": 2,
+      "name": "Ujjwala Care Anti Hair Fall Herbal Shampoo  200 ML",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [],
+      "claim_status": "NO_STRONG_CLAIM_DETECTED",
+      "verification_needed": false,
+      "claim_risk": "NONE",
+      "expected_safety_tier": "NO_CHANGE",
+      "status_mismatch": false
+    },
+    {
+      "position": 3,
+      "name": "Aarong Earth Shampoo With Amla, Ritha & Shikakai Extract  200 ml",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [],
+      "claim_status": "NO_STRONG_CLAIM_DETECTED",
+      "verification_needed": false,
+      "claim_risk": "NONE",
+      "expected_safety_tier": "NO_CHANGE",
+      "status_mismatch": false
+    },
+    {
+      "position": 4,
+      "name": "Parachute Naturale Shampoo Egg Shine 320ml",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [],
+      "claim_status": "NO_STRONG_CLAIM_DETECTED",
+      "verification_needed": false,
+      "claim_risk": "NONE",
+      "expected_safety_tier": "NO_CHANGE",
+      "status_mismatch": false
+    },
+    {
+      "position": 5,
+      "name": "Parachute Naturale Shampoo Nourishing Care 320ml",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [],
+      "claim_status": "NO_STRONG_CLAIM_DETECTED",
+      "verification_needed": false,
+      "claim_risk": "NONE",
+      "expected_safety_tier": "NO_CHANGE",
+      "status_mismatch": false
+    },
+    {
+      "position": 6,
+      "name": "Parachute Naturale Advanced Hair Fall Control Shampoo with Onion & Coconut Milk For Strong & Thick Hair Reduces Hair Fall Paraben Free, 100% Vegan All Hair Types 320 ml",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [],
+      "claim_status": "NO_STRONG_CLAIM_DETECTED",
+      "verification_needed": false,
+      "claim_risk": "NONE",
+      "expected_safety_tier": "NO_CHANGE",
+      "status_mismatch": false
+    },
+    {
+      "position": 7,
+      "name": "HAIR CARE BUNDLE - Parachute Naturale Shampoo Anti Hair Fall 320ml & Parachute Advansed Onion Enriched Coconut Hair Growth Oil 200ml",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [],
+      "claim_status": "NO_STRONG_CLAIM_DETECTED",
+      "verification_needed": false,
+      "claim_risk": "NONE",
+      "expected_safety_tier": "NO_CHANGE",
+      "status_mismatch": false
+    },
+    {
+      "position": 8,
+      "name": "Realme 67W SUPER VOOC TYPE C FAST CHARGER Original Premium Quality",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [
+        "ORIGINAL",
+        "PREMIUM"
+      ],
+      "claim_status": "UNVERIFIED_SELLER_CLAIM",
+      "verification_needed": true,
+      "claim_risk": "HIGH",
+      "expected_safety_tier": "REVIEW",
+      "status_mismatch": true
+    },
+    {
+      "position": 9,
+      "name": "Xiaomi Fast Charger 33W Turbo Charge Original EU QC 4.0 Adapter 3A Usb Type C Cable For MI 10 9T 9 A3 Redmi Note 8 9 9s Pro",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [
+        "ORIGINAL"
+      ],
+      "claim_status": "UNVERIFIED_SELLER_CLAIM",
+      "verification_needed": true,
+      "claim_risk": "MEDIUM",
+      "expected_safety_tier": "REVIEW",
+      "status_mismatch": true
+    },
+    {
+      "position": 10,
+      "name": "CASIFY UP03 PD 20W QC18W Dual-Port Adapter Fast Charger PD 20W USB C Charger 18W USB Fast Charger Wall Charger US Plug",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [],
+      "claim_status": "NO_STRONG_CLAIM_DETECTED",
+      "verification_needed": false,
+      "claim_risk": "NONE",
+      "expected_safety_tier": "NO_CHANGE",
+      "status_mismatch": false
+    },
+    {
+      "position": 11,
+      "name": "33W Fast Turbo Charger with 6A USB Type-C Cable For Xiaomi  Mobile",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [],
+      "claim_status": "NO_STRONG_CLAIM_DETECTED",
+      "verification_needed": false,
+      "claim_risk": "NONE",
+      "expected_safety_tier": "NO_CHANGE",
+      "status_mismatch": false
+    },
+    {
+      "position": 12,
+      "name": "33W Fast Type-C Charger for Xiaomi, Vivo, Realme, Oppo, Samsung, Redmi, OnePlus, Inifinix, Motorola",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [],
+      "claim_status": "NO_STRONG_CLAIM_DETECTED",
+      "verification_needed": false,
+      "claim_risk": "NONE",
+      "expected_safety_tier": "NO_CHANGE",
+      "status_mismatch": false
+    },
+    {
+      "position": 13,
+      "name": "Officials Realme 45W Super vooc Original Premium Quality Fast Charger",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [
+        "ORIGINAL",
+        "PREMIUM"
+      ],
+      "claim_status": "UNVERIFIED_SELLER_CLAIM",
+      "verification_needed": true,
+      "claim_risk": "HIGH",
+      "expected_safety_tier": "REVIEW",
+      "status_mismatch": true
+    },
+    {
+      "position": 14,
+      "name": "AirPods Pro 2nd Generation Wireless Charging wireless Earbuds",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [
+        "AIRPODS"
+      ],
+      "claim_status": "UNVERIFIED_SELLER_CLAIM",
+      "verification_needed": true,
+      "claim_risk": "HIGH",
+      "expected_safety_tier": "REVIEW",
+      "status_mismatch": true
+    },
+    {
+      "position": 15,
+      "name": "New Airpods Stereo 895B Earbuds Touch Control Stereo Bass Earphone LED Digital Display BT 5.4 Wireless in Ear Earbuds",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [
+        "AIRPODS"
+      ],
+      "claim_status": "UNVERIFIED_SELLER_CLAIM",
+      "verification_needed": true,
+      "claim_risk": "HIGH",
+      "expected_safety_tier": "REVIEW",
+      "status_mismatch": true
+    },
+    {
+      "position": 16,
+      "name": "AirPods Pro 2nd genaration wireless Charging  Bluetooth Earbuds",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [
+        "AIRPODS"
+      ],
+      "claim_status": "UNVERIFIED_SELLER_CLAIM",
+      "verification_needed": true,
+      "claim_risk": "HIGH",
+      "expected_safety_tier": "REVIEW",
+      "status_mismatch": true
+    },
+    {
+      "position": 17,
+      "name": "Airpods Pro / tws Black edition wireless earbuds Bluetooth headphone",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [
+        "AIRPODS"
+      ],
+      "claim_status": "UNVERIFIED_SELLER_CLAIM",
+      "verification_needed": true,
+      "claim_risk": "HIGH",
+      "expected_safety_tier": "REVIEW",
+      "status_mismatch": true
+    },
+    {
+      "position": 18,
+      "name": "Ujjwala Care Anti Hair Fall Shampoo+Conditioner Men  200 ML",
+      "current_status": "GOOD_OPTION",
+      "current_score": 85,
+      "seller_claims": [],
+      "claim_status": "NO_STRONG_CLAIM_DETECTED",
+      "verification_needed": false,
+      "claim_risk": "NONE",
+      "expected_safety_tier": "NO_CHANGE",
+      "status_mismatch": false
+    },
+    {
+      "position": 19,
+      "name": "CASIFY FC02 PD 20W USB C Charger Fast Charging Quick Charge QC 3.0 Type C Wall Charger Adapter 20W PD Charger US Plug",
+      "current_status": "GOOD_OPTION",
+      "current_score": 85,
+      "seller_claims": [],
+      "claim_status": "NO_STRONG_CLAIM_DETECTED",
+      "verification_needed": false,
+      "claim_risk": "NONE",
+      "expected_safety_tier": "NO_CHANGE",
+      "status_mismatch": false
+    },
+    {
+      "position": 20,
+      "name": "Oraimo Style TWS Bluetooth Earbuds - Wireless Earphones with ENC, Bass Boost, 5H Battery, Type-C Charging - Multicolor",
+      "current_status": "GOOD_OPTION",
+      "current_score": 85,
+      "seller_claims": [],
+      "claim_status": "NO_STRONG_CLAIM_DETECTED",
+      "verification_needed": false,
+      "claim_risk": "NONE",
+      "expected_safety_tier": "NO_CHANGE",
+      "status_mismatch": false
+    },
+    {
+      "position": 21,
+      "name": "Ultrapods Pro True Wireless Earbuds with Display, Bluetooth 5.3",
+      "current_status": "GOOD_OPTION",
+      "current_score": 85,
+      "seller_claims": [],
+      "claim_status": "NO_STRONG_CLAIM_DETECTED",
+      "verification_needed": false,
+      "claim_risk": "NONE",
+      "expected_safety_tier": "NO_CHANGE",
+      "status_mismatch": false
+    },
+    {
+      "position": 22,
+      "name": "Himalaya Gentle Daily Care Natural Protein Shampoo 170ml (Buy 1 Get 1 FREE)",
+      "current_status": "GOOD_OPTION",
+      "current_score": 82,
+      "seller_claims": [],
+      "claim_status": "NO_STRONG_CLAIM_DETECTED",
+      "verification_needed": false,
+      "claim_risk": "NONE",
+      "expected_safety_tier": "NO_CHANGE",
+      "status_mismatch": false
+    },
+    {
+      "position": 23,
+      "name": "Teton 18W Fast Charger - USB Type-A Charger with USB Cable, Quick Charge Power Adapter for All Android Samsung and iphone 16/15 Mobile Devices",
+      "current_status": "GOOD_OPTION",
+      "current_score": 82,
+      "seller_claims": [],
+      "claim_status": "NO_STRONG_CLAIM_DETECTED",
+      "verification_needed": false,
+      "claim_risk": "NONE",
+      "expected_safety_tier": "NO_CHANGE",
+      "status_mismatch": false
+    },
+    {
+      "position": 24,
+      "name": "CASIFY MU01 PD 20W QC18W 4-Port Adapter Fast Charger PD 20W USB C Charger 18W USB Fast Charger Wall Charger EU Plug",
+      "current_status": "GOOD_OPTION",
+      "current_score": 82,
+      "seller_claims": [],
+      "claim_status": "NO_STRONG_CLAIM_DETECTED",
+      "verification_needed": false,
+      "claim_risk": "NONE",
+      "expected_safety_tier": "NO_CHANGE",
+      "status_mismatch": false
+    },
+    {
+      "position": 25,
+      "name": "K8 Wireless Earbuds Hi-Fi Stereo Bass Bluetooth Headphones with Digital Display",
+      "current_status": "GOOD_OPTION",
+      "current_score": 82,
+      "seller_claims": [],
+      "claim_status": "NO_STRONG_CLAIM_DETECTED",
+      "verification_needed": false,
+      "claim_risk": "NONE",
+      "expected_safety_tier": "NO_CHANGE",
+      "status_mismatch": false
+    }
+  ],
+  "mismatches": [
+    {
+      "position": 8,
+      "name": "Realme 67W SUPER VOOC TYPE C FAST CHARGER Original Premium Quality",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [
+        "ORIGINAL",
+        "PREMIUM"
+      ],
+      "claim_status": "UNVERIFIED_SELLER_CLAIM",
+      "verification_needed": true,
+      "claim_risk": "HIGH",
+      "expected_safety_tier": "REVIEW",
+      "status_mismatch": true
+    },
+    {
+      "position": 9,
+      "name": "Xiaomi Fast Charger 33W Turbo Charge Original EU QC 4.0 Adapter 3A Usb Type C Cable For MI 10 9T 9 A3 Redmi Note 8 9 9s Pro",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [
+        "ORIGINAL"
+      ],
+      "claim_status": "UNVERIFIED_SELLER_CLAIM",
+      "verification_needed": true,
+      "claim_risk": "MEDIUM",
+      "expected_safety_tier": "REVIEW",
+      "status_mismatch": true
+    },
+    {
+      "position": 13,
+      "name": "Officials Realme 45W Super vooc Original Premium Quality Fast Charger",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [
+        "ORIGINAL",
+        "PREMIUM"
+      ],
+      "claim_status": "UNVERIFIED_SELLER_CLAIM",
+      "verification_needed": true,
+      "claim_risk": "HIGH",
+      "expected_safety_tier": "REVIEW",
+      "status_mismatch": true
+    },
+    {
+      "position": 14,
+      "name": "AirPods Pro 2nd Generation Wireless Charging wireless Earbuds",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [
+        "AIRPODS"
+      ],
+      "claim_status": "UNVERIFIED_SELLER_CLAIM",
+      "verification_needed": true,
+      "claim_risk": "HIGH",
+      "expected_safety_tier": "REVIEW",
+      "status_mismatch": true
+    },
+    {
+      "position": 15,
+      "name": "New Airpods Stereo 895B Earbuds Touch Control Stereo Bass Earphone LED Digital Display BT 5.4 Wireless in Ear Earbuds",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [
+        "AIRPODS"
+      ],
+      "claim_status": "UNVERIFIED_SELLER_CLAIM",
+      "verification_needed": true,
+      "claim_risk": "HIGH",
+      "expected_safety_tier": "REVIEW",
+      "status_mismatch": true
+    },
+    {
+      "position": 16,
+      "name": "AirPods Pro 2nd genaration wireless Charging  Bluetooth Earbuds",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [
+        "AIRPODS"
+      ],
+      "claim_status": "UNVERIFIED_SELLER_CLAIM",
+      "verification_needed": true,
+      "claim_risk": "HIGH",
+      "expected_safety_tier": "REVIEW",
+      "status_mismatch": true
+    },
+    {
+      "position": 17,
+      "name": "Airpods Pro / tws Black edition wireless earbuds Bluetooth headphone",
+      "current_status": "RECOMMEND",
+      "current_score": 90,
+      "seller_claims": [
+        "AIRPODS"
+      ],
+      "claim_status": "UNVERIFIED_SELLER_CLAIM",
+      "verification_needed": true,
+      "claim_risk": "HIGH",
+      "expected_safety_tier": "REVIEW",
+      "status_mismatch": true
+    }
+  ]
+}

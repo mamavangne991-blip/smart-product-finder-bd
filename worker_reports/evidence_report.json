@@ -1,6 +1,6 @@
 {
   "worker": "Evidence Worker V1",
-  "timestamp": "2026-10-05T23:50:36.858717",
+  "timestamp": "2026-10-09T05:11:06.565728",
   "total_products": 21,
   "pass": 10,
   "incomplete": 11,
@@ -478,7 +478,7 @@
     },
     {
       "name": "Tresemme Shampoo Keratin Smooth 580ml | Daraz.com.bd",
-      "source": null,
+      "source": "Daraz Public",
       "item_id": "101528357",
       "evidence_fields": 9,
       "evidence_total": 9,
@@ -499,7 +499,7 @@
     },
     {
       "name": "Bird Swing Toy for Budgies, Cockatiels, Parrots & Finches – Fun Bird Cage Accessory | Bangladesh | Daraz.com.bd",
-      "source": null,
+      "source": "Daraz Public",
       "item_id": "540705606",
       "evidence_fields": 9,
       "evidence_total": 9,

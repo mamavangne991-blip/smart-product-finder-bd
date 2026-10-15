@@ -1,0 +1,10 @@
+INPUT RECORDS: 30
+APPROVED: 0
+PENDING: 30
+REJECTED: 0
+PRODUCTION WRITE ALLOWED: False
+PRODUCTION MODIFIED: False
+GIT MODIFIED: False
+STATUS: PASS
+REPORT: worker_reports/daraz_affiliate_approval_gate_report.json
+

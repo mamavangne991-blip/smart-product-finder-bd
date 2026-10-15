@@ -1,0 +1,366 @@
+[1mdiff --git a/daraz_public_products.json b/daraz_public_products.json[m
+[1mindex c081383..a0aefce 100644[m
+[1m--- a/daraz_public_products.json[m
+[1m+++ b/daraz_public_products.json[m
+[36m@@ -11,5 +11,31 @@[m
+     "description": "Product details of Artificial Fake Hanging Vines Plant 7 feet leaves Length: 7 feet Color: Green Artificial Fake Hanging Vines Plant Use these stunning artificial foliage vines on your big day to create the wedding set-up you've always dreamed of. The green vines are the perfect addition to your wedding bachelorette trying to create a natural beautiful setting. Product details of Artificial Fake Hanging Vines Plant 7 feet leavesLength: 7 feetColor: GreenArtificial Fake Hanging Vines PlantUse these stunning artificial foliage vines on your big day to create the wedding set-up you've always dreamed of.The green vines are the perfect addition to your wedding bachelorette trying to create a natural beautiful setting.",[m
+     "image": "https://img.drz.lazcdn.com/static/bd/p/bc6d141ea1c564c96dca6f8b3ab381cf.jpg_720x720q80.jpg",[m
+     "seller_id": "700556814423"[m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m    "url": "https://www.daraz.com.bd/products/tresemme-shampoo-keratin-smooth-580ml-i101528357-s1015534346.html",[m
+[32m+[m[32m    "name": "Tresemme Shampoo Keratin Smooth 580ml | Daraz.com.bd",[m
+[32m+[m[32m    "price": "850",[m
+[32m+[m[32m    "currency": "BDT",[m
+[32m+[m[32m    "item_id": "101528357",[m
+[32m+[m[32m    "seller_sku": "1015534346",[m
+[32m+[m[32m    "brand": "TRESemme",[m
+[32m+[m[32m    "category": "Health & Beauty > Hair Care",[m
+[32m+[m[32m    "description": "Product Type: Tresemme Shampoo Keratin Smooth Brand: Tresemme Capacity: 580ml Made in Bangladesh Launched in 1947, Tresemme  was named after renowned hair care expert Edna EmmÃ©. Up until the 1950's, Tresemme  was sold only in salons. Today it is available at a shop near you, so that you can have salon style hair at home. For over 60 years, Tresemme  has built a history of success in 13 countries around the world. From its origins in 1947 and salon expertise, Tresemme  has been driven by a simple truth: every woman deserves to look & feel fabulous, like she has just stepped out of the salon, everyday. This range has been carefully selected for its advanced formula. Driven by our salon heritage, we work with our stylists to deliver exper solutions from salon quality products without the salon price tag. Our salon inspired products enriched with high quality ingredients help you experience that salon feeling, everyday. Specially formulated with lower sulfates, Tresemme  Keratin Smooth Shampoo helps restore keratin and nourishes each strand to leave hair gorgeously straighter, shinier and more manageable. When used together with Keratin Smooth Conditioner, it controls frizz for up to 48 hours and transforms your hair to be gorgeously straighter, more manageable and easy to style. Apply to wet hair, gently massage and work into a lather. For best results use after shampooing with Tresemme  Keratin Smooth Shampoo.Start Shopping Now!",[m
+[32m+[m[32m    "image": "https://img.drz.lazcdn.com/static/bd/p/b7972209ceae1a12c5e5ba45c99a2571.jpg_720x720q80.jpg",[m
+[32m+[m[32m    "seller_id": "1000000"[m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m    "url": "https://www.daraz.com.bd/products/bird-swing-toy-for-budgies-cockatiels-parrots-finches-fun-bird-cage-accessory-bangladesh-i540705606-s2558640839.html",[m
+[32m+[m[32m    "name": "Bird Swing Toy for Budgies, Cockatiels, Parrots & Finches – Fun Bird Cage Accessory | Bangladesh | Daraz.com.bd",[m
+[32m+[m[32m    "price": "200",[m
+[32m+[m[32m    "currency": "BDT",[m
+[32m+[m[32m    "item_id": "540705606",[m
+[32m+[m[32m    "seller_sku": "2558640839",[m
+[32m+[m[32m    "brand": "No Brand",[m
+[32m+[m[32m    "category": "Pet Supplies > Bird",[m
+[32m+[m[32m    "description": "Product details of Birds Swing toy for Cage Accessory Perch Bird Toy for Budgies, Cockatiel, Parrot, Conure, Java, Finch, Canary and Other Small Birds bird ladder swing and cradle birds will play with joy Add fun and exercise to your bird’s life with this Bird Swing Toy, specially designed for small pet birds like budgies, cockatiels, parrots, conures, finches, canaries, and Java sparrows. Now available in Bangladesh, this swing keeps your bird active, happy, and mentally stimulated inside the cage. Key Features:Perfect for Small Birds – Suitable for budgies, cockatiels, parrots, finches & more Encourages Play & Movement – Supports physical activity and stress relief Easy to Install – Hangs securely in most standard cages Durable & Safe Materials – Made for long-lasting fun and safety Add fun and exercise to your bird’s life with this Bird Swing Toy, specially designed for small pet birds like budgies, cockatiels, parrots, conures, finches, canaries, and Java sparrows. Now available in Bangladesh, this swing keeps your bird active, happy, and mentally stimulated inside the cage.Key Features:Perfect for Small Birds – Suitable for budgies, cockatiels, parrots, finches & moreEncourages Play & Movement – Supports physical activity and stress reliefEasy to Install – Hangs securely in most standard cagesDurable & Safe Materials – Made for long-lasting fun and safety",[m
+[32m+[m[32m    "image": "https://img.drz.lazcdn.com/static/bd/p/d52e6538d473fdcba287dd083e585e92.jpg_720x720q80.jpg",[m
+[32m+[m[32m    "seller_id": "700906016804"[m
+   }[m
+ ][m
+\ No newline at end of file[m
+[1mdiff --git a/product_recommendations.json b/product_recommendations.json[m
+[1mindex 65a9b47..acaf6b9 100644[m
+[1m--- a/product_recommendations.json[m
+[1m+++ b/product_recommendations.json[m
+[36m@@ -215,6 +215,29 @@[m
+     },[m
+     "recommendation_rank": 9[m
+   },[m
+[32m+[m[32m  {[m
+[32m+[m[32m    "url": "https://www.daraz.com.bd/products/bird-swing-toy-for-budgies-cockatiels-parrots-finches-fun-bird-cage-accessory-bangladesh-i540705606-s2558640839.html",[m
+[32m+[m[32m    "name": "Bird Swing Toy for Budgies, Cockatiels, Parrots & Finches – Fun Bird Cage Accessory | Bangladesh | Daraz.com.bd",[m
+[32m+[m[32m    "price": "200",[m
+[32m+[m[32m    "currency": "BDT",[m
+[32m+[m[32m    "item_id": "540705606",[m
+[32m+[m[32m    "seller_sku": "2558640839",[m
+[32m+[m[32m    "brand": "No Brand",[m
+[32m+[m[32m    "category": "Pet Supplies > Bird",[m
+[32m+[m[32m    "description": "Product details of Birds Swing toy for Cage Accessory Perch Bird Toy for Budgies, Cockatiel, Parrot, Conure, Java, Finch, Canary and Other Small Birds bird ladder swing and cradle birds will play with joy Add fun and exercise to your bird’s life with this Bird Swing Toy, specially designed for small pet birds like budgies, cockatiels, parrots, conures, finches, canaries, and Java sparrows. Now available in Bangladesh, this swing keeps your bird active, happy, and mentally stimulated inside the cage. Key Features:Perfect for Small Birds – Suitable for budgies, cockatiels, parrots, finches & more Encourages Play & Movement – Supports physical activity and stress relief Easy to Install – Hangs securely in most standard cages Durable & Safe Materials – Made for long-lasting fun and safety Add fun and exercise to your bird’s life with this Bird Swing Toy, specially designed for small pet birds like budgies, cockatiels, parrots, conures, finches, canaries, and Java sparrows. Now available in Bangladesh, this swing keeps your bird active, happy, and mentally stimulated inside the cage.Key Features:Perfect for Small Birds – Suitable for budgies, cockatiels, parrots, finches & moreEncourages Play & Movement – Supports physical activity and stress reliefEasy to Install – Hangs securely in most standard cagesDurable & Safe Materials – Made for long-lasting fun and safety",[m
+[32m+[m[32m    "image": "https://img.drz.lazcdn.com/static/bd/p/d52e6538d473fdcba287dd083e585e92.jpg_720x720q80.jpg",[m
+[32m+[m[32m    "seller_id": "700906016804",[m
+[32m+[m[32m    "recommendation_score": 65,[m
+[32m+[m[32m    "score_breakdown": {[m
+[32m+[m[32m      "research": 10,[m
+[32m+[m[32m      "data_completeness": 20,[m
+[32m+[m[32m      "source": 5,[m
+[32m+[m[32m      "price": 20,[m
+[32m+[m[32m      "title": 10,[m
+[32m+[m[32m      "evidence_fields": 9[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "recommendation_rank": 10[m
+[32m+[m[32m  },[m
+   {[m
+     "url": "https://www.daraz.com.bd/products/tresemme-shampoo-keratin-smooth-580ml-i101528357-s1015534346.html",[m
+     "name": "Tresemme Shampoo Keratin Smooth 580ml | Daraz.com.bd",[m
+[36m@@ -236,7 +259,7 @@[m
+       "title": 10,[m
+       "evidence_fields": 9[m
+     },[m
+[31m-    "recommendation_rank": 10[m
+[32m+[m[32m    "recommendation_rank": 11[m
+   },[m
+   {[m
+     "id": 4,[m
+[36m@@ -253,7 +276,7 @@[m
+       "title": 6,[m
+       "evidence_fields": 3[m
+     },[m
+[31m-    "recommendation_rank": 11[m
+[32m+[m[32m    "recommendation_rank": 12[m
+   },[m
+   {[m
+     "id": 8,[m
+[36m@@ -272,7 +295,7 @@[m
+       "title": 6,[m
+       "evidence_fields": 3[m
+     },[m
+[31m-    "recommendation_rank": 12[m
+[32m+[m[32m    "recommendation_rank": 13[m
+   },[m
+   {[m
+     "id": 1,[m
+[36m@@ -289,7 +312,7 @@[m
+       "title": 6,[m
+       "evidence_fields": 3[m
+     },[m
+[31m-    "recommendation_rank": 13[m
+[32m+[m[32m    "recommendation_rank": 14[m
+   },[m
+   {[m
+     "id": 5,[m
+[36m@@ -306,7 +329,7 @@[m
+       "title": 6,[m
+       "evidence_fields": 3[m
+     },[m
+[31m-    "recommendation_rank": 14[m
+[32m+[m[32m    "recommendation_rank": 15[m
+   },[m
+   {[m
+     "id": 2,[m
+[36m@@ -323,7 +346,7 @@[m
+       "title": 6,[m
+       "evidence_fields": 3[m
+     },[m
+[31m-    "recommendation_rank": 15[m
+[32m+[m[32m    "recommendation_rank": 16[m
+   },[m
+   {[m
+     "id": 10,[m
+[36m@@ -342,7 +365,7 @@[m
+       "title": 8,[m
+       "evidence_fields": 3[m
+     },[m
+[31m-    "recommendation_rank": 16[m
+[32m+[m[32m    "recommendation_rank": 17[m
+   },[m
+   {[m
+     "id": 6,[m
+[36m@@ -361,7 +384,7 @@[m
+       "title": 8,[m
+       "evidence_fields": 3[m
+     },[m
+[31m-    "recommendation_rank": 17[m
+[32m+[m[32m    "recommendation_rank": 18[m
+   },[m
+   {[m
+     "id": 3,[m
+[36m@@ -378,7 +401,7 @@[m
+       "title": 6,[m
+       "evidence_fields": 3[m
+     },[m
+[31m-    "recommendation_rank": 18[m
+[32m+[m[32m    "recommendation_rank": 19[m
+   },[m
+   {[m
+     "id": 9,[m
+[36m@@ -397,7 +420,7 @@[m
+       "title": 6,[m
+       "evidence_fields": 3[m
+     },[m
+[31m-    "recommendation_rank": 19[m
+[32m+[m[32m    "recommendation_rank": 20[m
+   },[m
+   {[m
+     "id": 7,[m
+[36m@@ -416,6 +439,6 @@[m
+       "title": 6,[m
+       "evidence_fields": 3[m
+     },[m
+[31m-    "recommendation_rank": 20[m
+[32m+[m[32m    "recommendation_rank": 21[m
+   }[m
+ ][m
+\ No newline at end of file[m
+[1mdiff --git a/products.json b/products.json[m
+[1mindex 25ff3ad..00e90bb 100644[m
+[1m--- a/products.json[m
+[1m+++ b/products.json[m
+[36m@@ -217,5 +217,18 @@[m
+     "description": "Product Type: Tresemme Shampoo Keratin Smooth Brand: Tresemme Capacity: 580ml Made in Bangladesh Launched in 1947, Tresemme  was named after renowned hair care expert Edna EmmÃ©. Up until the 1950's, Tresemme  was sold only in salons. Today it is available at a shop near you, so that you can have salon style hair at home. For over 60 years, Tresemme  has built a history of success in 13 countries around the world. From its origins in 1947 and salon expertise, Tresemme  has been driven by a simple truth: every woman deserves to look & feel fabulous, like she has just stepped out of the salon, everyday. This range has been carefully selected for its advanced formula. Driven by our salon heritage, we work with our stylists to deliver exper solutions from salon quality products without the salon price tag. Our salon inspired products enriched with high quality ingredients help you experience that salon feeling, everyday. Specially formulated with lower sulfates, Tresemme  Keratin Smooth Shampoo helps restore keratin and nourishes each strand to leave hair gorgeously straighter, shinier and more manageable. When used together with Keratin Smooth Conditioner, it controls frizz for up to 48 hours and transforms your hair to be gorgeously straighter, more manageable and easy to style. Apply to wet hair, gently massage and work into a lather. For best results use after shampooing with Tresemme  Keratin Smooth Shampoo.Start Shopping Now!",[m
+     "image": "https://img.drz.lazcdn.com/static/bd/p/b7972209ceae1a12c5e5ba45c99a2571.jpg_720x720q80.jpg",[m
+     "seller_id": "1000000"[m
+[32m+[m[32m  },[m
+[32m+[m[32m  {[m
+[32m+[m[32m    "url": "https://www.daraz.com.bd/products/bird-swing-toy-for-budgies-cockatiels-parrots-finches-fun-bird-cage-accessory-bangladesh-i540705606-s2558640839.html",[m
+[32m+[m[32m    "name": "Bird Swing Toy for Budgies, Cockatiels, Parrots & Finches – Fun Bird Cage Accessory | Bangladesh | Daraz.com.bd",[m
+[32m+[m[32m    "price": "200",[m
+[32m+[m[32m    "currency": "BDT",[m
+[32m+[m[32m    "item_id": "540705606",[m
+[32m+[m[32m    "seller_sku": "2558640839",[m
+[32m+[m[32m    "brand": "No Brand",[m
+[32m+[m[32m    "category": "Pet Supplies > Bird",[m
+[32m+[m[32m    "description": "Product details of Birds Swing toy for Cage Accessory Perch Bird Toy for Budgies, Cockatiel, Parrot, Conure, Java, Finch, Canary and Other Small Birds bird ladder swing and cradle birds will play with joy Add fun and exercise to your bird’s life with this Bird Swing Toy, specially designed for small pet birds like budgies, cockatiels, parrots, conures, finches, canaries, and Java sparrows. Now available in Bangladesh, this swing keeps your bird active, happy, and mentally stimulated inside the cage. Key Features:Perfect for Small Birds – Suitable for budgies, cockatiels, parrots, finches & more Encourages Play & Movement – Supports physical activity and stress relief Easy to Install – Hangs securely in most standard cages Durable & Safe Materials – Made for long-lasting fun and safety Add fun and exercise to your bird’s life with this Bird Swing Toy, specially designed for small pet birds like budgies, cockatiels, parrots, conures, finches, canaries, and Java sparrows. Now available in Bangladesh, this swing keeps your bird active, happy, and mentally stimulated inside the cage.Key Features:Perfect for Small Birds – Suitable for budgies, cockatiels, parrots, finches & moreEncourages Play & Movement – Supports physical activity and stress reliefEasy to Install – Hangs securely in most standard cagesDurable & Safe Materials – Made for long-lasting fun and safety",[m
+[32m+[m[32m    "image": "https://img.drz.lazcdn.com/static/bd/p/d52e6538d473fdcba287dd083e585e92.jpg_720x720q80.jpg",[m
+[32m+[m[32m    "seller_id": "700906016804"[m
+   }[m
+ ][m
+\ No newline at end of file[m
+[1mdiff --git a/web_app_v6.py b/web_app_v6.py[m
+[1mindex 8f9148c..06efae4 100644[m
+[1m--- a/web_app_v6.py[m
+[1m+++ b/web_app_v6.py[m
+[36m@@ -6,19 +6,34 @@[m [mfrom http.server import BaseHTTPRequestHandler, HTTPServer[m
+ from urllib.parse import urlparse, parse_qs[m
+ [m
+ PRODUCT_FILE = Path("products.json")[m
+[32m+[m[32mRECOMMENDATION_FILE = Path("product_recommendations.json")[m
+ [m
+ [m
+ def load_products():[m
+     if not PRODUCT_FILE.exists():[m
+         return [][m
+[31m-[m
+     try:[m
+[31m-        return json.loads([m
+[31m-            PRODUCT_FILE.read_text(encoding="utf-8")[m
+[31m-        )[m
+[32m+[m[32m        products = json.loads(PRODUCT_FILE.read_text(encoding="utf-8"))[m
+     except Exception:[m
+         return [][m
+[31m-[m
+[32m+[m[32m    if RECOMMENDATION_FILE.exists():[m
+[32m+[m[32m        try:[m
+[32m+[m[32m            recommendations = json.loads(RECOMMENDATION_FILE.read_text(encoding="utf-8"))[m
+[32m+[m[32m            rec_map = {}[m
+[32m+[m[32m            for rec in recommendations:[m
+[32m+[m[32m                key = str(rec.get("id") or rec.get("item_id") or "")[m
+[32m+[m[32m                if key:[m
+[32m+[m[32m                    rec_map[key] = rec[m
+[32m+[m[32m            for product in products:[m
+[32m+[m[32m                key = str(product.get("id") or product.get("item_id") or "")[m
+[32m+[m[32m                rec = rec_map.get(key)[m
+[32m+[m[32m                if rec:[m
+[32m+[m[32m                    product["recommendation_rank"] = rec.get("recommendation_rank")[m
+[32m+[m[32m                    product["recommendation_score"] = rec.get("recommendation_score")[m
+[32m+[m[32m                    product["score_breakdown"] = rec.get("score_breakdown")[m
+[32m+[m[32m        except Exception:[m
+[32m+[m[32m            pass[m
+[32m+[m[32m    return products[m
+ [m
+ def get_price(product):[m
+     try:[m
+[36m@@ -163,7 +178,13 @@[m [mdef product_card(product, rank=None, best=False):[m
+         str(product.get("price", "N/A"))[m
+     )[m
+ [m
+[31m-    score = smart_score(product)[m
+[32m+[m[32m    score = product.get("recommendation_score")[m
+[32m+[m[32m    if score is None:[m
+[32m+[m[32m        score = smart_score(product)[m
+[32m+[m[32m    try:[m
+[32m+[m[32m        score = int(float(score))[m
+[32m+[m[32m    except Exception:[m
+[32m+[m[32m        score = int(smart_score(product))[m
+ [m
+     badge = ""[m
+ [m
+[36m@@ -236,36 +257,76 @@[m [mdef get_best_value_product(products):[m
+     if not valid_products:[m
+         return None[m
+ [m
+[31m-    return max([m
+[32m+[m[32m    return min([m
+         valid_products,[m
+[31m-        key=best_value_score[m
+[32m+[m[32m        key=lambda item: ([m
+[32m+[m[32m            item.get("recommendation_rank")[m
+[32m+[m[32m            if item.get("recommendation_rank") is not None[m
+[32m+[m[32m            else 999999[m
+[32m+[m[32m        )[m
+     )[m
+ [m
+ [m
+ [m
+ def get_top_three_products(products):[m
+[31m-[m
+     return sorted([m
+         products,[m
+[31m-        key=smart_score,[m
+[31m-        reverse=True[m
+[32m+[m[32m        key=lambda item: ([m
+[32m+[m[32m            item.get("recommendation_rank")[m
+[32m+[m[32m            if item.get("recommendation_rank") is not None[m
+[32m+[m[32m            else 999999[m
+[32m+[m[32m        )[m
+     )[:3][m
+ [m
+ [m
+ def home_page(products, keyword="", budget="", category_filter="", sort_by="score"):[m
+[32m+[m[32m    def recommendation_score(item):[m
+[32m+[m[32m        value = item.get("recommendation_score")[m
+[32m+[m[32m        if value is None:[m
+[32m+[m[32m            return smart_score(item)[m
+[32m+[m[32m        try:[m
+[32m+[m[32m            return int(float(value))[m
+[32m+[m[32m        except Exception:[m
+[32m+[m[32m            return smart_score(item)[m
+[32m+[m
+     ranked = sorted([m
+         products,[m
+[31m-        key=smart_score,[m
+[31m-        reverse=True[m
+[32m+[m[32m        key=lambda item: ([m
+[32m+[m[32m            item.get("recommendation_rank")[m
+[32m+[m[32m            if item.get("recommendation_rank") is not None[m
+[32m+[m[32m            else 999999[m
+[32m+[m[32m        )[m
+     )[m
+ [m
+     cards = ""[m
+ [m
+[31m-    best_value = get_best_value_product(products)[m
+[32m+[m[32m    valid_best_values = [[m
+[32m+[m[32m        product[m
+[32m+[m[32m        for product in products[m
+[32m+[m[32m        if get_price(product) > 0[m
+[32m+[m[32m    ][m
+[32m+[m
+[32m+[m[32m    best_value = None[m
+[32m+[m[32m    if valid_best_values:[m
+[32m+[m[32m        best_value = min([m
+[32m+[m[32m            valid_best_values,[m
+[32m+[m[32m            key=lambda item: ([m
+[32m+[m[32m                item.get("recommendation_rank")[m
+[32m+[m[32m                if item.get("recommendation_rank") is not None[m
+[32m+[m[32m                else 999999[m
+[32m+[m[32m            )[m
+[32m+[m[32m        )[m
+ [m
+     best_value_card = ""[m
+ [m
+[31m-    top_three = get_top_three_products(products)[m
+[32m+[m[32m    top_three = sorted([m
+[32m+[m[32m        products,[m
+[32m+[m[32m        key=lambda item: ([m
+[32m+[m[32m            item.get("recommendation_rank")[m
+[32m+[m[32m            if item.get("recommendation_rank") is not None[m
+[32m+[m[32m            else 999999[m
+[32m+[m[32m        )[m
+[32m+[m[32m    )[:3][m
+ [m
+     top_three_card = """[m
+     <div class="top-three-title">[m
+[36m@@ -283,7 +344,7 @@[m [mdef home_page(products, keyword="", budget="", category_filter="", sort_by="scor[m
+             str(item.get("price", "N/A"))[m
+         )[m
+ [m
+[31m-        item_score = smart_score(item)[m
+[32m+[m[32m        item_score = recommendation_score(item)[m
+ [m
+         top_three_card += f"""[m
+         <div class="card">[m
+[36m@@ -321,7 +382,7 @@[m [mdef home_page(products, keyword="", budget="", category_filter="", sort_by="scor[m
+             str(best_value.get("price", "N/A"))[m
+         )[m
+ [m
+[31m-        best_value_score = smart_score([m
+[32m+[m[32m        best_value_score = recommendation_score([m
+             best_value[m
+         )[m
+ [m
+[36m@@ -923,7 +984,7 @@[m [mclass Handler(BaseHTTPRequestHandler):[m
+             for product in products:[m
+ [m
+                 if str([m
+[31m-                    product.get("id", "")[m
+[32m+[m[32m                    product.get("id") or product.get("item_id") or ""[m
+                 ) == product_id:[m
+ [m
+                     selected = product[m

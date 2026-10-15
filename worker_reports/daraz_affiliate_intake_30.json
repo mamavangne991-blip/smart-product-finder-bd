@@ -1,0 +1,281 @@
+{
+  "worker": "daraz_affiliate_intake_30",
+  "mode": "safe_read_only_intake_preparation",
+  "record_count": 30,
+  "official_links_required": 30,
+  "affiliate_links_generated": 0,
+  "production_modified": false,
+  "git_modified": false,
+  "records": [
+    {
+      "item_id": "1583452163",
+      "name": "Vendens 20000 and 10000 mah 4 in 1 fast charging power bank  (premium quality)",
+      "price": "549",
+      "product_url": "https://www.daraz.com.bd/products/-i1583452163.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "1586236042",
+      "name": "Proton 10000mAh Power Bank Power House X10 (751593) | 22.5W Fast Charging | PD 3.0 & QC 3.0 Portable Charger | USB-C Power Bank | Free Delivery",
+      "price": "899",
+      "product_url": "https://www.daraz.com.bd/products/proton-10000mah-x10-751593-225w-30-qc-30-usb-c-i1586236042.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "1587242094",
+      "name": "Power Bank 10000mAh – Fast Charging Portable Charger with Dual USB Output, Type-C Input, LED Battery Display, Smart Safety Protection, Compact Power Bank for Android, iPhone, Tablets & Travel",
+      "price": "699",
+      "product_url": "https://www.daraz.com.bd/products/10000mah-usb-c-led-iphone-i1587242094.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "1586668702",
+      "name": "Original Vendens Fast Charging Support Power Bank | 10000mAh | 20000mAh | 30000 mah",
+      "price": "714",
+      "product_url": "https://www.daraz.com.bd/products/10000mah-20000mah-30000-mah-i1586668702.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "464706763",
+      "name": "Good Cool 10000mAh Portable Power Bank with LED Digital Display & Bright Flashlight - 10W Fast Charging Compact Powerbank for Type C & iOS",
+      "price": "742",
+      "product_url": "https://www.daraz.com.bd/products/led-10000mah-10w-i464706763.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "483164827",
+      "name": "Good Cool 20000mAh 22.5W Fast Charging Portable Power Bank with Built-in Cable & LED Digital Display - Minimalistic Powerbank for Type C & iOS",
+      "price": "1727",
+      "product_url": "https://www.daraz.com.bd/products/-i483164827.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "1586372130",
+      "name": "FOOMEE FP113 22.5W Fast Charging Power Bank 10000mAh, Ultra Slim Portable Charger with LED Display, Dual USB & Type-C Output for Phone, iPhone, Samsung, iPad",
+      "price": "1100",
+      "product_url": "https://www.daraz.com.bd/products/foomee-fp113-225w-10000mah-i1586372130.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "531037270",
+      "name": "Hoco J100 High-Ranking 10000mAh Power Bank – Dual USB Output, Type-C & Micro-USB Input – Black",
+      "price": "805",
+      "product_url": "https://www.daraz.com.bd/products/hoco-j100-high-ranking-10000mah-power-bank-dual-usb-output-type-c-micro-usb-input-black-i531037270.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "1585215939",
+      "name": "oraimo PowerNova Q21 20000mAh 22.5W Power Bank (OPB-7200Q)",
+      "price": "2235",
+      "product_url": "https://www.daraz.com.bd/products/oraimo-q21-20000mah-225w-opb-7200q-i1585215939.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "464794334",
+      "name": "Good Cool 10000mAh Mini Power Bank 22.5W & 20W PD Fast Charging with Built-in Cables, LED Digital Display & Flashlight - Compact Portable Charger",
+      "price": "1137",
+      "product_url": "https://www.daraz.com.bd/products/-i464794334.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "505043426",
+      "name": "High-Performance - Y80 Ultra Smart Watch (8 + 1 Cover) in Germany) - Reliable Accessory - Easy to Use - Dreamy Deals (1 Protective cover )",
+      "price": "822",
+      "product_url": "https://www.daraz.com.bd/products/y80-8-1-1-i505043426.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "1586707006",
+      "name": "S10 Max Smart Watch 2.29 Inch AMOLED Display NFC Bluetooth Call Wireless Charging",
+      "price": "649",
+      "product_url": "https://www.daraz.com.bd/products/s10-max-smart-watch-229-inch-amoled-display-nfc-bluetooth-call-wireless-charging-i1586707006.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "557186442",
+      "name": "T900 Ultra 2 Full Touch Screen Smart Watch - Bluetooth Calls & Smart Features Heart Rate Monitor Large Display Upgraded VERSION",
+      "price": "554",
+      "product_url": "https://www.daraz.com.bd/products/t900-2-i557186442.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "184584779",
+      "name": "Smart Watch Man Woman Smartwatch Bluetooth Blood Pressure Measurement Heart Rate Monitor Smart Watch 2021 New - Imran Fashion Hut",
+      "price": "580",
+      "product_url": "https://www.daraz.com.bd/products/2021-i184584779.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "315371965",
+      "name": "T500 Smart Watch Bluetooth Call Full Touch Display Heart Rate Tracker Waterproof Compatible with Android and iOS",
+      "price": "599",
+      "product_url": "https://www.daraz.com.bd/products/t500-smart-watch-bluetooth-call-full-touch-display-heart-rate-tracker-waterproof-compatible-with-android-and-ios-i315371965.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "1581067816",
+      "name": "Oraimo Watch 5 Lite Smart Watch OSW-804 with 2.01 Inch HD Display and 100 Plus Sports Modes",
+      "price": "1598",
+      "product_url": "https://www.daraz.com.bd/products/5-osw-804-hd-i1581067816.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "571446742",
+      "name": "S10 Max Laxasfit Smart Watch 2.29 Inch AMOLED Display NFC Bluetooth Call Wireless Charging",
+      "price": "599",
+      "product_url": "https://www.daraz.com.bd/products/s10-max-laxasfit-229-amoled-nfc-i571446742.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "1587085270",
+      "name": "S10 Max Laxasfit Smart Watch 2.29 Inch AMOLED Display NFC Bluetooth Call WirelessCharging By Aura gadgets",
+      "price": "1038",
+      "product_url": "https://www.daraz.com.bd/products/s10-max-laxasfit-smart-watch-229-inch-amoled-display-nfc-bluetooth-call-wirelesscharging-by-aura-gadgets-i1587085270.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "1587294853",
+      "name": "S12 Max Ferefit Smart Watch – Ultra 2.29\" AMOLED | Updated Premium Model | NFC Access | Bluetooth Calling | Fast Wireless Charging | Fitness & Health Master By Aura gadgets",
+      "price": "899",
+      "product_url": "https://www.daraz.com.bd/products/s12-max-ferefit-smart-watch-ultra-229-amoled-updated-premium-model-nfc-access-bluetooth-calling-fast-wireless-charging-fitness-health-master-by-aura-gadgets-i1587294853.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "529986722",
+      "name": "DT900 Ultra 9 Smart Watch (Strap 7+1 cover ) Smart Watch 2.06 inch Full HD Display Screen For Men & Women Whit Wireless Charger By Pucko  Gadget",
+      "price": "998",
+      "product_url": "https://www.daraz.com.bd/products/dt900-9-7-1-pucko-206-hd-i529986722.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "1579577315",
+      "name": "HP W10 Rechargeable Wireless Bluetooth Mouse - Silent Click, RGB Light, Slim Design, Dual Mode (2.4G + Bluetooth) - For Laptop, PC & Mac",
+      "price": "298",
+      "product_url": "https://www.daraz.com.bd/products/hp-w10-rgb-24g-i1579577315.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "1587027196",
+      "name": "Wireless Bluetooth M2 Dual Mode Rechargeable RGB Backlit Mouse – Ultra Slim Portable Silent Mouse for Laptop, PC, Mac & Tablet",
+      "price": "275",
+      "product_url": "https://www.daraz.com.bd/products/-i1587027196.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "318043811",
+      "name": "LENOVO-M20 Wired Usb Mini Mouse - Desktop Optical Mouse Usb Wired Compatible With Windows Pc Desktop Computer & Laptop Black",
+      "price": "146",
+      "product_url": "https://www.daraz.com.bd/products/lenovo-m20-usb-usb-i318043811.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "1587240225",
+      "name": "Hp X-55 Wired Usb Gaming Mouse - Desktop Optical Mouse Usb Wired Compatible With Windows Pc Desktop Computer & Laptop Black",
+      "price": "280",
+      "product_url": "https://www.daraz.com.bd/products/hp-x-55-usb-usb-i1587240225.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "364097103",
+      "name": "Wareless Bluetooth Mouse For Smartphone Laptop & Computer",
+      "price": "265",
+      "product_url": "https://www.daraz.com.bd/products/-i364097103.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "531162849",
+      "name": "T-WOLF G580 Wired Mouse with Grip Tape Computer Mouse for Gaming",
+      "price": "716",
+      "product_url": "https://www.daraz.com.bd/products/t-wolf-g580-wired-mouse-with-grip-tape-i531162849.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "273986780",
+      "name": "Logitech M90 Wired USB Mouse, 1000 DPI Optical Tracking, Ambidextrous PC / Mac / Laptop - Grey",
+      "price": "449",
+      "product_url": "https://www.daraz.com.bd/products/logitech-m90-usb-1000-dpi-ambidextrous-mac-i273986780.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "350744942",
+      "name": "Hp Wireless Mouse S9000 For Desktop & Laptop - Reliable Mouse For Smooth Navigation - Enhance Your Computing Experience",
+      "price": "390",
+      "product_url": "https://www.daraz.com.bd/products/hp-i350744942.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "528554605",
+      "name": "HP SJ-100 USB Optical Mouse Plug & Play Wired Mouse for Laptop Desktop",
+      "price": "145",
+      "product_url": "https://www.daraz.com.bd/products/-i528554605.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    },
+    {
+      "item_id": "1587210827",
+      "name": "Rechargeable Wireless RGB Waterproof Optical Mouse, For Pc and Laptop Gamer Dual Model 2.4GHz Mouse - Nano receiver - Palm Grip - Black Fun Gaming - Optical Wireless Mouse",
+      "price": "285",
+      "product_url": "https://www.daraz.com.bd/products/24ghz-rgb-i1587210827.html",
+      "affiliate_url": "",
+      "affiliate_status": "PENDING_OFFICIAL_LINK",
+      "approval_status": "PENDING_APPROVAL"
+    }
+  ]
+}

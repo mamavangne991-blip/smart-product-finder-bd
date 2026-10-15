@@ -89,6 +89,32 @@ def load_products():
                 final_products.append(product)
 
             if final_products:
+                # Keep ranked recommendations first, but do not hide
+                # valid products that are absent from the recommendation list.
+                def normalized_ids(item):
+                    ids = set()
+                    for key in ("id", "item_id"):
+                        value = str(item.get(key) or "").strip()
+                        if not value:
+                            continue
+                        ids.add(value)
+                        if value.startswith("daraz-"):
+                            ids.add(value[len("daraz-"):])
+                        else:
+                            ids.add("daraz-" + value)
+                    return ids
+
+                seen_ids = set()
+                for item in final_products:
+                    seen_ids.update(normalized_ids(item))
+
+                for product in products:
+                    ids = normalized_ids(product)
+                    if ids and ids.intersection(seen_ids):
+                        continue
+                    final_products.append(product)
+                    seen_ids.update(ids)
+
                 return final_products
 
         except Exception:
@@ -550,126 +576,97 @@ Smart Product Finder BD
 </title>
 
 <style>
-
-* {{
-    box-sizing: border-box;
-}}
-
+* {{ box-sizing: border-box; }}
+:root {{ color-scheme: light; }}
 body {{
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f6f8;
-    padding: 15px;
+  margin: 0; padding: 20px;
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  color: #172033; background: #f3f6fb;
+  line-height: 1.55;
 }}
-
-.container {{
-    max-width: 850px;
-    margin: auto;
-}}
-
+.container {{ width: 100%; max-width: 960px; margin: 0 auto; }}
 .header {{
-    text-align: center;
-    margin-bottom: 20px;
+  padding: 28px 22px; margin-bottom: 20px;
+  color: #fff; text-align: center;
+  background: linear-gradient(135deg, #124eae, #3985ee);
+  border-radius: 22px; box-shadow: 0 8px 25px rgba(25, 75, 150, .15);
 }}
-
-.subtitle {{
-    opacity: 0.7;
-}}
-
+.header h1 {{ margin: 0 0 10px; font-size: clamp(25px, 5vw, 38px); line-height: 1.2; overflow-wrap: anywhere; }}
+.subtitle {{ font-size: clamp(15px, 3.5vw, 18px); opacity: .94; }}
 .search-box {{
-    background: white;
-    padding: 15px;
-    border-radius: 14px;
-    margin-bottom: 20px;
+  padding: 20px; margin-bottom: 22px; background: #fff;
+  border: 1px solid #e1e8f2; border-radius: 18px;
+  box-shadow: 0 5px 18px rgba(31, 55, 90, .05);
 }}
-
-input {{
-    width: 100%;
-    padding: 13px;
-    margin: 6px 0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
+.search-box form {{ display: grid; gap: 12px; }}
+.search-row {{ display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }}
+.search-box input, .search-box select {{
+  width: 100%; min-width: 0; min-height: 48px; margin: 0;
+  padding: 12px 14px; font: inherit; color: #172033;
+  background: #fff; border: 1px solid #cbd5e1; border-radius: 11px;
 }}
-
-button {{
-    width: 100%;
-    padding: 13px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
+.search-box button, button {{
+  min-height: 48px; padding: 12px 18px; font: inherit;
+  font-weight: 700; color: #fff; background: #1768d2;
+  border: 0; border-radius: 11px; cursor: pointer;
+  transition: background-color .15s ease, transform .15s ease;
 }}
-
+.search-box button:hover, button:hover {{ background: #1055b4; }}
+.search-box input:focus-visible, .search-box select:focus-visible,
+button:focus-visible, a:focus-visible {{
+  outline: 3px solid #8ab8ff; outline-offset: 3px;
+}}
 .result-count {{
-    margin: 15px 0;
-    font-weight: bold;
+  padding: 12px 15px; margin: 16px 0;
+  color: #174ea6; background: #e8f1ff;
+  border-radius: 12px; font-weight: 750;
 }}
-
 .card {{
-    position: relative;
-    background: white;
-    padding: 18px;
-    margin-bottom: 15px;
-    border-radius: 14px;
+  position: relative; padding: 20px; margin-bottom: 16px;
+  overflow-wrap: anywhere; background: #fff;
+  border: 1px solid #e1e8f2; border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(24, 55, 95, .06);
 }}
-
-.best-card {{
-    border: 2px solid #222;
+.card h2 {{ margin: 5px 0 12px; color: #172033; font-size: clamp(19px, 4vw, 25px); line-height: 1.4; }}
+.meta {{ color: #667085; font-size: .95rem; line-height: 1.6; }}
+.price {{
+  display: inline-block; margin: 8px 8px 8px 0; padding: 7px 11px;
+  color: #1459b8; background: #eaf3ff; border-radius: 10px;
+  font-size: 1.08rem; font-weight: 800;
 }}
-
-.best-badge {{
-    font-weight: bold;
-    margin-bottom: 10px;
-}}
-
-.rank {{
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-weight: bold;
-}}
-
-.card h2 {{
-    margin-top: 5px;
-    padding-right: 50px;
-}}
-
-.meta,
-.price,
 .score {{
-    margin: 10px 0;
+  display: inline-block; margin: 8px 0; padding: 7px 11px;
+  color: #137547; background: #e7f8ee; border-radius: 10px; font-weight: 800;
 }}
-
-.details-btn,
-.buy-btn {{
-    display: inline-block;
-    padding: 12px 16px;
-    background: #222;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
+.best-card {{ border: 2px solid #2878e5; background: linear-gradient(180deg, #fff, #f7faff); }}
+.best-badge {{ margin-bottom: 10px; color: #1759b5; font-weight: 800; }}
+.rank {{ position: absolute; top: 14px; right: 14px; font-weight: 800; color: #475467; }}
+.details-btn, .buy-btn {{
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; margin: 8px 8px 0 0; padding: 11px 16px;
+  color: #fff; background: #1768d2; border-radius: 11px;
+  text-decoration: none; font-weight: 700; overflow-wrap: anywhere;
 }}
-
+.details-btn:hover, .buy-btn:hover {{ background: #1055b4; }}
 .empty {{
-    background: white;
-    padding: 30px;
-    text-align: center;
-    border-radius: 14px;
+  padding: 28px 20px; text-align: center; background: #fff;
+  border: 1px solid #e1e8f2; border-radius: 16px;
 }}
-
-@media (min-width: 700px) {{
-
-    .search-row {{
-        display: flex;
-        gap: 10px;
-    }}
-
-    .search-row input {{
-        margin: 0;
-    }}
+@media (min-width: 680px) {{
+  body {{ padding: 28px; }}
+  .search-row {{ grid-template-columns: minmax(0, 2fr) minmax(140px, 1fr) minmax(0, 1fr); }}
 }}
-
+@media (max-width: 480px) {{
+  body {{ padding: 12px; }}
+  .header {{ padding: 22px 14px; border-radius: 17px; }}
+  .search-box {{ padding: 14px; }}
+  .card {{ padding: 16px; }}
+  .rank {{ top: 9px; right: 9px; }}
+  .details-btn, .buy-btn {{ width: 100%; margin-right: 0; }}
+}}
+@media (prefers-reduced-motion: reduce) {{
+  *, *::before, *::after {{ scroll-behavior: auto !important; transition: none !important; }}
+}}
 </style>
 
 </head>
@@ -882,54 +879,38 @@ content="width=device-width, initial-scale=1"
 </title>
 
 <style>
-
-* {{
-    box-sizing: border-box;
-}}
-
+* {{ box-sizing: border-box; }}
 body {{
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f6f8;
-    padding: 15px;
+  margin: 0; padding: 20px;
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  color: #172033; background: #f3f6fb; line-height: 1.6;
 }}
-
-.container {{
-    max-width: 700px;
-    margin: auto;
-}}
-
+.container {{ width: 100%; max-width: 760px; margin: 0 auto; }}
 .card {{
-    background: white;
-    padding: 22px;
-    border-radius: 15px;
+  padding: clamp(18px, 4vw, 30px); background: #fff;
+  border: 1px solid #e1e8f2; border-radius: 20px;
+  box-shadow: 0 8px 28px rgba(31, 55, 90, .07);
 }}
-
-.row {{
-    padding: 12px 0;
-    border-bottom: 1px solid #eee;
+.card h1 {{ margin-top: 0; font-size: clamp(24px, 5vw, 34px); line-height: 1.3; overflow-wrap: anywhere; }}
+.row {{ padding: 14px 0; border-bottom: 1px solid #e8edf4; overflow-wrap: anywhere; }}
+.score {{ margin: 20px 0; font-size: 20px; font-weight: 800; color: #137547; }}
+.reasons {{ margin: 20px 0; line-height: 1.7; }}
+.buy-btn, .back-btn {{
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 46px; margin: 10px 8px 0 0; padding: 12px 18px;
+  color: #fff; background: #1768d2; border-radius: 11px;
+  text-decoration: none; font-weight: 700; overflow-wrap: anywhere;
 }}
-
-.score {{
-    font-size: 20px;
-    margin: 20px 0;
+.buy-btn:hover, .back-btn:hover {{ background: #1055b4; }}
+a:focus-visible {{ outline: 3px solid #8ab8ff; outline-offset: 3px; }}
+@media (max-width: 480px) {{
+  body {{ padding: 12px; }}
+  .card {{ border-radius: 16px; }}
+  .buy-btn, .back-btn {{ width: 100%; margin-right: 0; }}
 }}
-
-.reasons {{
-    margin: 20px 0;
+@media (prefers-reduced-motion: reduce) {{
+  *, *::before, *::after {{ transition: none !important; }}
 }}
-
-.buy-btn,
-.back-btn {{
-    display: inline-block;
-    padding: 13px 18px;
-    margin-top: 10px;
-    background: #222;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-}}
-
 </style>
 
 </head>

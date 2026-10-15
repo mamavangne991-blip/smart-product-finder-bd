@@ -1,0 +1,233 @@
+SMART PRODUCT FINDER BD — FULL AUDIT
+Time: 2026-10-12T10:12:27.494333+06:00
+Overall: READY
+
+[PASS] web_app_v6.py syntax
+
+
+[PASS] products.json valid JSON
+records=17
+
+[PASS] products.json duplicate IDs
+None
+
+[PASS] products.json product names
+missing=0
+
+[PASS] product_recommendations.json valid JSON
+records=21
+
+[PASS] product_recommendations.json duplicate IDs
+None
+
+[PASS] product_recommendations.json product names
+missing=0
+
+[PASS] daraz_public_products.json valid JSON
+records=1
+
+[PASS] daraz_public_products.json duplicate IDs
+None
+
+[PASS] daraz_public_products.json product names
+missing=0
+
+[PASS] RFL Bike affiliate URL saved
+[('products.json', 'RFL Playtime Royal Bike Free Delivery All Over Bangladesh | Daraz.com.bd', 1500.0, 'https://s.daraz.com.bd/s.YXfL9?cc'), ('daraz_public_products.json', 'RFL Playtime Royal Bike Free Delivery All Over Bangladesh | Daraz.com.bd', '1500', None)]
+
+[PASS] Local home page HTTP 200
+200
+
+[PASS] RFL detail page HTTP 200
+200
+
+[PASS] Affiliate link appears in RFL detail HTML
+Exact link found
+
+[PASS] Git branch
+main
+
+[PASS] Latest commit
+6c103d6 Update verified Daraz affiliate product link
+
+[PASS] Git status
+D app_v10_before_agent.py
+ D app_v1_backup.py
+ D app_v2_backup.py
+ D app_v3_backup.py
+ D app_v4_before_source.py
+ D app_v4_final_backup.py
+ D app_v5_backup.py
+ D app_v5_before_final.py
+ D app_v5_block1_backup.py
+ D app_v6_backup.py
+ D app_v7_before_cleanup.py
+ D app_v8_before_score_v2.py
+ D app_v9_before_advanced_data.py
+ D app_v9_before_recommendation_engine.py
+ D app_v9_final_backup.py
+ M daraz_public_products.json
+ D product_research_agent_v1_backup.py
+ D product_research_agent_v2_backup.py
+ D product_research_agent_v4_backup.py
+ M products.json
+ D products_before_agent.json
+ D products_before_cleanup.json
+ D products_before_daraz_integration.json
+ D products_before_score_v2.json
+ D products_final_backup.json
+ D products_source_backup.csv
+ D products_v7_final_backup.json
+ D sources_before_cleanup.json
+ D sources_old_backup.json
+ D sources_v7_final_backup.json
+ D web_app_v1_backup.py
+ D web_app_v2_backup.py
+ D web_app_v3_final_backup.py
+ D web_app_v3_local_backup.py
+ D web_app_v5_backup_before_favorite.py
+ M web_app_v6.py
+ D web_app_v6_backup_before_best_value.py
+ D web_app_v6_before_buy_button_upgrade.py
+ D web_app_v6_before_online.py
+ D web_app_v6_before_server_fix.py
+ D web_app_v6_before_share_upgrade.py
+ D web_app_v6_share_error_backup.py
+ M worker_reports/daraz_discovery_quality_report.json
+ M worker_reports/daraz_public_discovery_report.json
+ M worker_reports/duplicate_report.json
+ M worker_reports/evidence_report.json
+ M worker_reports/final_production_audit_report.json
+ M worker_reports/orchestrator_runs/orchestrator_summary.json
+ M worker_reports/orchestrator_runs/quality_security_worker.log
+ M worker_reports/search_filter_report.json
+ M worker_reports/v5_evidence_score_report.json
+?? AirCare
+?? Baby
+?? Bird
+?? Breakfast
+?? Fresh
+?? Hair
+?? Home
+?? Laundry
+?? Medical
+?? Snacks
+?? app_v10_PRODUCTION_SAFE.py
+?? daraz_api_PRODUCTION_SAFE.py
+?? daraz_data_bridge_candidate.py
+?? daraz_public_import_PRODUCTION_SAFE.py
+?? "f | grep -E 'python|flask|web_app|daraz' | grep -v grep"
+?? overnight_master_worker.py
+?? overnight_master_worker_v2.py
+?? overnight_master_worker_v3.py
+?? products.json.backup_affiliate_20261009_043038
+?? products.json.before_demo_cleanup.json
+?? products.json.before_rfl_affiliate_20261012_100645.bak
+?? products_PRODUCTION_SAFE.json
+?? "t; from pathlib import Path; ast.parse(Path('web_app_v6.py').read_text()); print('web_app_v6.py: SYNTAX OK')\""
+?? web_app_v6.py.backup_affiliate_merge_20261009_035714
+?? web_app_v6.py.before_details_id_fix
+?? web_app_v6.py.pre_discovery_fallback_backup
+?? web_app_v6.py.pre_final_pipeline_backup
+?? web_app_v6.py.ui_backup_20261009_160744
+?? wifite/
+?? worker_agents/daraz_affiliate_approval_gate.py
+?? worker_agents/daraz_affiliate_intake_validator.py
+?? worker_agents/daraz_claim_safety_candidate_v1.py
+?? worker_agents/daraz_claim_safety_staging_apply_v1.py
+?? worker_agents/daraz_discovery_quality_worker.py
+?? worker_agents/daraz_final_recommendation_pipeline_v2_candidate.py
+?? worker_agents/daraz_product_ranking_v2_worker.py
+?? worker_agents/daraz_product_ranking_v3_worker.py.pre_claim_safety_backup
+?? worker_agents/daraz_product_ranking_v3_worker.py.pre_relevance_fix_backup
+?? worker_agents/daraz_product_ranking_v4_candidate.py
+?? worker_agents/daraz_product_ranking_worker.py
+?? worker_agents/daraz_production_integration_candidate_worker.py
+?? worker_agents/daraz_public_discovery_worker.py
+?? worker_agents/daraz_public_discovery_worker.py.urlfix_backup
+?? worker_agents/daraz_recommendation_candidate_worker.py
+?? worker_agents/daraz_recommendation_v3_candidate.py
+?? worker_agents/search_filter_runtime_v2_worker.py
+?? worker_logs/
+?? worker_reports/REAL_11_daraz_final_recommendation_pipeline_worker_runner.py
+?? worker_reports/REAL_11_daraz_recommendation_safety_worker_runner.py
+?? worker_reports/REAL_11_daraz_recommendation_v2_worker_runner.py
+?? worker_reports/affiliate_link_intake_template.json
+?? worker_reports/business_mvp_affiliate_candidate.json
+?? worker_reports/daraz_affiliate_approval_gate_report.json
+?? worker_reports/daraz_affiliate_intake_30.json
+?? worker_reports/daraz_affiliate_intake_validation_report.json
+?? worker_reports/daraz_bridge_pipeline_test.json
+?? worker_reports/daraz_claim_safety_candidate_v1_report.json
+?? worker_reports/daraz_data_bridge_candidate.json
+?? worker_reports/daraz_discovery_quality_report.json.pre_real11_20261007_015359.bak
+?? worker_reports/daraz_final_recommendation_pipeline_e2e_result.json
+?? worker_reports/daraz_final_recommendation_pipeline_e2e_runner.py
+?? worker_reports/daraz_final_recommendation_pipeline_v2_candidate_report.json
+?? worker_reports/daraz_final_recommendation_safety_staging_v1.json
+?? worker_reports/daraz_final_recommendation_staging.json
+?? worker_reports/daraz_final_recommendation_staging_v2.json
+?? worker_reports/daraz_fresh_candidates.json
+?? worker_reports/daraz_fresh_staging_validation.json
+?? worker_reports/daraz_live_ranking_candidate.json
+?? worker_reports/daraz_new_product_staging.json
+?? worker_reports/daraz_product_ranking_report.json
+?? worker_reports/daraz_product_ranking_v2_report.json
+?? worker_reports/daraz_product_ranking_v3_clean_production_candidate.py
+?? worker_reports/daraz_product_ranking_v3_relevance_candidate.py
+?? worker_reports/daraz_product_ranking_v3_relevance_regression_result.json
+?? worker_reports/daraz_product_ranking_v3_relevance_regression_runner.py
+?? worker_reports/daraz_product_ranking_v4_candidate_report.json
+?? worker_reports/daraz_production_approval_manifest.json
+?? worker_reports/daraz_production_bridge_dry_run.json
+?? worker_reports/daraz_production_integration_candidate.json
+?? worker_reports/daraz_public_discovery_report.json.pre_real11_20261007_015359.bak
+?? worker_reports/daraz_ranking_v3_exact_candidate_input.json
+?? worker_reports/daraz_ranking_v3_full_candidate_stage.py
+?? worker_reports/daraz_ranking_v3_full_candidate_stage_result.json
+?? worker_reports/daraz_ranking_v3_full_fix_test.json
+?? worker_reports/daraz_ranking_v3_real_staging_result.json
+?? worker_reports/daraz_ranking_v3_relevance_fix_test.json
+?? worker_reports/daraz_ranking_v3_staging_inputs.json
+?? worker_reports/daraz_real_11_discovery_candidate.json
+?? worker_reports/daraz_real_11_discovery_staging.json
+?? worker_reports/daraz_real_11_final_pipeline_result.json
+?? worker_reports/daraz_real_11_quality_staging.json
+?? worker_reports/daraz_real_11_ranking_exact_candidate_input.json
+?? worker_reports/daraz_real_11_ranking_relevance_candidate_input.json
+?? worker_reports/daraz_real_11_ranking_v3_candidate_result.json
+?? worker_reports/daraz_real_11_ranking_v3_candidate_runner.py
+?? worker_reports/daraz_real_11_ranking_v3_relevance_result.json
+?? worker_reports/daraz_real_11_ranking_v3_relevance_runner.py
+?? worker_reports/daraz_real_11_recommendation_safety_result.json
+?? worker_reports/daraz_real_11_recommendation_v2_result.json
+?? worker_reports/daraz_real_claim_safety_staging.json
+?? worker_reports/daraz_recommendation_candidate_report.json
+?? worker_reports/daraz_recommendation_safety_e2e_result.json
+?? worker_reports/daraz_recommendation_safety_e2e_runner.py
+?? worker_reports/daraz_recommendation_v2_compatible.json
+?? worker_reports/daraz_recommendation_v2_e2e_input.json
+?? worker_reports/daraz_recommendation_v2_e2e_result.json
+?? worker_reports/daraz_recommendation_v2_e2e_runner.py
+?? worker_reports/daraz_recommendation_v2_real_staging_result.json
+?? worker_reports/daraz_recommendation_v2_staging_input.json
+?? worker_reports/daraz_recommendation_v3_candidate_report.json
+?? worker_reports/daraz_relevance_improvement_candidate.json
+?? worker_reports/daraz_relevance_mapping_candidate.json
+?? worker_reports/git_cleanup_classification.txt
+?? worker_reports/import_backups/
+?? worker_reports/master_finish_backups/
+?? worker_reports/master_finish_report_20261012_095538.json
+?? worker_reports/master_fix_backups/
+?? worker_reports/overnight_master_report.json
+?? worker_reports/overnight_master_v2_report.json
+?? worker_reports/overnight_master_v3_report.json
+?? worker_reports/products_daraz_affiliate_ready_candidate.json
+?? worker_reports/products_daraz_live_candidate.json
+?? worker_reports/products_daraz_merged_candidate.json
+?? worker_reports/products_daraz_source_fix_candidate.json
+?? worker_reports/search_filter_runtime_v2_report.json
+
+[PASS] Git diff check
+No issues reported
+

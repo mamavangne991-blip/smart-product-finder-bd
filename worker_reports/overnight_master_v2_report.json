@@ -1,0 +1,85 @@
+{
+  "worker": "overnight_master_worker_v2",
+  "mode": "safe_read_only",
+  "started": "2026-10-08T09:15:46",
+  "finished": "2026-10-08T09:15:54",
+  "production_write": false,
+  "production_import": false,
+  "affiliate_generation": false,
+  "git_commit": false,
+  "git_push": false,
+  "daraz_write_api": false,
+  "production_sha256_before": "a79b0034ba35214d6679f619622cdbea55dec91ef605d4223b6406edd8d0db8e",
+  "production_sha256_after": "a79b0034ba35214d6679f619622cdbea55dec91ef605d4223b6406edd8d0db8e",
+  "production_unchanged": true,
+  "credential_scan": {
+    "status": "REVIEW",
+    "output": "daraz_api.py:13:APP_KEY = os.getenv(\"DARAZ_APP_KEY\")\ndaraz_api.py:14:APP_SECRET = os.getenv(\"DARAZ_APP_SECRET\")\ndaraz_api.py:53:        raise RuntimeError(\"DARAZ_APP_KEY or DARAZ_APP_SECRET is missing\")\n"
+  },
+  "git_status_before": "s/daraz_product_ranking_v2_worker.py\n?? worker_agents/daraz_product_ranking_v3_worker.py.pre_claim_safety_backup\n?? worker_agents/daraz_product_ranking_v3_worker.py.pre_relevance_fix_backup\n?? worker_agents/daraz_product_ranking_v4_candidate.py\n?? worker_agents/daraz_product_ranking_worker.py\n?? worker_agents/daraz_production_integration_candidate_worker.py\n?? worker_agents/daraz_public_discovery_worker.py\n?? worker_agents/daraz_public_discovery_worker.py.urlfix_backup\n?? worker_agents/daraz_recommendation_candidate_worker.py\n?? worker_agents/daraz_recommendation_v3_candidate.py\n?? worker_agents/search_filter_runtime_v2_worker.py\n?? worker_logs/\n?? worker_reports/REAL_11_daraz_final_recommendation_pipeline_worker_runner.py\n?? worker_reports/REAL_11_daraz_recommendation_safety_worker_runner.py\n?? worker_reports/REAL_11_daraz_recommendation_v2_worker_runner.py\n?? worker_reports/affiliate_link_intake_template.json\n?? worker_reports/business_mvp_affiliate_candidate.json\n?? worker_reports/daraz_affiliate_approval_gate_report.json\n?? worker_reports/daraz_affiliate_intake_30.json\n?? worker_reports/daraz_affiliate_intake_validation_report.json\n?? worker_reports/daraz_bridge_pipeline_test.json\n?? worker_reports/daraz_claim_safety_candidate_v1_report.json\n?? worker_reports/daraz_data_bridge_candidate.json\n?? worker_reports/daraz_discovery_quality_report.json.pre_real11_20261007_015359.bak\n?? worker_reports/daraz_final_recommendation_pipeline_e2e_result.json\n?? worker_reports/daraz_final_recommendation_pipeline_e2e_runner.py\n?? worker_reports/daraz_final_recommendation_pipeline_v2_candidate_report.json\n?? worker_reports/daraz_final_recommendation_safety_staging_v1.json\n?? worker_reports/daraz_final_recommendation_staging.json\n?? worker_reports/daraz_final_recommendation_staging_v2.json\n?? worker_reports/daraz_fresh_candidates.json\n?? worker_reports/daraz_fresh_staging_validation.json\n?? worker_reports/daraz_live_ranking_candidate.json\n?? worker_reports/daraz_new_product_staging.json\n?? worker_reports/daraz_product_ranking_report.json\n?? worker_reports/daraz_product_ranking_v2_report.json\n?? worker_reports/daraz_product_ranking_v3_clean_production_candidate.py\n?? worker_reports/daraz_product_ranking_v3_relevance_candidate.py\n?? worker_reports/daraz_product_ranking_v3_relevance_regression_result.json\n?? worker_reports/daraz_product_ranking_v3_relevance_regression_runner.py\n?? worker_reports/daraz_product_ranking_v4_candidate_report.json\n?? worker_reports/daraz_production_approval_manifest.json\n?? worker_reports/daraz_production_bridge_dry_run.json\n?? worker_reports/daraz_production_integration_candidate.json\n?? worker_reports/daraz_public_discovery_report.json.pre_real11_20261007_015359.bak\n?? worker_reports/daraz_ranking_v3_exact_candidate_input.json\n?? worker_reports/daraz_ranking_v3_full_candidate_stage.py\n?? worker_reports/daraz_ranking_v3_full_candidate_stage_result.json\n?? worker_reports/daraz_ranking_v3_full_fix_test.json\n?? worker_reports/daraz_ranking_v3_real_staging_result.json\n?? worker_reports/daraz_ranking_v3_relevance_fix_test.json\n?? worker_reports/daraz_ranking_v3_staging_inputs.json\n?? worker_reports/daraz_real_11_discovery_candidate.json\n?? worker_reports/daraz_real_11_discovery_staging.json\n?? worker_reports/daraz_real_11_final_pipeline_result.json\n?? worker_reports/daraz_real_11_quality_staging.json\n?? worker_reports/daraz_real_11_ranking_exact_candidate_input.json\n?? worker_reports/daraz_real_11_ranking_relevance_candidate_input.json\n?? worker_reports/daraz_real_11_ranking_v3_candidate_result.json\n?? worker_reports/daraz_real_11_ranking_v3_candidate_runner.py\n?? worker_reports/daraz_real_11_ranking_v3_relevance_result.json\n?? worker_reports/daraz_real_11_ranking_v3_relevance_runner.py\n?? worker_reports/daraz_real_11_recommendation_safety_result.json\n?? worker_reports/daraz_real_11_recommendation_v2_result.json\n?? worker_reports/daraz_real_claim_safety_staging.json\n?? worker_reports/daraz_recommendation_candidate_report.json\n?? worker_reports/daraz_recommendation_safety_e2e_result.json\n?? worker_reports/daraz_recommendation_safety_e2e_runner.py\n?? worker_reports/daraz_recommendation_v2_compatible.json\n?? worker_reports/daraz_recommendation_v2_e2e_input.json\n?? worker_reports/daraz_recommendation_v2_e2e_result.json\n?? worker_reports/daraz_recommendation_v2_e2e_runner.py\n?? worker_reports/daraz_recommendation_v2_real_staging_result.json\n?? worker_reports/daraz_recommendation_v2_staging_input.json\n?? worker_reports/daraz_recommendation_v3_candidate_report.json\n?? worker_reports/daraz_relevance_improvement_candidate.json\n?? worker_reports/daraz_relevance_mapping_candidate.json\n?? worker_reports/overnight_master_report.json\n?? worker_reports/products_daraz_affiliate_ready_candidate.json\n?? worker_reports/products_daraz_live_candidate.json\n?? worker_reports/products_daraz_merged_candidate.json\n?? worker_reports/products_daraz_source_fix_candidate.json\n?? worker_reports/search_filter_runtime_v2_report.json\n",
+  "git_status_after": "s/daraz_product_ranking_v2_worker.py\n?? worker_agents/daraz_product_ranking_v3_worker.py.pre_claim_safety_backup\n?? worker_agents/daraz_product_ranking_v3_worker.py.pre_relevance_fix_backup\n?? worker_agents/daraz_product_ranking_v4_candidate.py\n?? worker_agents/daraz_product_ranking_worker.py\n?? worker_agents/daraz_production_integration_candidate_worker.py\n?? worker_agents/daraz_public_discovery_worker.py\n?? worker_agents/daraz_public_discovery_worker.py.urlfix_backup\n?? worker_agents/daraz_recommendation_candidate_worker.py\n?? worker_agents/daraz_recommendation_v3_candidate.py\n?? worker_agents/search_filter_runtime_v2_worker.py\n?? worker_logs/\n?? worker_reports/REAL_11_daraz_final_recommendation_pipeline_worker_runner.py\n?? worker_reports/REAL_11_daraz_recommendation_safety_worker_runner.py\n?? worker_reports/REAL_11_daraz_recommendation_v2_worker_runner.py\n?? worker_reports/affiliate_link_intake_template.json\n?? worker_reports/business_mvp_affiliate_candidate.json\n?? worker_reports/daraz_affiliate_approval_gate_report.json\n?? worker_reports/daraz_affiliate_intake_30.json\n?? worker_reports/daraz_affiliate_intake_validation_report.json\n?? worker_reports/daraz_bridge_pipeline_test.json\n?? worker_reports/daraz_claim_safety_candidate_v1_report.json\n?? worker_reports/daraz_data_bridge_candidate.json\n?? worker_reports/daraz_discovery_quality_report.json.pre_real11_20261007_015359.bak\n?? worker_reports/daraz_final_recommendation_pipeline_e2e_result.json\n?? worker_reports/daraz_final_recommendation_pipeline_e2e_runner.py\n?? worker_reports/daraz_final_recommendation_pipeline_v2_candidate_report.json\n?? worker_reports/daraz_final_recommendation_safety_staging_v1.json\n?? worker_reports/daraz_final_recommendation_staging.json\n?? worker_reports/daraz_final_recommendation_staging_v2.json\n?? worker_reports/daraz_fresh_candidates.json\n?? worker_reports/daraz_fresh_staging_validation.json\n?? worker_reports/daraz_live_ranking_candidate.json\n?? worker_reports/daraz_new_product_staging.json\n?? worker_reports/daraz_product_ranking_report.json\n?? worker_reports/daraz_product_ranking_v2_report.json\n?? worker_reports/daraz_product_ranking_v3_clean_production_candidate.py\n?? worker_reports/daraz_product_ranking_v3_relevance_candidate.py\n?? worker_reports/daraz_product_ranking_v3_relevance_regression_result.json\n?? worker_reports/daraz_product_ranking_v3_relevance_regression_runner.py\n?? worker_reports/daraz_product_ranking_v4_candidate_report.json\n?? worker_reports/daraz_production_approval_manifest.json\n?? worker_reports/daraz_production_bridge_dry_run.json\n?? worker_reports/daraz_production_integration_candidate.json\n?? worker_reports/daraz_public_discovery_report.json.pre_real11_20261007_015359.bak\n?? worker_reports/daraz_ranking_v3_exact_candidate_input.json\n?? worker_reports/daraz_ranking_v3_full_candidate_stage.py\n?? worker_reports/daraz_ranking_v3_full_candidate_stage_result.json\n?? worker_reports/daraz_ranking_v3_full_fix_test.json\n?? worker_reports/daraz_ranking_v3_real_staging_result.json\n?? worker_reports/daraz_ranking_v3_relevance_fix_test.json\n?? worker_reports/daraz_ranking_v3_staging_inputs.json\n?? worker_reports/daraz_real_11_discovery_candidate.json\n?? worker_reports/daraz_real_11_discovery_staging.json\n?? worker_reports/daraz_real_11_final_pipeline_result.json\n?? worker_reports/daraz_real_11_quality_staging.json\n?? worker_reports/daraz_real_11_ranking_exact_candidate_input.json\n?? worker_reports/daraz_real_11_ranking_relevance_candidate_input.json\n?? worker_reports/daraz_real_11_ranking_v3_candidate_result.json\n?? worker_reports/daraz_real_11_ranking_v3_candidate_runner.py\n?? worker_reports/daraz_real_11_ranking_v3_relevance_result.json\n?? worker_reports/daraz_real_11_ranking_v3_relevance_runner.py\n?? worker_reports/daraz_real_11_recommendation_safety_result.json\n?? worker_reports/daraz_real_11_recommendation_v2_result.json\n?? worker_reports/daraz_real_claim_safety_staging.json\n?? worker_reports/daraz_recommendation_candidate_report.json\n?? worker_reports/daraz_recommendation_safety_e2e_result.json\n?? worker_reports/daraz_recommendation_safety_e2e_runner.py\n?? worker_reports/daraz_recommendation_v2_compatible.json\n?? worker_reports/daraz_recommendation_v2_e2e_input.json\n?? worker_reports/daraz_recommendation_v2_e2e_result.json\n?? worker_reports/daraz_recommendation_v2_e2e_runner.py\n?? worker_reports/daraz_recommendation_v2_real_staging_result.json\n?? worker_reports/daraz_recommendation_v2_staging_input.json\n?? worker_reports/daraz_recommendation_v3_candidate_report.json\n?? worker_reports/daraz_relevance_improvement_candidate.json\n?? worker_reports/daraz_relevance_mapping_candidate.json\n?? worker_reports/overnight_master_report.json\n?? worker_reports/products_daraz_affiliate_ready_candidate.json\n?? worker_reports/products_daraz_live_candidate.json\n?? worker_reports/products_daraz_merged_candidate.json\n?? worker_reports/products_daraz_source_fix_candidate.json\n?? worker_reports/search_filter_runtime_v2_report.json\n",
+  "tasks": [
+    {
+      "task": "python_compile",
+      "status": "REVIEW",
+      "details": {
+        "returncode": 123,
+        "stdout": "",
+        "stderr": "  File \"./project_archive/backup_test_archive_20261005/web_app_v6_share_error_backup.py\", line 882\n    const shareData = {\n    ^^^^^^^^^^^^^^^\nSyntaxError: invalid syntax. Perhaps you forgot a comma?\n"
+      }
+    },
+    {
+      "task": "worker_agents/product_discovery_worker.py",
+      "status": "PASS",
+      "details": {
+        "returncode": 0,
+        "stdout": "========================================\n PRODUCT DISCOVERY WORKER\n========================================\nPASS: products.json exists\nPASS: daraz_public_products.json exists\nPASS: daraz_public_import.py exists\nPASS: products.json valid JSON\nPASS: public Daraz data valid JSON\nPASS: Daraz products contain item_id\n       11/11\nPASS: Daraz products contain product name\n       11/11\nPASS: Daraz products contain price\n       11/11\nPASS: Daraz products contain URL\n       11/11\nPASS: No duplicate Daraz item IDs\n       Duplicates: []\nPASS: Public importer has main guard\nPASS: Public importer does not expose Daraz secret\nPASS: Public importer writes public data file\nPASS: daraz_public_import.py compiles\n\nPRODUCTS: 21\nDARAZ PRODUCTS: 11\nPUBLIC IMPORT DATA: 3\nSTATUS: PASS\nREPORT: worker_reports/product_discovery_report.json\nMODE: AUDIT ONLY / NO FILE MODIFICATION\n",
+        "stderr": ""
+      }
+    },
+    {
+      "task": "worker_agents/affiliate_safety_worker.py",
+      "status": "PASS",
+      "details": {
+        "returncode": 0,
+        "stdout": "========================================\n AFFILIATE SAFETY WORKER\n========================================\nPASS: products.json exists\nPASS: web_app_v6.py exists\nPASS: products.json valid JSON\nPASS: Daraz products have usable URLs\n       Missing: []\nPASS: Daraz URLs are HTTPS\n       Invalid URLs: []\nPASS: App contains product URL handling\nPASS: App uses HTTPS product links\nPASS: No obvious credentials embedded in web app\n       Patterns found: []\nPASS: Affiliate tracking is not required for normal product links\n       No tracking parameter will be invented automatically\nPASS: No obvious unsafe link/redirect patterns\n       Found: []\nPASS: web_app_v6.py compiles\n\nPRODUCTS: 21\nDARAZ PRODUCTS: 11\nTRACKING TERMS FOUND: ['affiliate']\nSTATUS: PASS\nREPORT: worker_reports/affiliate_safety_report.json\nMODE: AUDIT ONLY / NO FILE MODIFICATION\n",
+        "stderr": ""
+      }
+    },
+    {
+      "task": "worker_agents/daraz_affiliate_intake_validator.py",
+      "status": "PASS",
+      "details": {
+        "returncode": 0,
+        "stdout": "INPUT RECORDS: 30\nVALID OFFICIAL LINKS: 0\nPENDING OFFICIAL LINKS: 30\nINVALID LINKS: 0\nAFFILIATE LINKS GENERATED: 0\nSTATUS: PASS\nPRODUCTION MODIFIED: False\nGIT MODIFIED: False\nREPORT: worker_reports/daraz_affiliate_intake_validation_report.json\n",
+        "stderr": ""
+      }
+    },
+    {
+      "task": "worker_agents/daraz_affiliate_approval_gate.py",
+      "status": "PASS",
+      "details": {
+        "returncode": 0,
+        "stdout": "INPUT RECORDS: 30\nAPPROVED: 0\nPENDING: 30\nREJECTED: 0\nPRODUCTION WRITE ALLOWED: False\nPRODUCTION MODIFIED: False\nGIT MODIFIED: False\nSTATUS: PASS\nREPORT: worker_reports/daraz_affiliate_approval_gate_report.json\n",
+        "stderr": ""
+      }
+    },
+    {
+      "task": "worker_agents/daraz_discovery_quality_worker.py",
+      "status": "PASS",
+      "details": {
+        "returncode": 0,
+        "stdout": "=======================================================\nDARAZ DISCOVERY QUALITY WORKER\n=======================================================\nInput products : 30\nUnique         : 30\nDuplicates     : 0\nPASS           : 30\nREVIEW         : 0\nREJECT         : 0\n\nReport: worker_reports/daraz_discovery_quality_report.json\nProduction data modified: NO\nGit modified: NO\n\nTOP QUALITY PRODUCTS:\n- Natura Grow Shampoo + Conditioner 200ml (Buy 1 Get 1) | ৳249 | score=100 | id=1585981435\n- Parachute Naturale Nourishing Care Shampoo with Aloe Vera & Coconut Milk For Strong & Silky Hair Smoothens Hair Paraben Free, 100% Vegan All Hair Types 160 ml | ৳126 | score=100 | id=131530544\n- Ujjwala Care Anti Hair Fall Herbal Shampoo  200 ML | ৳198 | score=100 | id=530364850\n- Himalaya Gentle Daily Care Natural Protein Shampoo 170ml (Buy 1 Get 1 FREE) | ৳270 | score=100 | id=1585855395\n- Aarong Earth Shampoo With Amla, Ritha & Shikakai Extract  200 ml | ৳249 | score=100 | id=411800933\n- Parachute Naturale Shampoo Egg Shine 320ml | ৳239 | score=100 | id=339305549\n- Ujjwala Care Anti Hair Fall Shampoo+Conditioner Men  200 ML | ৳187 | score=100 | id=530368705\n- Parachute Naturale Shampoo Nourishing Care 320ml | ৳239 | score=100 | id=131530545\n- Parachute Naturale Advanced Hair Fall Control Shampoo with Onion & Coconut Milk For Strong & Thick Hair Reduces Hair Fall Paraben Free, 100% Vegan All Hair Types 320 ml | ৳239 | score=100 | id=287020419\n- HAIR CARE BUNDLE - Parachute Naturale Shampoo Anti Hair Fall 320ml & Parachute Advansed Onion Enriched Coconut Hair Growth Oil 200ml | ৳261 | score=100 | id=307729936\n",
+        "stderr": ""
+      }
+    }
+  ],
+  "morning_actions": [
+    "Review this report.",
+    "Review Git changes before any commit.",
+    "Review pending affiliate links.",
+    "Approve any production import manually.",
+    "Run final E2E test after approved changes."
+  ],
+  "status": "REVIEW"
+}

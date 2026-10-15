@@ -1,0 +1,38 @@
+{
+  "safe_mode": true,
+  "mode": "relevance_improvement_candidate",
+  "products": [
+    {
+      "item_id": "438545820",
+      "name": "Artificial Hanging Vines Plant - 7 feet - artificial flower leaf | Daraz.com.bd",
+      "category": "Furniture & Decor > Home Decor",
+      "category_leaf": "Home Decor",
+      "matched_words": [],
+      "match_count": 0,
+      "relevance_candidate": "WEAK"
+    },
+    {
+      "item_id": "101528357",
+      "name": "Tresemme Shampoo Keratin Smooth 580ml | Daraz.com.bd",
+      "category": "Health & Beauty > Hair Care",
+      "category_leaf": "Hair Care",
+      "matched_words": [],
+      "match_count": 0,
+      "relevance_candidate": "WEAK"
+    },
+    {
+      "item_id": "540705606",
+      "name": "Bird Swing Toy for Budgies, Cockatiels, Parrots & Finches – Fun Bird Cage Accessory | Bangladesh | Daraz.com.bd",
+      "category": "Pet Supplies > Bird",
+      "category_leaf": "Bird",
+      "matched_words": [
+        "bird"
+      ],
+      "match_count": 1,
+      "relevance_candidate": "STRONG"
+    }
+  ],
+  "production_modified": false,
+  "products_json_modified": false,
+  "decision": "READY_FOR_RELEVANCE_REVIEW"
+}

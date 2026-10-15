@@ -1,0 +1,72 @@
+nohup: ignoring input
+DARAZ PUBLIC DISCOVERY WORKER
+==================================================
+
+SEARCH: shampoo
+Total: 3405
+Found: 10
+- Natura Grow Shampoo + Conditioner 200ml (Buy 1 Get 1) | 250 | 1585981435
+- Himalaya Gentle Baby Shampoo 100ml | Mild Formula For Babies Skin and Hair Care | Suitable For Everyday Baby Care Routine | 209 | 460739942
+- Parachute Just for Baby - Baby Shampoo 200ml | 254 | 222332683
+- Parachute Naturale Nourishing Care Shampoo with Aloe Vera & Coconut Milk For Strong & Silky Hair Smoothens Hair Paraben Free, 100% Vegan All Hair Types 160 ml | 125 | 131530544
+- B.Tech ExperT Anti Lice Shampoo 100ml | 120 | 523280829
+- Ujjwala Care Anti Hair Fall Shampoo+Conditioner Men  100 ML | 93 | 530368701
+- Parachute Just for Baby Gentle Nourishing Baby Shampoo Formula 100ml for Daily Use | 199 | 469212185
+- Parachute Naturale Damage Repair Shampoo with Red Hibiscus & Coconut Milk For Strong & Soft Hair Smoothens Rough Hair Paraben Free, 100% Vegan All Hair Types 160 ml | 125 | 131530546
+- Buy 1 Get 1 Ujjwala Care Anti Hairfall Herbal Shampoo 230 ml | 293 | 1586611776
+- Shampoo Base (paraben Free) | 168 | 573843375
+
+SEARCH: charger
+Total: 8160
+Found: 10
+- Tecno 45W Fast Charger EU Quick Charge Power Adapter For Tecno Spark Camon 40 30 20 Pro+ Go 2 Pova 7 Ultra 6 5 &USB Type C Cable | 1483 | 1580954415
+- 2.1A 5Star Charger CH - K first charger with Cable | 133 | 1586657873
+- Megastar Power Booster 2- 45W Fast Charger | 175 | 563299925
+- CASIFY FC02 PD 20W USB C Charger Fast Charging Quick Charge QC 3.0 Type C Wall Charger Adapter 20W PD Charger US Plug | 234 | 1576034745
+- OPPO 65W SUPERVOOC USB Charger (Only Charger) | 186 | 523989191
+- Anik 12W Fast Charging Adapter – Single USB 5V/2.4A | Over Voltage & Short Circuit Protected | ANIK TELECOM Bangladesh | 130 | 562500256
+- Micro Fast charger A60 2.4A Auto id instead of Mpex Micro Fast charger A60 2.4A Auto id | 199 | 368375087
+- Realme 67W SUPER VOOC TYPE C FAST CHARGER Original Premium Quality | 326 | 542554559
+- Original 120W 90W  17 Pro Max 14T 15 Ultra 13T 12T Redmi Note 13 Poco F8 F7 X7 M8 Pro Charger Turbo Fast Cargador US Plug | 1698 | 1578169675
+- Ligoi 650-mAh/1A (3w-5w)-Black-Charger-LE -650/LED-01 Type B  Charging  All MobilePhone | 103 | 417855784
+
+SEARCH: earbuds
+Total: 4968
+Found: 10
+- AirPods Pro Replica Wireless Earbuds TWS Bluetooth Headphone with Premium Sound Quality & Powerful Base By Aisidi | 245 | 1595283663
+- AirPods Pro 2nd genaration wireless Charging  Bluetooth Earbuds | 385 | 1594577392
+- Realme Airpods Pro Tws Wireless Earbuds - Bluetooth Headphone | 199 | 1599393233
+- Airpods Pro Wireless Earbuds Multitouch Function TWS Wireless Bluetooth 5.0 Earphones | 199 | 1599393457
+- New Q86 TWS Wireless Earphones (Retro Camera Style) | 299 | 1596030895
+- AirPods Pro 2nd Generation Wireless Charging wireless Earbuds | 388 | 1594545865
+- Orymo Style TWS Bluetooth Earbuds - Wireless Earphones with ENC, Bass Boost, 5H Battery, Type-C Charging - Multicolor | 235 | 1580413296
+- Hoco | EQ34 Plus Rima | True Wireless Earbuds (TWS) | ANC + ENC | Bluetooth 5.4 | 7h Playback (6h with ANC) | 300mAh Case, 40mAh Buds | App Control & Multi-Device Switching | Lightweight 44.8g | 699 | 1595926110
+- Q86 TWS Wireless Earphones Bluetooth 5.3 Stereo Sport Headphones Retro Camera Style Earbuds Compatible iPhone Android | 388 | 1594950578
+- K8 Wireless Earbuds Hi-Fi Stereo Bass Bluetooth Headphones with Digital Display | 399 | 1578584676
+
+REPORT: worker_reports/daraz_public_discovery_report.json
+Production data modified: NO
+Git modified: NO
+=================================================================
+DARAZ PRODUCT RANKING WORKER V3
+=================================================================
+Input : 30
+BEST  : 1
+GOOD  : 5
+REVIEW: 24
+
+TOP 10:
+01. CASIFY FC02 PD 20W USB C Charger Fast Charging Quick Charge QC 3.0 Type C Wall Charger Adapter 20W PD Charger US Plug | ৳239 | charger | score=90 | BEST
+02. Parachute Naturale Nourishing Care Shampoo with Aloe Vera & Coconut Milk For Strong & Silky Hair Smoothens Hair Paraben Free, 100% Vegan All Hair Types 160 ml | ৳126 | shampoo | score=85 | GOOD
+03. Megastar Power Booster 2- 45W Fast Charger | ৳175 | charger | score=85 | GOOD
+04. Orymo Style TWS Bluetooth Earbuds - Wireless Earphones with ENC, Bass Boost, 5H Battery, Type-C Charging - Multicolor | ৳249 | earbuds | score=85 | GOOD
+05. Natura Grow Shampoo + Conditioner 200ml (Buy 1 Get 1) | ৳249 | shampoo | score=82 | GOOD
+06. K8 Wireless Earbuds Hi-Fi Stereo Bass Bluetooth Headphones with Digital Display | ৳399 | earbuds | score=82 | GOOD
+07. Realme 67W SUPER VOOC TYPE C FAST CHARGER Original Premium Quality | ৳326 | charger | score=75 | REVIEW
+08. Himalaya Gentle Daily Care Natural Protein Shampoo 170ml (Buy 1 Get 1 FREE) | ৳270 |  | score=65 | REVIEW
+09. Xiaomi Fast Charger 33W Turbo Charge Original EU QC 4.0 Adapter 3A Usb Type C Cable For MI 10 9T 9 A3 Redmi Note 8 9 9s Pro | ৳279 |  | score=65 | REVIEW
+10. CASIFY UP03 PD 20W QC18W Dual-Port Adapter Fast Charger PD 20W USB C Charger 18W USB Fast Charger Wall Charger US Plug | ৳329 |  | score=65 | REVIEW
+
+REPORT: worker_reports/daraz_product_ranking_v3_report.json
+Production data modified: NO
+Git modified: NO

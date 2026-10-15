@@ -1,0 +1,47 @@
+{
+  "safe_mode": true,
+  "mode": "recommendation_v2_compatible_staging",
+  "source": "worker_reports/daraz_ranking_v3_real_staging_result.json",
+  "ranked_products": [
+    {
+      "item_id": "438545820",
+      "name": "Artificial Hanging Vines Plant - 7 feet - artificial flower leaf | Daraz.com.bd",
+      "price": 200.0,
+      "url": null,
+      "search_keyword": "furniture & decor > home decor",
+      "ranking_score_v3": 50,
+      "ranking_tier_v3": "REVIEW",
+      "ranking_flags_v3": [
+        "weak_keyword_relevance"
+      ]
+    },
+    {
+      "item_id": "101528357",
+      "name": "Tresemme Shampoo Keratin Smooth 580ml | Daraz.com.bd",
+      "price": 850.0,
+      "url": null,
+      "search_keyword": "health & beauty > hair care",
+      "ranking_score_v3": 50,
+      "ranking_tier_v3": "REVIEW",
+      "ranking_flags_v3": [
+        "weak_keyword_relevance"
+      ]
+    },
+    {
+      "item_id": "540705606",
+      "name": "Bird Swing Toy for Budgies, Cockatiels, Parrots & Finches – Fun Bird Cage Accessory | Bangladesh | Daraz.com.bd",
+      "price": 200.0,
+      "url": null,
+      "search_keyword": "pet supplies > bird",
+      "ranking_score_v3": 50,
+      "ranking_tier_v3": "REVIEW",
+      "ranking_flags_v3": [
+        "weak_keyword_relevance"
+      ]
+    }
+  ],
+  "product_count": 3,
+  "production_modified": false,
+  "products_json_modified": false,
+  "decision": "READY_FOR_RECOMMENDATION_V2"
+}

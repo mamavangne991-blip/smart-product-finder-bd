@@ -1,0 +1,42 @@
+[
+  {
+    "test": "shampoo_under_500",
+    "url": "http://127.0.0.1:18080/?q=shampoo&budget=500",
+    "http": 200,
+    "body_bytes": 3065,
+    "products_found": [],
+    "tresemme_present": false,
+    "shampoo_present": false,
+    "charger_present": false
+  },
+  {
+    "test": "shampoo_under_1000",
+    "url": "http://127.0.0.1:18080/?q=shampoo&budget=1000",
+    "http": 200,
+    "body_bytes": 4465,
+    "products_found": [],
+    "tresemme_present": false,
+    "shampoo_present": true,
+    "charger_present": false
+  },
+  {
+    "test": "charger_under_1000",
+    "url": "http://127.0.0.1:18080/?q=charger&budget=1000",
+    "http": 200,
+    "body_bytes": 5309,
+    "products_found": [],
+    "tresemme_present": false,
+    "shampoo_present": false,
+    "charger_present": true
+  },
+  {
+    "test": "empty_search",
+    "url": "http://127.0.0.1:18080/",
+    "http": 200,
+    "body_bytes": 16287,
+    "products_found": [],
+    "tresemme_present": false,
+    "shampoo_present": true,
+    "charger_present": true
+  }
+]

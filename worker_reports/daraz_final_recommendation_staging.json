@@ -1,0 +1,330 @@
+{
+  "worker": "daraz_final_recommendation_staging",
+  "version": "1.0",
+  "mode": "read_only_staging",
+  "status": "PASS",
+  "source_count": 25,
+  "staging_count": 25,
+  "recommendations": [
+    {
+      "position": 1,
+      "item_id": "1585981435",
+      "name": "Natura Grow Shampoo + Conditioner 200ml (Buy 1 Get 1)",
+      "price": "250",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/natura-200ml-1-1-i1585981435.html",
+      "search_keyword": "shampoo",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 2,
+      "item_id": "530364850",
+      "name": "Ujjwala Care Anti Hair Fall Herbal Shampoo  200 ML",
+      "price": "198",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/ujjwala-care-anti-hair-fall-herbal-shampoo-200-ml-i530364850.html",
+      "search_keyword": "shampoo",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 3,
+      "item_id": "411800933",
+      "name": "Aarong Earth Shampoo With Amla, Ritha & Shikakai Extract  200 ml",
+      "price": "249",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/aarong-earth-shampoo-with-amla-ritha-shikakai-extract-200-ml-i411800933.html",
+      "search_keyword": "shampoo",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 4,
+      "item_id": "339305549",
+      "name": "Parachute Naturale Shampoo Egg Shine 320ml",
+      "price": "239",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/parachute-naturale-shampoo-egg-shine-320ml-i339305549.html",
+      "search_keyword": "shampoo",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 5,
+      "item_id": "131530545",
+      "name": "Parachute Naturale Shampoo Nourishing Care 320ml",
+      "price": "239",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/parachute-naturale-shampoo-nourishing-care-320ml-i131530545.html",
+      "search_keyword": "shampoo",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 6,
+      "item_id": "287020419",
+      "name": "Parachute Naturale Advanced Hair Fall Control Shampoo with Onion & Coconut Milk For Strong & Thick Hair Reduces Hair Fall Paraben Free, 100% Vegan All Hair Types 320 ml",
+      "price": "239",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/parachute-naturale-advanced-hair-fall-control-shampoo-with-onion-coconut-milk-for-strong-thick-hair-reduces-hair-fall-paraben-free-100-vegan-all-hair-types-320-ml-i287020419.html",
+      "search_keyword": "shampoo",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 7,
+      "item_id": "307729936",
+      "name": "HAIR CARE BUNDLE - Parachute Naturale Shampoo Anti Hair Fall 320ml & Parachute Advansed Onion Enriched Coconut Hair Growth Oil 200ml",
+      "price": "261",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/hair-care-bundle-parachute-naturale-shampoo-anti-hair-fall-320ml-parachute-advansed-onion-enriched-coconut-hair-growth-oil-200ml-i307729936.html",
+      "search_keyword": "shampoo",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 8,
+      "item_id": "542554559",
+      "name": "Realme 67W SUPER VOOC TYPE C FAST CHARGER Original Premium Quality",
+      "price": "326",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/realme-67w-vooc-c-i542554559.html",
+      "search_keyword": "charger",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 9,
+      "item_id": "575028627",
+      "name": "Xiaomi Fast Charger 33W Turbo Charge Original EU QC 4.0 Adapter 3A Usb Type C Cable For MI 10 9T 9 A3 Redmi Note 8 9 9s Pro",
+      "price": "279",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/xiaomi-fast-charger-33w-turbo-charge-original-eu-qc-40-adapter-3a-usb-type-c-cable-for-mi-10-9t-9-a3-redmi-note-8-9-9s-pro-i575028627.html",
+      "search_keyword": "charger",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 10,
+      "item_id": "1575939599",
+      "name": "CASIFY UP03 PD 20W QC18W Dual-Port Adapter Fast Charger PD 20W USB C Charger 18W USB Fast Charger Wall Charger US Plug",
+      "price": "329",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/casify-up03-pd-20w-qc18w-dual-port-adapter-fast-charger-pd-20w-usb-c-charger-18w-usb-fast-charger-wall-charger-us-plug-i1575939599.html",
+      "search_keyword": "charger",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 11,
+      "item_id": "534647950",
+      "name": "33W Fast Turbo Charger with 6A USB Type-C Cable For Xiaomi  Mobile",
+      "price": "365",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/33w-fast-turbo-charger-with-6a-usb-type-c-cable-for-xiaomi-mobile-i534647950.html",
+      "search_keyword": "charger",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 12,
+      "item_id": "374283130",
+      "name": "33W Fast Type-C Charger for Xiaomi, Vivo, Realme, Oppo, Samsung, Redmi, OnePlus, Inifinix, Motorola",
+      "price": "339",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/xiaomi-vivo-realme-oppo-samsung-redmi-oneplus-inefinix-motorola-33w-c-i374283130.html",
+      "search_keyword": "charger",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 13,
+      "item_id": "517036518",
+      "name": "Officials Realme 45W Super vooc Original Premium Quality Fast Charger",
+      "price": "338",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/realme-45w-vooc-i517036518.html",
+      "search_keyword": "charger",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 14,
+      "item_id": "539962246",
+      "name": "AirPods Pro 2nd Generation Wireless Charging wireless Earbuds",
+      "price": "309",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/-i539962246.html",
+      "search_keyword": "earbuds",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 15,
+      "item_id": "1580450818",
+      "name": "New Airpods Stereo 895B Earbuds Touch Control Stereo Bass Earphone LED Digital Display BT 5.4 Wireless in Ear Earbuds",
+      "price": "269",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/new-airpods-stereo-895b-earbuds-touch-control-stereo-bass-earphone-led-digital-display-bt-54-wireless-in-ear-earbuds-i1580450818.html",
+      "search_keyword": "earbuds",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 16,
+      "item_id": "314348905",
+      "name": "AirPods Pro 2nd genaration wireless Charging  Bluetooth Earbuds",
+      "price": "339",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/-i314348905.html",
+      "search_keyword": "earbuds",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 17,
+      "item_id": "415353633",
+      "name": "Airpods Pro / tws Black edition wireless earbuds Bluetooth headphone",
+      "price": "305",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/-i415353633.html",
+      "search_keyword": "earbuds",
+      "score": 90,
+      "status": "RECOMMEND"
+    },
+    {
+      "position": 18,
+      "item_id": "530368705",
+      "name": "Ujjwala Care Anti Hair Fall Shampoo+Conditioner Men  200 ML",
+      "price": "187",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/ujjwala-care-anti-hair-fall-shampooconditioner-men-200-ml-i530368705.html",
+      "search_keyword": "shampoo",
+      "score": 85,
+      "status": "GOOD_OPTION"
+    },
+    {
+      "position": 19,
+      "item_id": "1576034745",
+      "name": "CASIFY FC02 PD 20W USB C Charger Fast Charging Quick Charge QC 3.0 Type C Wall Charger Adapter 20W PD Charger US Plug",
+      "price": "239",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/casify-fc02-pd-20w-usb-c-charger-fast-charging-quick-charge-qc-30-type-c-wall-charger-adapter-20w-pd-charger-us-plug-i1576034745.html",
+      "search_keyword": "charger",
+      "score": 85,
+      "status": "GOOD_OPTION"
+    },
+    {
+      "position": 20,
+      "item_id": "1580413296",
+      "name": "Oraimo Style TWS Bluetooth Earbuds - Wireless Earphones with ENC, Bass Boost, 5H Battery, Type-C Charging - Multicolor",
+      "price": "249",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/oraimo-style-tws-bluetooth-earbuds-wireless-earphones-with-enc-bass-boost-5h-battery-type-c-charging-multicolor-i1580413296.html",
+      "search_keyword": "earbuds",
+      "score": 85,
+      "status": "GOOD_OPTION"
+    },
+    {
+      "position": 21,
+      "item_id": "1580241303",
+      "name": "Ultrapods Pro True Wireless Earbuds with Display, Bluetooth 5.3",
+      "price": "235",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/ultrapods-pro-true-wireless-earbuds-with-display-bluetooth-53-i1580241303.html",
+      "search_keyword": "earbuds",
+      "score": 85,
+      "status": "GOOD_OPTION"
+    },
+    {
+      "position": 22,
+      "item_id": "1585855395",
+      "name": "Himalaya Gentle Daily Care Natural Protein Shampoo 170ml (Buy 1 Get 1 FREE)",
+      "price": "270",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/himalaya-gentle-daily-care-natural-protein-shampoo-170ml-buy-1-get-1-free-i1585855395.html",
+      "search_keyword": "shampoo",
+      "score": 82,
+      "status": "GOOD_OPTION"
+    },
+    {
+      "position": 23,
+      "item_id": "448548264",
+      "name": "Teton 18W Fast Charger - USB Type-A Charger with USB Cable, Quick Charge Power Adapter for All Android Samsung and iphone 16/15 Mobile Devices",
+      "price": "368",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/-i448548264.html",
+      "search_keyword": "charger",
+      "score": 82,
+      "status": "GOOD_OPTION"
+    },
+    {
+      "position": 24,
+      "item_id": "567732804",
+      "name": "CASIFY MU01 PD 20W QC18W 4-Port Adapter Fast Charger PD 20W USB C Charger 18W USB Fast Charger Wall Charger EU Plug",
+      "price": "379",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/casify-mu01-pd-20w-qc18w-4-port-adapter-fast-charger-pd-20w-usb-c-charger-18w-usb-fast-charger-wall-charger-eu-plug-i567732804.html",
+      "search_keyword": "charger",
+      "score": 82,
+      "status": "GOOD_OPTION"
+    },
+    {
+      "position": 25,
+      "item_id": "1578584676",
+      "name": "K8 Wireless Earbuds Hi-Fi Stereo Bass Bluetooth Headphones with Digital Display",
+      "price": "360",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/k8-i1578584676.html",
+      "search_keyword": "earbuds",
+      "score": 82,
+      "status": "GOOD_OPTION"
+    }
+  ],
+  "review_items": [
+    {
+      "item_id": "131530544",
+      "name": "Parachute Naturale Nourishing Care Shampoo with Aloe Vera & Coconut Milk For Strong & Silky Hair Smoothens Hair Paraben Free, 100% Vegan All Hair Types 160 ml",
+      "price": "126",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/parachute-naturale-nourishing-care-shampoo-with-aloe-vera-coconut-milk-for-strong-silky-hair-smoothens-hair-paraben-free-100-vegan-all-hair-types-160-ml-i131530544.html",
+      "search_keyword": "shampoo",
+      "ranking_score": 72,
+      "ranking_tier": "REVIEW",
+      "ranking_flags": [
+        "unusually_low_price"
+      ],
+      "recommendation_status": "REVIEW"
+    },
+    {
+      "item_id": "563299925",
+      "name": "Megastar Power Booster 2- 45W Fast Charger",
+      "price": "175",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/megastar-power-booster-2-45w-fast-charger-i563299925.html",
+      "search_keyword": "charger",
+      "ranking_score": 72,
+      "ranking_tier": "REVIEW",
+      "ranking_flags": [
+        "unusually_low_price"
+      ],
+      "recommendation_status": "REVIEW"
+    },
+    {
+      "item_id": "1587658117",
+      "name": "Hoco | EQ34 Plus Rima | True Wireless Earbuds (TWS) | ANC + ENC | Bluetooth 5.4 | 7h Playback (6h with ANC) | 300mAh Case, 40mAh Buds | App Control & Multi-Device Switching | Lightweight 44.8g.",
+      "price": "866",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/hoco-eq34-plus-rima-true-wireless-earbuds-tws-anc-enc-bluetooth-54-7h-playback-6h-with-anc-300mah-case-40mah-buds-app-control-multi-device-switching-lightweight-448g-i1587658117.html",
+      "search_keyword": "earbuds",
+      "ranking_score": 68,
+      "ranking_tier": "REVIEW",
+      "ranking_flags": [
+        "very_high_price"
+      ],
+      "recommendation_status": "REVIEW"
+    },
+    {
+      "item_id": "1587207804",
+      "name": "Q86 TWS Wireless Earphones Bluetooth 5.3 Stereo Sport Headphones Retro Camera Style Earbuds Compatible iPhone Android",
+      "price": "680",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/q86-tws-53-i1587207804.html",
+      "search_keyword": "earbuds",
+      "ranking_score": 68,
+      "ranking_tier": "REVIEW",
+      "ranking_flags": [
+        "very_high_price"
+      ],
+      "recommendation_status": "REVIEW"
+    },
+    {
+      "item_id": "563970559",
+      "name": "TIMACK® Bluetooth 5.0 Earphones Waterproof Wireless HIFI Sound Magnetic Neckband Headset Sports Headphones For Iphone And Android",
+      "price": "589",
+      "url": "https://www.daraz.com.bd//www.daraz.com.bd/products/-i563970559.html",
+      "search_keyword": "earbuds",
+      "ranking_score": 50,
+      "ranking_tier": "REVIEW",
+      "ranking_flags": [
+        "weak_keyword_relevance",
+        "higher_price"
+      ],
+      "recommendation_status": "REVIEW"
+    }
+  ],
+  "production_modified": false,
+  "git_modified": false
+}
