@@ -23,6 +23,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
+          git config --global submodule.recurse false
           curl -O https://raw.githubusercontent.com/mamavangne991-blip/smart-product-finder-bd/main/main.py
           python main.py
           
