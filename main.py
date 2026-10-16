@@ -53,4 +53,4 @@ if __name__ == "__main__":
     print("Posting to Telegram Channel...")
     result = post_to_telegram(caption, sample_product["affiliate_link"])
     print("Completed!", result)
-        
+    
