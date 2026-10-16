@@ -2,7 +2,6 @@ name: Smart Product Finder Auto Post
 
 on:
   schedule:
-    # প্রতিদিন ৩ বার স্বয়ংক্রিয়ভাবে পোস্ট হবে (বাংলাদেশ সময় সকাল ৯টা, দুপুর ৩টা ও রাত ৮টা)
     - cron: '0 3,9,14 * * *'
   workflow_dispatch:
 
