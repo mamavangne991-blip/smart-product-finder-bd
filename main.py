@@ -1,15 +1,14 @@
 import os
 import requests
-import google.generativeai as genai
+from google import genai
 
-# Read Environment Variables
+# Secrets
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
-# Setup Gemini AI
-genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
+# Gemini Setup
+client = genai.Client(api_key=GEMINI_API_KEY)
 
 def generate_caption(product_name, original_price, discount_price):
     prompt = f"""
@@ -19,7 +18,10 @@ def generate_caption(product_name, original_price, discount_price):
     Discount Price: {discount_price} BDT
     Include emojis, clear bullet points, and a strong call to action (CTA). Keep it concise.
     """
-    response = model.generate_content(prompt)
+    response = client.models.generate_content(
+        model='gemini-2.5-flash',
+        contents=prompt,
+    )
     return response.text
 
 def post_to_telegram(caption, product_link):
@@ -51,4 +53,4 @@ if __name__ == "__main__":
     print("Posting to Telegram Channel...")
     result = post_to_telegram(caption, sample_product["affiliate_link"])
     print("Completed!", result)
-    
+        
