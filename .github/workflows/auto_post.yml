@@ -1,0 +1,32 @@
+name: Smart Product Finder Auto Post
+
+on:
+  schedule:
+    # প্রতিদিন ৩ বার স্বয়ংক্রিয়ভাবে পোস্ট হবে (বাংলাদেশ সময় সকাল ৯টা, দুপুর ৩টা ও রাত ৮টা)
+    - cron: '0 3,9,14 * * *'
+  workflow_dispatch:
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-generativeai
+
+      - name: Run Auto Post Bot
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python main.py
+        
