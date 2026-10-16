@@ -17,13 +17,12 @@ jobs:
       - name: Install dependencies
         run: pip install requests google-genai
 
-      - name: Run Script
+      - name: Fetch and Run Script
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          git config --global submodule.recurse false
-          curl -O https://raw.githubusercontent.com/mamavangne991-blip/smart-product-finder-bd/main/main.py
+          curl -sSL https://raw.githubusercontent.com/mamavangne991-blip/smart-product-finder-bd/main/main.py -o main.py
           python main.py
           
