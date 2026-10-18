@@ -1,4 +1,4 @@
-import os
+	mport os
 import requests
 from flask import Flask
 from google import genai
@@ -54,7 +54,8 @@ BEST_SELLING_GADGETS = [
 
 def generate_caption(product):
     if not client:
-        return "API Key missing!"    prompt = f"""
+        return "API Key missing!"
+    prompt = f"""
     Create an extremely catchy and high-converting Bengali social media post for Daraz affiliate marketing.
     Product: {product['name']}
     Original Price: {product['original_price']} BDT
@@ -68,10 +69,10 @@ def generate_caption(product):
     4. Call to action to buy immediately.
     Keep it concise and clear.
     """
-response = client.models.generate_content(
-    model='gemini-1.5-flash',
-    contents=prompt,
-)
+    response = client.models.generate_content(
+        model='gemini-3.8-flash',
+        contents=prompt,
+    )
     return response.text
 
 def post_to_telegram(caption, product_link):
