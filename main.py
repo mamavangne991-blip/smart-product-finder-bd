@@ -1,19 +1,22 @@
 import os
 import requests
-from flask import Flask
+from flask import Flask, request
 from google import genai
+from apscheduler.schedulers.background import BackgroundScheduler
 
 app = Flask(__name__)
 
-# Secrets
+# Environment Variables / Secrets
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
+FB_PAGE_ID = os.environ.get("FB_PAGE_ID")  # আপনার ফেসবুক পেজ আইডি
+FB_PAGE_ACCESS_TOKEN = os.environ.get("FB_PAGE_ACCESS_TOKEN")  # আপনার পেজ অ্যাক্সেস টোকেন
 
-# Gemini Setup
+# Gemini Client Setup
 client = genai.Client(api_key=GEMINI_API_KEY) if GEMINI_API_KEY else None
 
-# 📱 ইলেকট্রনিক্স গ্যাজেট লিস্ট
+# 📱 প্রোডাক্ট ডাটাবেজ (এখানে যত খুশি প্রোডাক্ট যোগ করতে পারবেন)
 BEST_SELLING_GADGETS = [
     {
         "id": 1,
@@ -57,6 +60,8 @@ BEST_SELLING_GADGETS = [
     }
 ]
 
+current_product_index = 0
+
 def generate_caption(product):
     if not client:
         return "API Key missing!"
@@ -72,7 +77,7 @@ def generate_caption(product):
     2. Mention that it's a huge discount / best-selling gadget.
     3. Bullet points of top 3 features.
     4. Call to action to buy immediately.
-    Keep it concise and clear. Do not use markdown symbols that break payload.
+    Keep it concise and clear. Do not use complex markdown syntax.
     """
     response = client.models.generate_content(
         model='gemini-flash-latest',
@@ -80,20 +85,55 @@ def generate_caption(product):
     )
     return response.text
 
+# 📨 ১. টেলিগ্রাম পোস্ট ফাংশন
 def post_to_telegram(caption, product_link):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         return {"status": "Telegram tokens missing"}
     
     message = f"{caption}\n\n🛒 অফার মূল্যে কিনতে লিংকে ক্লিক করুন:\n👉 {product_link}"
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    payload = {
-        "chat_id": TELEGRAM_CHAT_ID,
-        "text": message
-    }
+    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message}
     res = requests.post(url, json=payload)
     return res.json()
 
-# 🌐 সুন্দর ড্যাশবোর্ড রুট
+# 📘 ২. ফেসবুক পোস্ট ফাংশন
+def post_to_facebook(caption, product_link):
+    if not FB_PAGE_ID or not FB_PAGE_ACCESS_TOKEN:
+        return {"status": "Facebook tokens missing"}
+    
+    message = f"{caption}\n\n🛒 অফার মূল্যে কিনতে লিংকে ক্লিক করুন:\n👉 {product_link}"
+    url = f"https://graph.facebook.com/v18.0/{FB_PAGE_ID}/feed"
+    payload = {
+        "message": message,
+        "access_token": FB_PAGE_ACCESS_TOKEN
+    }
+    res = requests.post(url, data=payload)
+    return res.json()
+
+# ⏰ ৩. অটোমেটেড শিডিউল জব (স্বয়ংক্রিয়ভাবে পোস্ট পাঠাবে)
+def auto_post_job():
+    global current_product_index
+    if not BEST_SELLING_GADGETS:
+        return
+    
+    product = BEST_SELLING_GADGETS[current_product_index]
+    caption = generate_caption(product)
+    
+    # টেলিগ্রাম ও ফেসবুকে পোস্ট
+    tg_res = post_to_telegram(caption, product["affiliate_link"])
+    fb_res = post_to_facebook(caption, product["affiliate_link"])
+    
+    print(f"Auto Posted Product #{product['id']}: TG={tg_res.get('ok')}, FB={fb_res.get('id')}")
+    
+    # পরের প্রোডাক্টের দিকে ইনডেক্স বাড়ানো
+    current_product_index = (current_product_index + 1) % len(BEST_SELLING_GADGETS)
+
+# ব্যাকগ্রাউন্ড শিডিউলার শুরু (প্রতি ২ ঘণ্টায় ১টি পোস্ট)
+scheduler = BackgroundScheduler(daemon=True)
+scheduler.add_job(auto_post_job, 'interval', hours=2)
+scheduler.start()
+
+# 🌐 ড্যাশবোর্ড রুট
 @app.route("/")
 def home():
     cards_html = ""
@@ -106,7 +146,7 @@ def home():
                 মূল্য: <span style="text-decoration: line-through; color: #888;">৳{product['original_price']}</span> 
                 <strong style="color: #e53935; font-size: 18px; margin-left: 8px;">৳{product['discount_price']}</strong>
             </p>
-            <a href="/trigger-post?id={product['id']}" style="display: inline-block; background: #0088cc; color: white; text-decoration: none; padding: 10px 18px; border-radius: 6px; font-weight: bold; font-size: 14px;">🚀 Generate AI Post</a>
+            <a href="/trigger-post?id={product['id']}" style="display: inline-block; background: #0088cc; color: white; text-decoration: none; padding: 10px 18px; border-radius: 6px; font-weight: bold; font-size: 14px;">🚀 Post to FB & Telegram Now</a>
         </div>
         """
 
@@ -116,30 +156,28 @@ def home():
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Smart Product Finder BD - Admin Dashboard</title>
+        <title>Smart Product Finder BD - Auto Dashboard</title>
     </head>
     <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px;">
         <div style="max-width: 800px; margin: 0 auto;">
             
-            <!-- Header -->
             <div style="background: linear-gradient(135deg, #0088cc, #005f9e); color: white; padding: 25px; border-radius: 12px; margin-bottom: 25px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
                 <h1 style="margin: 0; font-size: 26px;">🚀 Smart Product Finder BD</h1>
-                <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">AI-Powered Affiliate Automation Dashboard</p>
+                <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Facebook & Telegram Auto Automation Dashboard</p>
             </div>
 
-            <!-- Stats -->
             <div style="display: flex; gap: 15px; margin-bottom: 25px;">
                 <div style="flex: 1; background: white; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
                     <h4 style="margin: 0; color: #777;">মোট প্রোডাক্ট</h4>
                     <h2 style="margin: 5px 0 0 0; color: #0088cc;">{len(BEST_SELLING_GADGETS)}টি</h2>
                 </div>
                 <div style="flex: 1; background: white; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-                    <h4 style="margin: 0; color: #777;">ইঞ্জিন স্ট্যাটাস</h4>
-                    <h2 style="margin: 5px 0 0 0; color: #4caf50;">Active 🟢</h2>
+                    <h4 style="margin: 0; color: #777;">অটো-শিডিউলার</h4>
+                    <h2 style="margin: 5px 0 0 0; color: #4caf50;">Every 2 Hours ⏱️</h2>
                 </div>
             </div>
 
-            <h2 style="color: #444; margin-bottom: 15px;">📦 ট্রেন্ডিং প্রোডাক্ট লিস্ট</h2>
+            <h2 style="color: #444; margin-bottom: 15px;">📦 প্রোডাক্ট তালিকা</h2>
             {cards_html}
 
         </div>
@@ -148,24 +186,25 @@ def home():
     """
     return dashboard_html
 
-# 🌐 পোস্ট জেনারেট রুট
+# 🌐 ম্যানুয়াল পোস্ট ট্রিগার রুট
 @app.route("/trigger-post")
 def trigger_post():
-    from flask import request
     product_id = request.args.get('id', default=1, type=int)
-    
-    # আইডি অনুযায়ী প্রোডাক্ট নির্বাচন
     product_to_post = next((p for p in BEST_SELLING_GADGETS if p['id'] == product_id), BEST_SELLING_GADGETS[0])
     
     try:
         caption = generate_caption(product_to_post)
-        result = post_to_telegram(caption, product_to_post["affiliate_link"])
+        tg_result = post_to_telegram(caption, product_to_post["affiliate_link"])
+        fb_result = post_to_facebook(caption, product_to_post["affiliate_link"])
+        
         return f"""
         <div style="font-family: Arial; padding: 30px; max-width: 600px; margin: 40px auto; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-            <h2 style="color: #4caf50;">✅ AI Post Generated Successfully!</h2>
+            <h2 style="color: #4caf50;">✅ Post Triggers Executed!</h2>
             <p><strong>Product:</strong> {product_to_post['name']}</p>
-            <h3>Response:</h3>
-            <pre style="background: #f5f5f5; padding: 15px; border-radius: 6px; overflow-x: auto;">{result}</pre>
+            <h3>Telegram Response:</h3>
+            <pre style="background: #f5f5f5; padding: 10px; border-radius: 6px;">{tg_result}</pre>
+            <h3>Facebook Response:</h3>
+            <pre style="background: #f5f5f5; padding: 10px; border-radius: 6px;">{fb_result}</pre>
             <br>
             <a href="/" style="background: #0088cc; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">⬅️ Back to Dashboard</a>
         </div>
