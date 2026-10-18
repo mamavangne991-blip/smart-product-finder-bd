@@ -1,4 +1,4 @@
-	mport os
+import os
 import requests
 from flask import Flask
 from google import genai
@@ -70,7 +70,7 @@ def generate_caption(product):
     Keep it concise and clear.
     """
     response = client.models.generate_content(
-        model='gemini-3.8-flash',
+        model='gemini-flash-latest',
         contents=prompt,
     )
     return response.text
