@@ -1,6 +1,9 @@
 import os
 import requests
+from flask import Flask
 from google import genai
+
+app = Flask(__name__)
 
 # Secrets
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
@@ -8,16 +11,16 @@ TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
 # Gemini Setup
-client = genai.Client(api_key=GEMINI_API_KEY)
+client = genai.Client(api_key=GEMINI_API_KEY) if GEMINI_API_KEY else None
 
-# 📱 ইলেকট্রনিক্স গ্যাজেট লিস্ট (অতিরিক্ত সেল হওয়া আইটেমগুলো র‍্যাংক অনুযায়ী প্রথমে রাখা হয়েছে)
+# 📱 ইলেকট্রনিক্স গ্যাজেট লিস্ট
 BEST_SELLING_GADGETS = [
     {
         "name": "TWS M10 / F9 Bluetooth Wireless Earbuds with Power Bank",
         "original_price": "850",
         "discount_price": "349",
         "sales_badge": "🔥 ২০,০০০+ পিস বিক্রি হয়েছে! (Top Seller)",
-        "affiliate_link": "https://www.daraz.com.bd/" # আপনার দারাজ অ্যাফিলিয়েট লিংক
+        "affiliate_link": "https://www.daraz.com.bd/"
     },
     {
         "name": "T800 Ultra Smartwatch with Large HD Display",
@@ -50,13 +53,15 @@ BEST_SELLING_GADGETS = [
 ]
 
 def generate_caption(product):
+    if not client:
+        return "API Key missing!"
     prompt = f"""
     Create an extremely catchy and high-converting Bengali social media post for Daraz affiliate marketing.
     Product: {product['name']}
     Original Price: {product['original_price']} BDT
     Discount Price: {product['discount_price']} BDT
     Highlight Note: {product['sales_badge']}
-    
+
     Structure:
     1. Attention grabbing headline with Emojis.
     2. Mention that it's a huge discount / best-selling gadget.
@@ -71,6 +76,8 @@ def generate_caption(product):
     return response.text
 
 def post_to_telegram(caption, product_link):
+    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
+        return {"status": "Telegram tokens missing"}
     message = f"{caption}\n\n🛒 **অফার মূল্যে কিনতে লিংকে ক্লিক করুন:**\n👉 {product_link}"
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     payload = {
@@ -81,14 +88,28 @@ def post_to_telegram(caption, product_link):
     res = requests.post(url, json=payload)
     return res.json()
 
+# 🌐 ফ্লাস্ক রুট ১: ওয়েবসাইটের হোমপেজ
+@app.route("/")
+def home():
+    return """
+    <div style="font-family: Arial; text-align: center; margin-top: 50px;">
+        <h2>🚀 Smart Product Finder BD is Live & Running!</h2>
+        <p>Your AI-powered Telegram automation web service is active.</p>
+        <a href="/trigger-post" style="background: #0088cc; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Test Telegram Post Now</a>
+    </div>
+    """
+
+# 🌐 ফ্লাস্ক রুট ২: টেলিগ্রামে পোস্ট পাঠানোর ট্রিগার লিংক
+@app.route("/trigger-post")
+def trigger_post():
+    try:
+        product_to_post = BEST_SELLING_GADGETS[0]
+        caption = generate_caption(product_to_post)
+        result = post_to_telegram(caption, product_to_post["affiliate_link"])
+        return f"<h3>Success! Posted to Telegram.</h3><pre>{result}</pre><br><a href='/'>Go Back</a>"
+    except Exception as e:
+        return f"<h3>Error:</h3> <p>{str(e)}</p><br><a href='/'>Go Back</a>"
+
 if __name__ == "__main__":
-    # টপ সেলিং প্রডাক্ট থেকে প্রথম আইটেমটি পিক করা হচ্ছে
-    product_to_post = BEST_SELLING_GADGETS[0] 
-    
-    print(f"Generating AI Caption for Best Selling Gadget: {product_to_post['name']}...")
-    caption = generate_caption(product_to_post)
-    
-    print("Posting to Telegram Channel...")
-    result = post_to_telegram(caption, product_to_post["affiliate_link"])
-    print("Completed!", result)
-    
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+
