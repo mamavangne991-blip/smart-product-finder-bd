@@ -8,15 +8,12 @@ app = Flask(__name__)
 
 # Environment Variables / Secrets
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
-TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
-TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
-FB_PAGE_ID = os.environ.get("FB_PAGE_ID")  # আপনার ফেসবুক পেজ আইডি
-FB_PAGE_ACCESS_TOKEN = os.environ.get("FB_PAGE_ACCESS_TOKEN")  # আপনার পেজ অ্যাক্সেস টোকেন
+MAKE_WEBHOOK_URL = os.environ.get("MAKE_WEBHOOK_URL")  # Make.com Webhook URL
 
 # Gemini Client Setup
 client = genai.Client(api_key=GEMINI_API_KEY) if GEMINI_API_KEY else None
 
-# 📱 প্রোডাক্ট ডাটাবেজ (এখানে যত খুশি প্রোডাক্ট যোগ করতে পারবেন)
+# 📱 প্রোডাক্ট ডাটাবেজ (এখানে আপনার প্রয়োজনমতো শত শত প্রোডাক্ট যোগ করতে পারবেন)
 BEST_SELLING_GADGETS = [
     {
         "id": 1,
@@ -65,18 +62,26 @@ current_product_index = 0
 def generate_caption(product):
     if not client:
         return "API Key missing!"
+    
+    # আপনার দেওয়া মাস্টার প্রম্পট স্ট্র্যাটেজি অনুযায়ী জেমিনি এআই ক্যাপশন জেনারেট করবে
     prompt = f"""
-    Create an extremely catchy Bengali social media post for Daraz affiliate marketing.
-    Product: {product['name']}
-    Original Price: {product['original_price']} BDT
-    Discount Price: {product['discount_price']} BDT
-    Highlight Note: {product['sales_badge']}
+    Role: You are an expert Digital Marketer, E-commerce Specialist, and Conversion Rate Optimization (CRO) Copywriter focusing on Bangladeshi consumer trends (specifically for Daraz/Gadget Affiliate Marketing).
 
-    Structure:
-    1. Attention grabbing headline with Emojis.
-    2. Mention that it's a huge discount / best-selling gadget.
-    3. Bullet points of top 3 features.
-    4. Call to action to buy immediately.
+    Task: Write an extremely compelling, engaging, and high-converting Bengali social media post for an electronics gadget offer.
+
+    Product Details:
+    - Product Name: {product['name']}
+    - Original Price: {product['original_price']} BDT
+    - Offer Price: {product['discount_price']} BDT
+    - Highlight Note: {product['sales_badge']}
+
+    Requirements & Output Format:
+    1. Catchy Headline: Create a scroll-stopping headline with relevant emojis that creates FOMO or highlights the huge discount.
+    2. Emotional/Practical Hook: Explain in 1-2 lines why the user desperately needs this product in their daily life.
+    3. Top 3 Feature Bullet Points: Clearly highlight 3 main benefits using bullet points.
+    4. Urgency & Offer Call-To-Action (CTA): Add a clear instruction encouraging them to buy now before stock runs out.
+    5. Hashtags: Include 5 trending hashtags.
+
     Keep it concise and clear. Do not use complex markdown syntax.
     """
     response = client.models.generate_content(
@@ -85,32 +90,24 @@ def generate_caption(product):
     )
     return response.text
 
-# 📨 ১. টেলিগ্রাম পোস্ট ফাংশন
-def post_to_telegram(caption, product_link):
-    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-        return {"status": "Telegram tokens missing"}
+# 🌐 Make.com ওয়েবহুকের মাধ্যমে সব সোশ্যাল মিডিয়ায় পোস্ট পাঠানোর ফাংশন
+def post_to_all_platforms(product, caption):
+    if not MAKE_WEBHOOK_URL:
+        return {"status": "Webhook URL missing"}
     
-    message = f"{caption}\n\n🛒 অফার মূল্যে কিনতে লিংকে ক্লিক করুন:\n👉 {product_link}"
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message}
-    res = requests.post(url, json=payload)
-    return res.json()
-
-# 📘 ২. ফেসবুক পোস্ট ফাংশন
-def post_to_facebook(caption, product_link):
-    if not FB_PAGE_ID or not FB_PAGE_ACCESS_TOKEN:
-        return {"status": "Facebook tokens missing"}
-    
-    message = f"{caption}\n\n🛒 অফার মূল্যে কিনতে লিংকে ক্লিক করুন:\n👉 {product_link}"
-    url = f"https://graph.facebook.com/v18.0/{FB_PAGE_ID}/feed"
     payload = {
-        "message": message,
-        "access_token": FB_PAGE_ACCESS_TOKEN
+        "product_name": product["name"],
+        "caption": caption,
+        "discount_price": product["discount_price"],
+        "original_price": product["original_price"],
+        "badge": product["sales_badge"],
+        "affiliate_link": product["affiliate_link"]
     }
-    res = requests.post(url, data=payload)
+    
+    res = requests.post(MAKE_WEBHOOK_URL, json=payload)
     return res.json()
 
-# ⏰ ৩. অটোমেটেড শিডিউল জব (স্বয়ংক্রিয়ভাবে পোস্ট পাঠাবে)
+# ⏰ অটোমেটেড শিডিউল জব (স্বয়ংক্রিয়ভাবে ব্যাকগ্রাউন্ডে পোস্ট পাঠাবে)
 def auto_post_job():
     global current_product_index
     if not BEST_SELLING_GADGETS:
@@ -119,21 +116,19 @@ def auto_post_job():
     product = BEST_SELLING_GADGETS[current_product_index]
     caption = generate_caption(product)
     
-    # টেলিগ্রাম ও ফেসবুকে পোস্ট
-    tg_res = post_to_telegram(caption, product["affiliate_link"])
-    fb_res = post_to_facebook(caption, product["affiliate_link"])
+    # ওয়েবহুকের মাধ্যমে সব সোশ্যাল মিডিয়ায় একসাথে রিকোয়েস্ট পাঠানো
+    webhook_res = post_to_all_platforms(product, caption)
+    print(f"Auto Posted Product #{product['id']} via Webhook: {webhook_res}")
     
-    print(f"Auto Posted Product #{product['id']}: TG={tg_res.get('ok')}, FB={fb_res.get('id')}")
-    
-    # পরের প্রোডাক্টের দিকে ইনডেক্স বাড়ানো
+    # পরবর্তী প্রোডাক্টের ইনডেক্স আপডেট
     current_product_index = (current_product_index + 1) % len(BEST_SELLING_GADGETS)
 
-# ব্যাকগ্রাউন্ড শিডিউলার শুরু (প্রতি ২ ঘণ্টায় ১টি পোস্ট)
+# ব্যাকগ্রাউন্ড শিডিউলার শুরু (প্রতি ২ ঘণ্টায় ১টি করে অটো পোস্ট)
 scheduler = BackgroundScheduler(daemon=True)
 scheduler.add_job(auto_post_job, 'interval', hours=2)
 scheduler.start()
 
-# 🌐 ড্যাশবোর্ড রুট
+# 🌐 ড্যাশবোর্ড রুট (ওয়েবসাইট হোমপেজ)
 @app.route("/")
 def home():
     cards_html = ""
@@ -146,7 +141,7 @@ def home():
                 মূল্য: <span style="text-decoration: line-through; color: #888;">৳{product['original_price']}</span> 
                 <strong style="color: #e53935; font-size: 18px; margin-left: 8px;">৳{product['discount_price']}</strong>
             </p>
-            <a href="/trigger-post?id={product['id']}" style="display: inline-block; background: #0088cc; color: white; text-decoration: none; padding: 10px 18px; border-radius: 6px; font-weight: bold; font-size: 14px;">🚀 Post to FB & Telegram Now</a>
+            <a href="/trigger-post?id={product['id']}" style="display: inline-block; background: #0088cc; color: white; text-decoration: none; padding: 10px 18px; border-radius: 6px; font-weight: bold; font-size: 14px;">🚀 Post to All Social Media</a>
         </div>
         """
 
@@ -156,14 +151,14 @@ def home():
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Smart Product Finder BD - Auto Dashboard</title>
+        <title>Smart Product Finder BD - Multi-Platform Automation</title>
     </head>
     <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px;">
         <div style="max-width: 800px; margin: 0 auto;">
             
             <div style="background: linear-gradient(135deg, #0088cc, #005f9e); color: white; padding: 25px; border-radius: 12px; margin-bottom: 25px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
                 <h1 style="margin: 0; font-size: 26px;">🚀 Smart Product Finder BD</h1>
-                <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Facebook & Telegram Auto Automation Dashboard</p>
+                <p style="margin-top: 8px; opacity: 0.9; font-size: 14px;">Multi-Platform AI Affiliate Automation Dashboard</p>
             </div>
 
             <div style="display: flex; gap: 15px; margin-bottom: 25px;">
@@ -194,17 +189,14 @@ def trigger_post():
     
     try:
         caption = generate_caption(product_to_post)
-        tg_result = post_to_telegram(caption, product_to_post["affiliate_link"])
-        fb_result = post_to_facebook(caption, product_to_post["affiliate_link"])
+        webhook_result = post_to_all_platforms(product_to_post, caption)
         
         return f"""
         <div style="font-family: Arial; padding: 30px; max-width: 600px; margin: 40px auto; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-            <h2 style="color: #4caf50;">✅ Post Triggers Executed!</h2>
+            <h2 style="color: #4caf50;">✅ Multi-Platform Post Triggered!</h2>
             <p><strong>Product:</strong> {product_to_post['name']}</p>
-            <h3>Telegram Response:</h3>
-            <pre style="background: #f5f5f5; padding: 10px; border-radius: 6px;">{tg_result}</pre>
-            <h3>Facebook Response:</h3>
-            <pre style="background: #f5f5f5; padding: 10px; border-radius: 6px;">{fb_result}</pre>
+            <h3>Webhook Response:</h3>
+            <pre style="background: #f5f5f5; padding: 10px; border-radius: 6px;">{webhook_result}</pre>
             <br>
             <a href="/" style="background: #0088cc; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">⬅️ Back to Dashboard</a>
         </div>
