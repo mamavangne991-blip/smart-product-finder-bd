@@ -1,3 +1,5 @@
+
+
 import os
 import requests
 from flask import Flask
@@ -67,7 +69,7 @@ def generate_caption(product):
     2. Mention that it's a huge discount / best-selling gadget.
     3. Bullet points of top 3 features.
     4. Call to action to buy immediately.
-    Keep it concise and clear.
+    Keep it concise and clear. Do not use complex markdown formatting symbols that break.
     """
     response = client.models.generate_content(
         model='gemini-flash-latest',
@@ -78,12 +80,13 @@ def generate_caption(product):
 def post_to_telegram(caption, product_link):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         return {"status": "Telegram tokens missing"}
-    message = f"{caption}\n\n🛒 **অফার মূল্যে কিনতে লিংকে ক্লিক করুন:**\n👉 {product_link}"
+    
+    message = f"{caption}\n\n🛒 অফার মূল্যে কিনতে লিংকে ক্লিক করুন:\n👉 {product_link}"
+    
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     payload = {
         "chat_id": TELEGRAM_CHAT_ID,
-        "text": message,
-        "parse_mode": "Markdown"
+        "text": message
     }
     res = requests.post(url, json=payload)
     return res.json()
@@ -106,7 +109,7 @@ def trigger_post():
         product_to_post = BEST_SELLING_GADGETS[0]
         caption = generate_caption(product_to_post)
         result = post_to_telegram(caption, product_to_post["affiliate_link"])
-        return f"<h3>Success! Posted to Telegram.</h3><pre>{result}</pre><br><a href='/'>Go Back</a>"
+        return f"<h3>Success! Telegram API Response:</h3><pre>{result}</pre><br><a href='/'>Go Back</a>"
     except Exception as e:
         return f"<h3>Error:</h3> <p>{str(e)}</p><br><a href='/'>Go Back</a>"
 
