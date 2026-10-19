@@ -1,6 +1,6 @@
 flask
 requests
-beautifulsoup4
+google-genai
 gunicorn
-google-genai
-google-genai
+apscheduler
+
