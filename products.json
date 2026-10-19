@@ -1,4 +1,22 @@
 [
+    {
+        "id": 1,
+        "name": "Wireless Bluetooth Earbuds",
+        "original_price": "850",
+        "discount_price": "349",
+        "sales_badge": "🔥 ২০,০০০+ পিস বিক্রি হয়েছে!",
+        "affiliate_link": "https://www.daraz.com.bd/"
+    },
+    {
+        "id": 2,
+        "name": "Smart Watch Ultra Series 8",
+        "original_price": "1800",
+        "discount_price": "790",
+        "sales_badge": "⚡ দারাজের সেরা বিক্রীত স্মার্টওয়াচ",
+        "affiliate_link": "https://www.daraz.com.bd/"
+    }
+]
+[
   {
     "id": 6,
     "name": "Wireless Earbuds Pro",
