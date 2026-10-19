@@ -59,6 +59,23 @@ def generate_caption(product):
 
 def post_to_all_platforms(product, caption):
     if not MAKE_WEBHOOK_URL:
+        return "Webhook URL missing"
+    
+    payload = {
+        "product_name": product["name"],
+        "caption": caption,
+        "discount_price": product["discount_price"],
+        "original_price": product["original_price"],
+        "badge": product["sales_badge"],
+        "affiliate_link": product["affiliate_link"]
+    }
+    try:
+        res = requests.post(MAKE_WEBHOOK_URL, json=payload)
+        return res.text if res.text else "Accepted by Webhook"
+    except Exception as e:
+        return str(e)
+def post_to_all_platforms(product, caption):
+    if not MAKE_WEBHOOK_URL:
         return {"status": "Webhook URL missing"}
     
     payload = {
